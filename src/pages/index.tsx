@@ -1,9 +1,10 @@
+import { Box, Heading } from '@chakra-ui/react'
 import React from 'react'
 
 export default function HomePage() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+    <Box>
+      <Heading>Hello World!</Heading>
+    </Box>
   )
 }

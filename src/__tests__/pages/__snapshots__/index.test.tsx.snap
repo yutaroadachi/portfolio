@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ホームページ 1`] = `
+<div>
+  <div
+    class="css-1u8qly9"
+  >
+    <h2
+      class="chakra-heading css-eo8fjx"
+    >
+      Hello World!
+    </h2>
+  </div>
+</div>
+`;

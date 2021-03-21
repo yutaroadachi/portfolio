@@ -1,6 +1,6 @@
 import { Box, Center } from '@chakra-ui/react'
 import React from 'react'
-import { Biography } from 'src/components/HomePage'
+import { Biography, Skills } from 'src/components/HomePage'
 import { AppLayout } from 'src/components/layout'
 
 export default function HomePage() {
@@ -9,6 +9,7 @@ export default function HomePage() {
       <Center p={4}>
         <Box w={{ base: 'full', lg: 'container.md' }}>
           <Biography />
+          <Skills />
         </Box>
       </Center>
     </AppLayout>

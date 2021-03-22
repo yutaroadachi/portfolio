@@ -1,4 +1,5 @@
 export { Biography } from './Biography'
+export { Contact } from './Contact'
 export { Jobs } from './Jobs'
 export { RecentPosts } from './RecentPosts'
 export { Skills } from './Skills'

@@ -2,19 +2,26 @@ import { Box, Center } from '@chakra-ui/react'
 import { GetServerSideProps } from 'next'
 import React from 'react'
 import Parser from 'rss-parser'
-import { Biography, Jobs, RecentPosts, Skills } from 'src/components/HomePage'
+import {
+  Biography,
+  Contact,
+  Jobs,
+  RecentPosts,
+  Skills,
+} from 'src/components/HomePage'
 import { AppLayout } from 'src/components/layout'
 import { RssFeed, RssFeedItem } from 'src/types/rss'
 
 export default function HomePage({ posts }: { posts: RssFeedItem[] }) {
   return (
     <AppLayout>
-      <Center p={4}>
+      <Center px={4}>
         <Box w={{ base: 'full', lg: 'container.md' }}>
           <Biography />
           <Skills />
           <RecentPosts posts={posts} />
           <Jobs />
+          <Contact />
         </Box>
       </Center>
     </AppLayout>

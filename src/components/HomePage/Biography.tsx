@@ -4,7 +4,7 @@ import { Image } from 'src/components/common'
 import { GitHubIcon, TwitterIcon, ZennIcon } from 'src/components/icons'
 
 export const Biography = () => (
-  <VStack spacing={4} layerStyle="card" p={4}>
+  <VStack spacing={4} layerStyle="card" p={4} mt={4}>
     <Image
       src="/assets/home-page/biography.png"
       width={90}

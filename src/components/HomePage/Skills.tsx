@@ -2,7 +2,7 @@ import { ListItem, Text, UnorderedList, VStack } from '@chakra-ui/react'
 import React from 'react'
 
 export const Skills = () => (
-  <VStack spacing={4} p={4}>
+  <VStack spacing={4} py={4}>
     <Text as="h2" textStyle="heading" fontSize="2xl">
       Skills
     </Text>

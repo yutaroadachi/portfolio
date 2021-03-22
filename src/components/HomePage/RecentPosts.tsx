@@ -5,7 +5,7 @@ import { formatYYYYMMDD } from 'src/lib/date-format'
 import { RssFeedItem } from 'src/types/rss'
 
 export const RecentPosts = ({ posts }: { posts: RssFeedItem[] }) => (
-  <VStack spacing={4}>
+  <VStack spacing={4} py={4}>
     <Text as="h2" textStyle="heading" fontSize="2xl">
       Recent Posts
     </Text>

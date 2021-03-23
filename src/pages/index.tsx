@@ -1,5 +1,5 @@
 import { Box, Center } from '@chakra-ui/react'
-import { GetServerSideProps } from 'next'
+import { GetStaticProps } from 'next'
 import React from 'react'
 import Parser from 'rss-parser'
 import {
@@ -12,7 +12,11 @@ import {
 import { AppLayout } from 'src/components/layout'
 import { RssFeed, RssFeedItem } from 'src/types/rss'
 
-export default function HomePage({ posts }: { posts: RssFeedItem[] }) {
+type HomePageProps = {
+  posts: RssFeedItem[]
+}
+
+export default function HomePage({ posts }: HomePageProps) {
   return (
     <AppLayout>
       <Center px={4}>
@@ -28,19 +32,16 @@ export default function HomePage({ posts }: { posts: RssFeedItem[] }) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps<{
-  posts: RssFeedItem[]
-}> = async ({ res }) => {
+export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
   try {
     const parser: Parser<RssFeed, RssFeedItem> = new Parser()
     const feed = await parser.parseURL('https://zenn.dev/a_da_chi/feed')
-
-    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate')
 
     return {
       props: {
         posts: feed.items,
       },
+      revalidate: 300,
     }
   } catch (e) {
     console.error(e)
@@ -49,6 +50,7 @@ export const getServerSideProps: GetServerSideProps<{
       props: {
         posts: [],
       },
+      revalidate: 300,
     }
   }
 }

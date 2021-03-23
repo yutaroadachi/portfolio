@@ -1,4 +1,5 @@
 import { createIcon } from '@chakra-ui/icons'
+import React from 'react'
 
 export const ZennIcon = createIcon({
   path: (

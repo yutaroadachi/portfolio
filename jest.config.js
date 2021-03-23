@@ -11,4 +11,5 @@ module.exports = {
   },
   // see https://stackoverflow.com/questions/50863312/jest-gives-cannot-find-module-when-importing-components-with-absolute-paths
   moduleDirectories: ['node_modules', '<rootDir>'],
+  testPathIgnorePatterns: ['/node_modules/', '<rootDir>/src/__tests__/data'],
 }

@@ -3,13 +3,392 @@
 exports[`ホームページ 1`] = `
 <div>
   <div
-    class="css-1u8qly9"
+    class="css-12hlzpf"
   >
-    <h2
-      class="chakra-heading css-eo8fjx"
+    <header
+      class="css-z7c1ux"
     >
-      Hello World!
-    </h2>
+      <h1
+        class="chakra-text css-15bmhpj"
+      >
+        adachi
+      </h1>
+    </header>
+    <main
+      class="css-1ixgbcy"
+    >
+      <div
+        class="css-10dsu7u"
+      >
+        <div
+          class="css-1ypnkj4"
+        >
+          <div
+            class="chakra-stack css-1w54upo"
+          >
+            <div
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+            >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
+              <img
+                alt="プロフィール画像"
+                class="css-1wyhzsb"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+            </div>
+            <h2
+              class="chakra-text css-5bs06v"
+            >
+              Yutaro Adachi
+            </h2>
+            <p
+              class="chakra-text css-1u8qly9"
+            >
+              Web Engineer
+            </p>
+            <div
+              class="chakra-stack css-ynu3ti"
+            >
+              <a
+                class="chakra-link css-1su6yxb"
+                href="https://github.com/yutaroadachi"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="chakra-icon css-5f6vqc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+              <a
+                class="chakra-link css-1su6yxb"
+                href="https://zenn.dev/a_da_chi"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="chakra-icon css-5f6vqc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                    fill="#3ea8ff"
+                  />
+                </svg>
+              </a>
+              <a
+                class="chakra-link css-1su6yxb"
+                href="https://twitter.com/a_da_chi_"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="chakra-icon css-5f6vqc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                    fill="#1da1f2"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="chakra-stack css-q1rmxe"
+          >
+            <h2
+              class="chakra-text css-5bs06v"
+            >
+              Skills
+            </h2>
+            <ul
+              class="css-79c3oz"
+              role="list"
+            >
+              <li
+                class="css-1u8qly9"
+              >
+                Next.js
+              </li>
+              <li
+                class="css-1u8qly9"
+              >
+                TypeScript
+              </li>
+              <li
+                class="css-1u8qly9"
+              >
+                Chakra UI
+              </li>
+              <li
+                class="css-1u8qly9"
+              >
+                Ruby on Rails
+              </li>
+              <li
+                class="css-1u8qly9"
+              >
+                Go
+              </li>
+            </ul>
+          </div>
+          <div
+            class="chakra-stack css-q1rmxe"
+          >
+            <h2
+              class="chakra-text css-5bs06v"
+            >
+              Recent Posts
+            </h2>
+            <div
+              class="css-7btwo6"
+            >
+              <a
+                class="chakra-link css-k2n3mh"
+                href="テスト0"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  class="chakra-stack css-1bpxxj3"
+                >
+                  <svg
+                    class="chakra-icon css-155kwoe"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                      fill="#3ea8ff"
+                    />
+                  </svg>
+                  <div
+                    class="css-1u8qly9"
+                  >
+                    <p
+                      class="chakra-text css-e7x1pi"
+                    >
+                      テスト0
+                    </p>
+                    <p
+                      class="chakra-text css-18ljba1"
+                    >
+                      Published at NaN/NaN/NaN
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a
+                class="chakra-link css-k2n3mh"
+                href="テスト1"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  class="chakra-stack css-1bpxxj3"
+                >
+                  <svg
+                    class="chakra-icon css-155kwoe"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                      fill="#3ea8ff"
+                    />
+                  </svg>
+                  <div
+                    class="css-1u8qly9"
+                  >
+                    <p
+                      class="chakra-text css-e7x1pi"
+                    >
+                      テスト1
+                    </p>
+                    <p
+                      class="chakra-text css-18ljba1"
+                    >
+                      Published at NaN/NaN/NaN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a
+              class="chakra-link css-1su6yxb"
+              href="https://zenn.dev/a_da_chi"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Read more
+            </a>
+          </div>
+          <div
+            class="chakra-stack css-q1rmxe"
+          >
+            <h2
+              class="chakra-text css-5bs06v"
+            >
+              Jobs
+            </h2>
+            <div
+              class="chakra-stack css-1a6r8mf"
+            >
+              <div
+                class="css-1qdqbu0"
+              >
+                <div
+                  class="css-1haazd4"
+                />
+              </div>
+              <div
+                class="css-1u8qly9"
+              >
+                <a
+                  class="chakra-link css-194aowd"
+                  href="https://onemile.co.jp/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  株式会社OneMile Partners
+                </a>
+                <p
+                  class="chakra-text css-18ljba1"
+                >
+                  2020/9 ~ current
+                </p>
+                <p
+                  class="chakra-text css-1prmau8"
+                >
+                  「はたらく世代」のお客様向けに、資産運用のサポートを提供する会社にて、業務支援のための管理画面やお客様向けサービスサイトの開発に従事。TypeScript, Next.js, Ruby on Railsをメインにフロントエンドからバックエンドまで幅広く経験。また、スクラム開発によるチーム開発も経験。
+                </p>
+              </div>
+            </div>
+            <div
+              class="chakra-stack css-1a6r8mf"
+            >
+              <div
+                class="css-1qdqbu0"
+              >
+                <div
+                  class="css-zub7zg"
+                />
+              </div>
+              <div
+                class="css-1u8qly9"
+              >
+                <a
+                  class="chakra-link css-194aowd"
+                  href="https://msetsu.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  株式会社みんせつ
+                </a>
+                <p
+                  class="chakra-text css-18ljba1"
+                >
+                  2019/8 ~ 2020/8
+                </p>
+                <p
+                  class="chakra-text css-1prmau8"
+                >
+                  上場企業のIR部門と機関投資家、証券会社をつなぐプラットフォームを提供する会社にて、メインプロダクトのSaaSの企画・開発に従事。React, Ruby on Railsをメインにフロントエンドからバックエンドまで幅広く経験。
+                </p>
+              </div>
+            </div>
+            <div
+              class="chakra-stack css-1a6r8mf"
+            >
+              <div
+                class="css-1qdqbu0"
+              >
+                <div
+                  class="css-zub7zg"
+                />
+              </div>
+              <div
+                class="css-1u8qly9"
+              >
+                <a
+                  class="chakra-link css-194aowd"
+                  href="https://www.nttcom.co.jp/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  NTTコムウェア株式会社
+                </a>
+                <p
+                  class="chakra-text css-18ljba1"
+                >
+                  2018/4 ~ 2019/7
+                </p>
+                <p
+                  class="chakra-text css-1prmau8"
+                >
+                  システムインテクグレータの会社にて、某金融機関に常駐して社内稟議などのペーパーレス化システムの保守に従事。保守チーム（5名程度）のリーダーとして顧客折衝やマネジメント、資料作成を経験。また開発面では、テスト設計やリリース作業を自動化するbashスクリプトの製造を経験。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="chakra-stack css-q1rmxe"
+          >
+            <h2
+              class="chakra-text css-5bs06v"
+            >
+              Contact
+            </h2>
+            <p
+              class="chakra-text css-1u8qly9"
+            >
+              お問い合わせは
+               
+              <a
+                class="chakra-link css-6t79vb"
+                href="https://twitter.com/a_da_chi_"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Twitter
+              </a>
+               
+              のDMまで
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="css-1oenz3w"
+    >
+      <p
+        class="chakra-text css-1u8qly9"
+      >
+        Copyright© adachi All Rights Reserved.
+      </p>
+    </footer>
   </div>
 </div>
 `;

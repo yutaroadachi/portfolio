@@ -9,7 +9,7 @@ exports[`ホームページ 1`] = `
       class="css-z7c1ux"
     >
       <h1
-        class="chakra-text css-15bmhpj"
+        class="chakra-text css-8pj0r7"
       >
         adachi
       </h1>
@@ -24,7 +24,7 @@ exports[`ホームページ 1`] = `
           class="css-1ypnkj4"
         >
           <div
-            class="chakra-stack css-1w54upo"
+            class="chakra-stack css-1prddbt"
           >
             <div
               style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
@@ -49,7 +49,7 @@ exports[`ホームページ 1`] = `
               />
             </div>
             <h2
-              class="chakra-text css-5bs06v"
+              class="chakra-text css-d3h786"
             >
               Yutaro Adachi
             </h2>
@@ -118,7 +118,7 @@ exports[`ホームページ 1`] = `
             class="chakra-stack css-q1rmxe"
           >
             <h2
-              class="chakra-text css-5bs06v"
+              class="chakra-text css-d3h786"
             >
               Skills
             </h2>
@@ -157,7 +157,7 @@ exports[`ホームページ 1`] = `
             class="chakra-stack css-q1rmxe"
           >
             <h2
-              class="chakra-text css-5bs06v"
+              class="chakra-text css-d3h786"
             >
               Recent Posts
             </h2>
@@ -165,7 +165,7 @@ exports[`ホームページ 1`] = `
               class="css-7btwo6"
             >
               <a
-                class="chakra-link css-k2n3mh"
+                class="chakra-link css-6m7qjd"
                 href="テスト0"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -192,7 +192,7 @@ exports[`ホームページ 1`] = `
                       テスト0
                     </p>
                     <p
-                      class="chakra-text css-18ljba1"
+                      class="chakra-text css-1j8q7r3"
                     >
                       Published at NaN/NaN/NaN
                     </p>
@@ -200,7 +200,7 @@ exports[`ホームページ 1`] = `
                 </div>
               </a>
               <a
-                class="chakra-link css-k2n3mh"
+                class="chakra-link css-6m7qjd"
                 href="テスト1"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -227,7 +227,7 @@ exports[`ホームページ 1`] = `
                       テスト1
                     </p>
                     <p
-                      class="chakra-text css-18ljba1"
+                      class="chakra-text css-1j8q7r3"
                     >
                       Published at NaN/NaN/NaN
                     </p>
@@ -248,18 +248,18 @@ exports[`ホームページ 1`] = `
             class="chakra-stack css-q1rmxe"
           >
             <h2
-              class="chakra-text css-5bs06v"
+              class="chakra-text css-d3h786"
             >
               Jobs
             </h2>
             <div
-              class="chakra-stack css-1a6r8mf"
+              class="chakra-stack css-1hdbw4k"
             >
               <div
                 class="css-1qdqbu0"
               >
                 <div
-                  class="css-1haazd4"
+                  class="css-1gtvgms"
                 />
               </div>
               <div
@@ -274,7 +274,7 @@ exports[`ホームページ 1`] = `
                   株式会社OneMile Partners
                 </a>
                 <p
-                  class="chakra-text css-18ljba1"
+                  class="chakra-text css-1j8q7r3"
                 >
                   2020/9 ~ current
                 </p>
@@ -286,13 +286,13 @@ exports[`ホームページ 1`] = `
               </div>
             </div>
             <div
-              class="chakra-stack css-1a6r8mf"
+              class="chakra-stack css-1hdbw4k"
             >
               <div
                 class="css-1qdqbu0"
               >
                 <div
-                  class="css-zub7zg"
+                  class="css-14962d7"
                 />
               </div>
               <div
@@ -307,7 +307,7 @@ exports[`ホームページ 1`] = `
                   株式会社みんせつ
                 </a>
                 <p
-                  class="chakra-text css-18ljba1"
+                  class="chakra-text css-1j8q7r3"
                 >
                   2019/8 ~ 2020/8
                 </p>
@@ -319,13 +319,13 @@ exports[`ホームページ 1`] = `
               </div>
             </div>
             <div
-              class="chakra-stack css-1a6r8mf"
+              class="chakra-stack css-1hdbw4k"
             >
               <div
                 class="css-1qdqbu0"
               >
                 <div
-                  class="css-zub7zg"
+                  class="css-14962d7"
                 />
               </div>
               <div
@@ -340,7 +340,7 @@ exports[`ホームページ 1`] = `
                   NTTコムウェア株式会社
                 </a>
                 <p
-                  class="chakra-text css-18ljba1"
+                  class="chakra-text css-1j8q7r3"
                 >
                   2018/4 ~ 2019/7
                 </p>
@@ -356,7 +356,7 @@ exports[`ホームページ 1`] = `
             class="chakra-stack css-q1rmxe"
           >
             <h2
-              class="chakra-text css-5bs06v"
+              class="chakra-text css-d3h786"
             >
               Contact
             </h2>

@@ -1,4 +1,4 @@
-import { Box, Grid, HStack, Link, Text, VStack } from '@chakra-ui/react'
+import { Box, HStack, Link, SimpleGrid, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { ZennIcon } from 'src/components/icons'
 import { formatYYYYMMDD } from 'src/lib/date-format'
@@ -9,10 +9,7 @@ export const RecentPosts = ({ posts }: { posts: RssFeedItem[] }) => (
     <Text as="h2" textStyle="heading" fontSize="2xl">
       Recent Posts
     </Text>
-    <Grid
-      templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}
-      gap={4}
-    >
+    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
       {posts.length > 0 ? (
         posts
           .slice(0, 6)
@@ -20,7 +17,7 @@ export const RecentPosts = ({ posts }: { posts: RssFeedItem[] }) => (
       ) : (
         <Text>failed to get recent posts.</Text>
       )}
-    </Grid>
+    </SimpleGrid>
     <Link href="https://zenn.dev/a_da_chi" isExternal>
       Read more
     </Link>

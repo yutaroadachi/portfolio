@@ -3,28 +3,28 @@
 exports[`ホームページ 1`] = `
 <div>
   <div
-    class="css-12hlzpf"
+    class="css-zf0iqh"
   >
     <header
-      class="css-z7c1ux"
+      class="css-1s9oiue"
     >
       <h1
-        class="chakra-text css-8pj0r7"
+        class="chakra-text css-12tyltg"
       >
         adachi
       </h1>
     </header>
     <main
-      class="css-1ixgbcy"
+      class="css-1ylu0bo"
     >
       <div
-        class="css-10dsu7u"
+        class="css-t52pyf"
       >
         <div
-          class="css-1ypnkj4"
+          class="css-t29p9g"
         >
           <div
-            class="chakra-stack css-1prddbt"
+            class="chakra-stack css-1h3x59n"
           >
             <div
               style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
@@ -42,33 +42,33 @@ exports[`ホームページ 1`] = `
               </div>
               <img
                 alt="プロフィール画像"
-                class="css-1wyhzsb"
+                class="css-14v6leu"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
             <h2
-              class="chakra-text css-d3h786"
+              class="chakra-text css-13h7zp6"
             >
               Yutaro Adachi
             </h2>
             <p
-              class="chakra-text css-1u8qly9"
+              class="chakra-text css-0"
             >
               Web Engineer
             </p>
             <div
-              class="chakra-stack css-ynu3ti"
+              class="chakra-stack css-1ocidfa"
             >
               <a
-                class="chakra-link css-1su6yxb"
+                class="chakra-link css-15wxsjd"
                 href="https://github.com/yutaroadachi"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <svg
-                  class="chakra-icon css-5f6vqc"
+                  class="chakra-icon css-blpcuq"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -79,13 +79,13 @@ exports[`ホームページ 1`] = `
                 </svg>
               </a>
               <a
-                class="chakra-link css-1su6yxb"
+                class="chakra-link css-15wxsjd"
                 href="https://zenn.dev/a_da_chi"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <svg
-                  class="chakra-icon css-5f6vqc"
+                  class="chakra-icon css-blpcuq"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -96,13 +96,13 @@ exports[`ホームページ 1`] = `
                 </svg>
               </a>
               <a
-                class="chakra-link css-1su6yxb"
+                class="chakra-link css-15wxsjd"
                 href="https://twitter.com/a_da_chi_"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <svg
-                  class="chakra-icon css-5f6vqc"
+                  class="chakra-icon css-blpcuq"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -115,66 +115,66 @@ exports[`ホームページ 1`] = `
             </div>
           </div>
           <div
-            class="chakra-stack css-q1rmxe"
+            class="chakra-stack css-omfut9"
           >
             <h2
-              class="chakra-text css-d3h786"
+              class="chakra-text css-13h7zp6"
             >
               Skills
             </h2>
             <ul
-              class="css-79c3oz"
+              class="css-px8c62"
               role="list"
             >
               <li
-                class="css-1u8qly9"
+                class="css-0"
               >
                 Next.js
               </li>
               <li
-                class="css-1u8qly9"
+                class="css-0"
               >
                 TypeScript
               </li>
               <li
-                class="css-1u8qly9"
+                class="css-0"
               >
                 Chakra UI
               </li>
               <li
-                class="css-1u8qly9"
+                class="css-0"
               >
                 Ruby on Rails
               </li>
               <li
-                class="css-1u8qly9"
+                class="css-0"
               >
                 Go
               </li>
             </ul>
           </div>
           <div
-            class="chakra-stack css-q1rmxe"
+            class="chakra-stack css-omfut9"
           >
             <h2
-              class="chakra-text css-d3h786"
+              class="chakra-text css-13h7zp6"
             >
               Recent Posts
             </h2>
             <div
-              class="css-7btwo6"
+              class="css-y5kmmo"
             >
               <a
-                class="chakra-link css-6m7qjd"
+                class="chakra-link css-tvvcsl"
                 href="テスト0"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <div
-                  class="chakra-stack css-1bpxxj3"
+                  class="chakra-stack css-1aw77m4"
                 >
                   <svg
-                    class="chakra-icon css-155kwoe"
+                    class="chakra-icon css-68klb0"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -184,15 +184,15 @@ exports[`ホームページ 1`] = `
                     />
                   </svg>
                   <div
-                    class="css-1u8qly9"
+                    class="css-0"
                   >
                     <p
-                      class="chakra-text css-e7x1pi"
+                      class="chakra-text css-722v25"
                     >
                       テスト0
                     </p>
                     <p
-                      class="chakra-text css-1j8q7r3"
+                      class="chakra-text css-1bp7v6u"
                     >
                       Published at NaN/NaN/NaN
                     </p>
@@ -200,16 +200,16 @@ exports[`ホームページ 1`] = `
                 </div>
               </a>
               <a
-                class="chakra-link css-6m7qjd"
+                class="chakra-link css-tvvcsl"
                 href="テスト1"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <div
-                  class="chakra-stack css-1bpxxj3"
+                  class="chakra-stack css-1aw77m4"
                 >
                   <svg
-                    class="chakra-icon css-155kwoe"
+                    class="chakra-icon css-68klb0"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -219,15 +219,15 @@ exports[`ホームページ 1`] = `
                     />
                   </svg>
                   <div
-                    class="css-1u8qly9"
+                    class="css-0"
                   >
                     <p
-                      class="chakra-text css-e7x1pi"
+                      class="chakra-text css-722v25"
                     >
                       テスト1
                     </p>
                     <p
-                      class="chakra-text css-1j8q7r3"
+                      class="chakra-text css-1bp7v6u"
                     >
                       Published at NaN/NaN/NaN
                     </p>
@@ -236,7 +236,7 @@ exports[`ホームページ 1`] = `
               </a>
             </div>
             <a
-              class="chakra-link css-1su6yxb"
+              class="chakra-link css-15wxsjd"
               href="https://zenn.dev/a_da_chi"
               rel="noopener noreferrer"
               target="_blank"
@@ -245,28 +245,28 @@ exports[`ホームページ 1`] = `
             </a>
           </div>
           <div
-            class="chakra-stack css-q1rmxe"
+            class="chakra-stack css-omfut9"
           >
             <h2
-              class="chakra-text css-d3h786"
+              class="chakra-text css-13h7zp6"
             >
               Jobs
             </h2>
             <div
-              class="chakra-stack css-1hdbw4k"
+              class="chakra-stack css-mrpnl4"
             >
               <div
-                class="css-1qdqbu0"
+                class="css-4yvaac"
               >
                 <div
-                  class="css-1gtvgms"
+                  class="css-1idbxg5"
                 />
               </div>
               <div
-                class="css-1u8qly9"
+                class="css-0"
               >
                 <a
-                  class="chakra-link css-194aowd"
+                  class="chakra-link css-4tcc3o"
                   href="https://onemile.co.jp/"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -274,32 +274,32 @@ exports[`ホームページ 1`] = `
                   株式会社OneMile Partners
                 </a>
                 <p
-                  class="chakra-text css-1j8q7r3"
+                  class="chakra-text css-1bp7v6u"
                 >
                   2020/9 ~ current
                 </p>
                 <p
-                  class="chakra-text css-1prmau8"
+                  class="chakra-text css-dw5ttn"
                 >
                   「はたらく世代」のお客様向けに、資産運用のサポートを提供する会社にて、業務支援のための管理画面やお客様向けサービスサイトの開発に従事。TypeScript, Next.js, Ruby on Railsをメインにフロントエンドからバックエンドまで幅広く経験。また、スクラム開発によるチーム開発も経験。
                 </p>
               </div>
             </div>
             <div
-              class="chakra-stack css-1hdbw4k"
+              class="chakra-stack css-mrpnl4"
             >
               <div
-                class="css-1qdqbu0"
+                class="css-4yvaac"
               >
                 <div
-                  class="css-14962d7"
+                  class="css-1hz1c6l"
                 />
               </div>
               <div
-                class="css-1u8qly9"
+                class="css-0"
               >
                 <a
-                  class="chakra-link css-194aowd"
+                  class="chakra-link css-4tcc3o"
                   href="https://msetsu.com/"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -307,32 +307,32 @@ exports[`ホームページ 1`] = `
                   株式会社みんせつ
                 </a>
                 <p
-                  class="chakra-text css-1j8q7r3"
+                  class="chakra-text css-1bp7v6u"
                 >
                   2019/8 ~ 2020/8
                 </p>
                 <p
-                  class="chakra-text css-1prmau8"
+                  class="chakra-text css-dw5ttn"
                 >
                   上場企業のIR部門と機関投資家、証券会社をつなぐプラットフォームを提供する会社にて、メインプロダクトのSaaSの企画・開発に従事。React, Ruby on Railsをメインにフロントエンドからバックエンドまで幅広く経験。
                 </p>
               </div>
             </div>
             <div
-              class="chakra-stack css-1hdbw4k"
+              class="chakra-stack css-mrpnl4"
             >
               <div
-                class="css-1qdqbu0"
+                class="css-4yvaac"
               >
                 <div
-                  class="css-14962d7"
+                  class="css-1hz1c6l"
                 />
               </div>
               <div
-                class="css-1u8qly9"
+                class="css-0"
               >
                 <a
-                  class="chakra-link css-194aowd"
+                  class="chakra-link css-4tcc3o"
                   href="https://www.nttcom.co.jp/"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -340,12 +340,12 @@ exports[`ホームページ 1`] = `
                   NTTコムウェア株式会社
                 </a>
                 <p
-                  class="chakra-text css-1j8q7r3"
+                  class="chakra-text css-1bp7v6u"
                 >
                   2018/4 ~ 2019/7
                 </p>
                 <p
-                  class="chakra-text css-1prmau8"
+                  class="chakra-text css-dw5ttn"
                 >
                   システムインテクグレータの会社にて、某金融機関に常駐して社内稟議などのペーパーレス化システムの保守に従事。保守チーム（5名程度）のリーダーとして顧客折衝やマネジメント、資料作成を経験。また開発面では、テスト設計やリリース作業を自動化するbashスクリプトの製造を経験。
                 </p>
@@ -353,20 +353,20 @@ exports[`ホームページ 1`] = `
             </div>
           </div>
           <div
-            class="chakra-stack css-q1rmxe"
+            class="chakra-stack css-omfut9"
           >
             <h2
-              class="chakra-text css-d3h786"
+              class="chakra-text css-13h7zp6"
             >
               Contact
             </h2>
             <p
-              class="chakra-text css-1u8qly9"
+              class="chakra-text css-0"
             >
               お問い合わせは
                
               <a
-                class="chakra-link css-6t79vb"
+                class="chakra-link css-1woiyh4"
                 href="https://twitter.com/a_da_chi_"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -381,10 +381,10 @@ exports[`ホームページ 1`] = `
       </div>
     </main>
     <footer
-      class="css-1oenz3w"
+      class="css-evb4b5"
     >
       <p
-        class="chakra-text css-1u8qly9"
+        class="chakra-text css-0"
       >
         Copyright© adachi All Rights Reserved.
       </p>

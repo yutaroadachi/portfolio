@@ -14,4 +14,11 @@ export const Skills = () => (
   </VStack>
 )
 
-const skills = ['Next.js', 'TypeScript', 'Chakra UI', 'Ruby on Rails', 'Go']
+const skills = [
+  'TypeScript',
+  'React',
+  'Next.js',
+  'Chakra UI',
+  'Ruby on Rails',
+  'Go',
+]

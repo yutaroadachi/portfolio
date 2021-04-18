@@ -1,4 +1,13 @@
-import { Box, chakra, HStack, Link, SimpleGrid, VStack } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import {
+  Box,
+  Button,
+  chakra,
+  HStack,
+  Link,
+  SimpleGrid,
+  VStack,
+} from '@chakra-ui/react'
 import React from 'react'
 import { ZennIcon } from 'src/components/icons'
 import { formatYYYYMMDD } from 'src/lib/date-format'
@@ -18,9 +27,15 @@ export const RecentPosts = ({ posts }: { posts: RssFeedItem[] }) => (
         <chakra.p>failed to get recent posts.</chakra.p>
       )}
     </SimpleGrid>
-    <Link href="https://zenn.dev/a_da_chi" isExternal>
-      Read more
-    </Link>
+    <Button
+      as="a"
+      href="https://zenn.dev/a_da_chi"
+      target="_blank"
+      rel="noopener noreferrer"
+      rightIcon={<ExternalLinkIcon />}
+    >
+      Zennでもっと読む
+    </Button>
   </VStack>
 )
 

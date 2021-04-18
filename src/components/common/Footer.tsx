@@ -1,8 +1,8 @@
-import { Center, Text } from '@chakra-ui/react'
+import { Center, chakra } from '@chakra-ui/react'
 import React from 'react'
 
 export const Footer = () => (
   <Center as="footer" p={2}>
-    <Text>Copyright© adachi All Rights Reserved.</Text>
+    <chakra.p>Copyright© adachi All Rights Reserved.</chakra.p>
   </Center>
 )

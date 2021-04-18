@@ -1,4 +1,4 @@
-import { HStack, Link, Text, VStack } from '@chakra-ui/react'
+import { chakra, HStack, Link, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { Image } from 'src/components/common'
 import { GitHubIcon, TwitterIcon, ZennIcon } from 'src/components/icons'
@@ -12,10 +12,10 @@ export const Biography = () => (
       alt="プロフィール画像"
       borderRadius="50%"
     />
-    <Text as="h2" textStyle="heading" fontSize="2xl">
+    <chakra.h2 textStyle="heading" fontSize="2xl">
       Yutaro Adachi
-    </Text>
-    <Text>Web Engineer</Text>
+    </chakra.h2>
+    <chakra.p>Web Engineer</chakra.p>
     <HStack spacing={8}>
       <Link href="https://github.com/yutaroadachi" isExternal>
         <GitHubIcon boxSize="20px" />

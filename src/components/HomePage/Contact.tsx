@@ -1,12 +1,12 @@
-import { Link, Text, VStack } from '@chakra-ui/react'
+import { chakra, Link, VStack } from '@chakra-ui/react'
 import React from 'react'
 
 export const Contact = () => (
   <VStack spacing={4} py={4}>
-    <Text as="h2" textStyle="heading" fontSize="2xl">
+    <chakra.h2 textStyle="heading" fontSize="2xl">
       Contact
-    </Text>
-    <Text>
+    </chakra.h2>
+    <chakra.p>
       お問い合わせは{' '}
       <Link
         href="https://twitter.com/a_da_chi_"
@@ -17,6 +17,6 @@ export const Contact = () => (
         Twitter
       </Link>{' '}
       のDMまで
-    </Text>
+    </chakra.p>
   </VStack>
 )

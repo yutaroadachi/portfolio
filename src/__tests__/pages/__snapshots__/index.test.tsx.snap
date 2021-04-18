@@ -9,7 +9,7 @@ exports[`ホームページ 1`] = `
       class="css-1s9oiue"
     >
       <h1
-        class="chakra-text css-12tyltg"
+        class="css-12tyltg"
       >
         adachi
       </h1>
@@ -50,12 +50,12 @@ exports[`ホームページ 1`] = `
               />
             </div>
             <h2
-              class="chakra-text css-13h7zp6"
+              class="css-13h7zp6"
             >
               Yutaro Adachi
             </h2>
             <p
-              class="chakra-text css-0"
+              class="css-0"
             >
               Web Engineer
             </p>
@@ -119,23 +119,28 @@ exports[`ホームページ 1`] = `
             class="chakra-stack css-omfut9"
           >
             <h2
-              class="chakra-text css-13h7zp6"
+              class="css-13h7zp6"
             >
               Skills
             </h2>
             <ul
-              class="css-px8c62"
+              class="css-tu0njr"
               role="list"
             >
               <li
                 class="css-0"
               >
-                Next.js
+                TypeScript
               </li>
               <li
                 class="css-0"
               >
-                TypeScript
+                React
+              </li>
+              <li
+                class="css-0"
+              >
+                Next.js
               </li>
               <li
                 class="css-0"
@@ -158,7 +163,7 @@ exports[`ホームページ 1`] = `
             class="chakra-stack css-omfut9"
           >
             <h2
-              class="chakra-text css-13h7zp6"
+              class="css-13h7zp6"
             >
               Recent Posts
             </h2>
@@ -188,12 +193,12 @@ exports[`ホームページ 1`] = `
                     class="css-0"
                   >
                     <p
-                      class="chakra-text css-722v25"
+                      class="css-722v25"
                     >
                       テスト0
                     </p>
                     <p
-                      class="chakra-text css-1bp7v6u"
+                      class="css-1bp7v6u"
                     >
                       Published at NaN/NaN/NaN
                     </p>
@@ -223,12 +228,12 @@ exports[`ホームページ 1`] = `
                     class="css-0"
                   >
                     <p
-                      class="chakra-text css-722v25"
+                      class="css-722v25"
                     >
                       テスト1
                     </p>
                     <p
-                      class="chakra-text css-1bp7v6u"
+                      class="css-1bp7v6u"
                     >
                       Published at NaN/NaN/NaN
                     </p>
@@ -249,7 +254,7 @@ exports[`ホームページ 1`] = `
             class="chakra-stack css-omfut9"
           >
             <h2
-              class="chakra-text css-13h7zp6"
+              class="css-13h7zp6"
             >
               Jobs
             </h2>
@@ -275,12 +280,12 @@ exports[`ホームページ 1`] = `
                   株式会社OneMile Partners
                 </a>
                 <p
-                  class="chakra-text css-1bp7v6u"
+                  class="css-1bp7v6u"
                 >
                   2020/9 ~ current
                 </p>
                 <p
-                  class="chakra-text css-dw5ttn"
+                  class="css-dw5ttn"
                 >
                   「はたらく世代」のお客様向けに、資産運用のサポートを提供する会社にて、業務支援のための管理画面やお客様向けサービスサイトの開発に従事。TypeScript, Next.js, Ruby on Railsをメインにフロントエンドからバックエンドまで幅広く経験。また、スクラム開発によるチーム開発も経験。
                 </p>
@@ -308,12 +313,12 @@ exports[`ホームページ 1`] = `
                   株式会社みんせつ
                 </a>
                 <p
-                  class="chakra-text css-1bp7v6u"
+                  class="css-1bp7v6u"
                 >
                   2019/8 ~ 2020/8
                 </p>
                 <p
-                  class="chakra-text css-dw5ttn"
+                  class="css-dw5ttn"
                 >
                   上場企業のIR部門と機関投資家、証券会社をつなぐプラットフォームを提供する会社にて、メインプロダクトのSaaSの企画・開発に従事。React, Ruby on Railsをメインにフロントエンドからバックエンドまで幅広く経験。
                 </p>
@@ -341,12 +346,12 @@ exports[`ホームページ 1`] = `
                   NTTコムウェア株式会社
                 </a>
                 <p
-                  class="chakra-text css-1bp7v6u"
+                  class="css-1bp7v6u"
                 >
                   2018/4 ~ 2019/7
                 </p>
                 <p
-                  class="chakra-text css-dw5ttn"
+                  class="css-dw5ttn"
                 >
                   システムインテクグレータの会社にて、某金融機関に常駐して社内稟議などのペーパーレス化システムの保守に従事。保守チーム（5名程度）のリーダーとして顧客折衝やマネジメント、資料作成を経験。また開発面では、テスト設計やリリース作業を自動化するbashスクリプトの製造を経験。
                 </p>
@@ -357,12 +362,12 @@ exports[`ホームページ 1`] = `
             class="chakra-stack css-omfut9"
           >
             <h2
-              class="chakra-text css-13h7zp6"
+              class="css-13h7zp6"
             >
               Contact
             </h2>
             <p
-              class="chakra-text css-0"
+              class="css-0"
             >
               お問い合わせは
                
@@ -385,7 +390,7 @@ exports[`ホームページ 1`] = `
       class="css-evb4b5"
     >
       <p
-        class="chakra-text css-0"
+        class="css-0"
       >
         Copyright© adachi All Rights Reserved.
       </p>

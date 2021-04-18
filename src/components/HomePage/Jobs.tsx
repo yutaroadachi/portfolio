@@ -1,11 +1,11 @@
-import { Box, Center, HStack, Link, Text, VStack } from '@chakra-ui/react'
+import { Box, Center, chakra, HStack, Link, VStack } from '@chakra-ui/react'
 import React from 'react'
 
 export const Jobs = () => (
   <VStack spacing={4} py={4}>
-    <Text as="h2" textStyle="heading" fontSize="2xl">
+    <chakra.h2 textStyle="heading" fontSize="2xl">
       Jobs
-    </Text>
+    </chakra.h2>
     {jobs.map((job) => (
       <JobCard key={job.companyName} job={job} />
     ))}
@@ -25,10 +25,10 @@ const JobCard = ({ job }: { job: Job }) => (
       <Link href={job.companyLink} isExternal fontWeight="bold">
         {job.companyName}
       </Link>
-      <Text fontSize="xs" color="secondary">
+      <chakra.p fontSize="xs" color="secondary">
         {job.period}
-      </Text>
-      <Text fontSize="xs">{job.description}</Text>
+      </chakra.p>
+      <chakra.p fontSize="xs">{job.description}</chakra.p>
     </Box>
   </HStack>
 )

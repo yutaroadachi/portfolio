@@ -1,3 +1,4 @@
-export { Footer } from './Footer'
-export { Header } from './Header'
-export { Image } from './Image'
+export * from './Footer'
+export * from './Header'
+export * from './Image'
+export * from './MetaTag'

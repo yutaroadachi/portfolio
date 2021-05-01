@@ -2,6 +2,7 @@ import { Box, Center } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import React from 'react'
 import Parser from 'rss-parser'
+import { MetaTag } from 'src/components/common'
 import {
   Biography,
   Contact,
@@ -19,6 +20,10 @@ type HomePageProps = {
 export default function HomePage({ posts }: HomePageProps) {
   return (
     <AppLayout>
+      <MetaTag
+        title="Home"
+        description="各種アカウントへのリンク、スキルなどが確認できます。"
+      />
       <Center px={4}>
         <Box w={{ base: 'full', lg: 'container.md' }}>
           <Biography />

@@ -1,3 +1,3 @@
-export { GitHubIcon } from './GitHubIcon'
-export { TwitterIcon } from './TwitterIcon'
-export { ZennIcon } from './ZennIcon'
+export * from './GitHubIcon'
+export * from './TwitterIcon'
+export * from './ZennIcon'

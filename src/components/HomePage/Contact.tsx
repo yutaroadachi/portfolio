@@ -7,16 +7,14 @@ export const Contact = () => (
       Contact
     </chakra.h2>
     <chakra.p>
-      お問い合わせは{' '}
+      お問い合わせフォームは
       <Link
-        href="https://twitter.com/a_da_chi_"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdSMQFzMIm2oWZ9fk_r1RGIUl_gaf3r6ouHVK_Ysn2FERGxVA/viewform?usp=sf_link"
         isExternal
-        fontWeight="bold"
-        color="#1da1f2"
+        color="link"
       >
-        Twitter
-      </Link>{' '}
-      のDMまで
+        こちら
+      </Link>
     </chakra.p>
   </VStack>
 )

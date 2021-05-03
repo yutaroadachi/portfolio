@@ -1,4 +1,5 @@
-import { Box, Center } from '@chakra-ui/react'
+import { EmailIcon } from '@chakra-ui/icons'
+import { Box, Button, Center } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import React from 'react'
 import Parser from 'rss-parser'
@@ -24,7 +25,7 @@ export default function HomePage({ posts }: HomePageProps) {
         title="Home"
         description="各種アカウントへのリンク、スキルなどが確認できます。"
       />
-      <Center px={4}>
+      <Center pos="relative" px={4}>
         <Box w={{ base: 'full', lg: 'container.md' }}>
           <Biography />
           <Skills />
@@ -32,6 +33,18 @@ export default function HomePage({ posts }: HomePageProps) {
           <Jobs />
           <Contact />
         </Box>
+        <Button
+          as="a"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdSMQFzMIm2oWZ9fk_r1RGIUl_gaf3r6ouHVK_Ysn2FERGxVA/viewform?usp=sf_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          rightIcon={<EmailIcon />}
+          pos="fixed"
+          bottom={{ base: 4, md: 8 }}
+          right={{ base: 4, md: 8 }}
+        >
+          Contact
+        </Button>
       </Center>
     </AppLayout>
   )

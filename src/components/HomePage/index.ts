@@ -1,6 +1,5 @@
 export * from './Achievements'
 export * from './Biography'
-export * from './Contact'
 export * from './Jobs'
 export * from './RecentPosts'
 export * from './Skills'

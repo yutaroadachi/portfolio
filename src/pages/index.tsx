@@ -6,7 +6,6 @@ import { ContactButton, MetaTag } from 'src/components/common'
 import {
   Achievements,
   Biography,
-  Contact,
   Jobs,
   RecentPosts,
   Skills,
@@ -32,7 +31,6 @@ export default function HomePage({ posts }: HomePageProps) {
           <RecentPosts posts={posts} />
           <Jobs />
           <Achievements />
-          <Contact />
         </Box>
         <ContactButton
           pos="fixed"

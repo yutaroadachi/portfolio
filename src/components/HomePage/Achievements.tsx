@@ -4,6 +4,7 @@ import {
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
+  Box,
   chakra,
   Link,
   Stack,
@@ -11,10 +12,8 @@ import {
 import React from 'react'
 
 export const Achievements = () => (
-  <Stack spacing={4} py={4}>
-    <chakra.h2 textStyle="heading" fontSize="2xl" textAlign="center">
-      Achievements
-    </chakra.h2>
+  <Box py={6}>
+    <chakra.h2 textStyle="h2">Achievements</chakra.h2>
     <Accordion defaultIndex={[0]} allowMultiple>
       <Stack spacing={4}>
         {achievements.map((achievement) => (
@@ -39,7 +38,7 @@ export const Achievements = () => (
         ))}
       </Stack>
     </Accordion>
-  </Stack>
+  </Box>
 )
 
 type Achievement = {

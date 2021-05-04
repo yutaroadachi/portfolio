@@ -1,13 +1,11 @@
-import { EmailIcon } from '@chakra-ui/icons'
-import { Box, Button, Center } from '@chakra-ui/react'
+import { Box, Center } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import React from 'react'
 import Parser from 'rss-parser'
-import { MetaTag } from 'src/components/common'
+import { ContactButton, MetaTag } from 'src/components/common'
 import {
   Achievements,
   Biography,
-  Contact,
   Jobs,
   RecentPosts,
   Skills,
@@ -33,20 +31,12 @@ export default function HomePage({ posts }: HomePageProps) {
           <RecentPosts posts={posts} />
           <Jobs />
           <Achievements />
-          <Contact />
         </Box>
-        <Button
-          as="a"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdSMQFzMIm2oWZ9fk_r1RGIUl_gaf3r6ouHVK_Ysn2FERGxVA/viewform?usp=sf_link"
-          target="_blank"
-          rel="noopener noreferrer"
-          rightIcon={<EmailIcon />}
+        <ContactButton
           pos="fixed"
           bottom={{ base: 4, md: 8 }}
           right={{ base: 4, md: 8 }}
-        >
-          Contact
-        </Button>
+        />
       </Center>
     </AppLayout>
   )

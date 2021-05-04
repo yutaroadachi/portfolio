@@ -5,6 +5,7 @@ import React from 'react'
 import Parser from 'rss-parser'
 import { MetaTag } from 'src/components/common'
 import {
+  Achievements,
   Biography,
   Contact,
   Jobs,
@@ -31,6 +32,7 @@ export default function HomePage({ posts }: HomePageProps) {
           <Skills />
           <RecentPosts posts={posts} />
           <Jobs />
+          <Achievements />
           <Contact />
         </Box>
         <Button

@@ -12,10 +12,8 @@ import {
 import React from 'react'
 
 export const Jobs = () => (
-  <Stack spacing={4} py={4}>
-    <chakra.h2 textStyle="heading" fontSize="2xl" textAlign="center">
-      Jobs
-    </chakra.h2>
+  <Box py={6}>
+    <chakra.h2 textStyle="h2">Jobs</chakra.h2>
     <Accordion defaultIndex={[0]} allowMultiple>
       <Stack spacing={4}>
         {jobs.map((job) => (
@@ -43,7 +41,7 @@ export const Jobs = () => (
         ))}
       </Stack>
     </Accordion>
-  </Stack>
+  </Box>
 )
 
 type Job = {

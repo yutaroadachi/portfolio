@@ -4,7 +4,7 @@ import { Image } from 'src/components/common'
 import { GitHubIcon, TwitterIcon, ZennIcon } from 'src/components/icons'
 
 export const Biography = () => (
-  <VStack spacing={4} layerStyle="card" p={4} mt={4}>
+  <VStack spacing={4} layerStyle="card" p={4} mt={4} mb={6}>
     <Image
       src="/assets/home-page/biography.png"
       width={90}
@@ -12,7 +12,7 @@ export const Biography = () => (
       alt="プロフィール画像"
       borderRadius="50%"
     />
-    <chakra.h2 textStyle="heading" fontSize="2xl">
+    <chakra.h2 fontSize="2xl" fontWeight="bold" color="primary">
       Yutaro Adachi
     </chakra.h2>
     <chakra.p>Web Engineer</chakra.p>

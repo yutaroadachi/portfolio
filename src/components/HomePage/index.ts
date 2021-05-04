@@ -1,3 +1,4 @@
+export * from './Achievements'
 export * from './Biography'
 export * from './Contact'
 export * from './Jobs'

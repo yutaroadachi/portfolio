@@ -1,3 +1,7 @@
+import Accordion from './accordion'
 import Button from './button'
 
-export default { Button }
+export default {
+  Accordion,
+  Button,
+}

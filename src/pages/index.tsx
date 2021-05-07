@@ -2,7 +2,7 @@ import { Box, Center } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import React from 'react'
 import Parser from 'rss-parser'
-import { ContactButton, MetaTag } from 'src/components/common'
+import { MetaTag } from 'src/components/common'
 import {
   Achievements,
   Biography,
@@ -24,19 +24,14 @@ export default function HomePage({ posts }: HomePageProps) {
         title="Home"
         description="各種アカウントへのリンク、スキルなどが確認できます。"
       />
-      <Center pos="relative" px={4}>
-        <Box w={{ base: 'full', lg: 'container.md' }}>
+      <Center w="full">
+        <Box w={{ base: 'full', lg: 'container.md' }} px={{ base: 4, lg: 0 }}>
           <Biography />
           <Skills />
           <RecentPosts posts={posts} />
           <Jobs />
           <Achievements />
         </Box>
-        <ContactButton
-          pos="fixed"
-          bottom={{ base: 4, md: 8 }}
-          right={{ base: 4, md: 8 }}
-        />
       </Center>
     </AppLayout>
   )

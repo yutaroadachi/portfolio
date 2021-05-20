@@ -14,9 +14,11 @@ export const MetaTag = (props: MetaTagProps) => {
   return (
     <Head>
       <title key="title">{props.title + baseTitle}</title>
-      <meta key="description" name="description">
-        {baseDescription + props.description}
-      </meta>
+      <meta
+        key="description"
+        name="description"
+        content={baseDescription + props.description}
+      />
     </Head>
   )
 }

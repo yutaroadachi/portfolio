@@ -15,6 +15,7 @@ module.exports = {
     '/node_modules/',
     '<rootDir>/src/__tests__/data',
     '<rootDir>/src/__tests__/mocks',
+    '<rootDir>/src/__tests__/utils',
   ],
   /** @link https://stackoverflow.com/questions/47541393/syntaxerror-invalid-or-unexpected-token-import */
   moduleNameMapper: {

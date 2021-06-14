@@ -21,4 +21,5 @@ module.exports = {
   moduleNameMapper: {
     'typeface-montserrat': '<rootDir>/src/__tests__/mocks/style.mock.js',
   },
+  testEnvironment: 'jsdom',
 }

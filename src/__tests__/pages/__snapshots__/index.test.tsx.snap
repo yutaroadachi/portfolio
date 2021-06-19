@@ -17,7 +17,7 @@ exports[`ホームページ 1`] = `
           adachi
         </h1>
         <a
-          class="chakra-button css-180pmj2"
+          class="chakra-button css-1kb9r3s"
           href="https://docs.google.com/forms/d/e/1FAIpQLSdSMQFzMIm2oWZ9fk_r1RGIUl_gaf3r6ouHVK_Ysn2FERGxVA/viewform?usp=sf_link"
           rel="noopener noreferrer"
           target="_blank"
@@ -112,7 +112,7 @@ exports[`ホームページ 1`] = `
                 class="chakra-stack css-1ocidfa"
               >
                 <a
-                  class="chakra-link css-1kuebcl"
+                  class="chakra-link css-f4h6uy"
                   href="https://github.com/yutaroadachi"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -129,7 +129,7 @@ exports[`ホームページ 1`] = `
                   </svg>
                 </a>
                 <a
-                  class="chakra-link css-1kuebcl"
+                  class="chakra-link css-f4h6uy"
                   href="https://zenn.dev/a_da_chi"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -146,7 +146,7 @@ exports[`ホームページ 1`] = `
                   </svg>
                 </a>
                 <a
-                  class="chakra-link css-1kuebcl"
+                  class="chakra-link css-f4h6uy"
                   href="https://twitter.com/a_da_chi_"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -228,7 +228,7 @@ exports[`ホームページ 1`] = `
                 class="css-y5kmmo"
               >
                 <a
-                  class="chakra-link css-1ef61dp"
+                  class="chakra-link css-siyd35"
                   href="テスト0"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -263,7 +263,7 @@ exports[`ホームページ 1`] = `
                   </div>
                 </a>
                 <a
-                  class="chakra-link css-1ef61dp"
+                  class="chakra-link css-siyd35"
                   href="テスト1"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -299,7 +299,7 @@ exports[`ホームページ 1`] = `
                 </a>
               </div>
               <a
-                class="chakra-button css-17af9sg"
+                class="chakra-button css-bepoh"
                 href="https://zenn.dev/a_da_chi"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -355,7 +355,7 @@ exports[`ホームページ 1`] = `
                   <button
                     aria-controls="accordion-panel-1"
                     aria-expanded="true"
-                    class="chakra-accordion__button css-3hmx3p"
+                    class="chakra-accordion__button css-2d0lu1"
                     data-index="0"
                     id="accordion-button-1"
                     type="button"
@@ -405,7 +405,7 @@ exports[`ホームページ 1`] = `
                           「はたらく世代」のお客様向けに、資産運用のサポートを提供する会社にて、業務支援のための管理画面やお客様向けサービスサイトの開発に従事。TypeScript, Next.js, Ruby on Railsをメインにフロントエンドからバックエンドまで幅広く経験。また、スクラム開発によるチーム開発も経験。
                         </p>
                         <a
-                          class="chakra-link css-18re5bi"
+                          class="chakra-link css-wmzrah"
                           href="https://onemile.co.jp/"
                           rel="noopener noreferrer"
                           target="_blank"
@@ -422,7 +422,7 @@ exports[`ホームページ 1`] = `
                   <button
                     aria-controls="accordion-panel-2"
                     aria-expanded="false"
-                    class="chakra-accordion__button css-3hmx3p"
+                    class="chakra-accordion__button css-2d0lu1"
                     data-index="1"
                     id="accordion-button-2"
                     type="button"
@@ -472,7 +472,7 @@ exports[`ホームページ 1`] = `
                           上場企業のIR部門と機関投資家、証券会社をつなぐプラットフォームを提供する会社にて、メインプロダクトのSaaSの企画・開発に従事。React, Ruby on Railsをメインにフロントエンドからバックエンドまで幅広く経験。
                         </p>
                         <a
-                          class="chakra-link css-18re5bi"
+                          class="chakra-link css-wmzrah"
                           href="https://msetsu.com/"
                           rel="noopener noreferrer"
                           target="_blank"
@@ -489,7 +489,7 @@ exports[`ホームページ 1`] = `
                   <button
                     aria-controls="accordion-panel-3"
                     aria-expanded="false"
-                    class="chakra-accordion__button css-3hmx3p"
+                    class="chakra-accordion__button css-2d0lu1"
                     data-index="2"
                     id="accordion-button-3"
                     type="button"
@@ -539,7 +539,7 @@ exports[`ホームページ 1`] = `
                           システムインテクグレータの会社にて、某金融機関に常駐して社内稟議などのペーパーレス化システムの保守に従事。保守チーム（5名程度）のリーダーとして顧客折衝やマネジメント、資料作成を経験。また開発面では、テスト設計やリリース作業を自動化するbashスクリプトの製造を経験。
                         </p>
                         <a
-                          class="chakra-link css-18re5bi"
+                          class="chakra-link css-wmzrah"
                           href="https://www.nttcom.co.jp/"
                           rel="noopener noreferrer"
                           target="_blank"
@@ -573,7 +573,7 @@ exports[`ホームページ 1`] = `
                   <button
                     aria-controls="accordion-panel-4"
                     aria-expanded="true"
-                    class="chakra-accordion__button css-3hmx3p"
+                    class="chakra-accordion__button css-2d0lu1"
                     data-index="0"
                     id="accordion-button-4"
                     type="button"
@@ -614,7 +614,7 @@ exports[`ホームページ 1`] = `
                           「Next.jsにおけるSSG/SSR/ISR/CSRの違いと使い分け」の記事がZennのTrendingでTech部門2位を達成。その他にも「Next.js最速セットアップ」の記事が同6位を達成するなど、Next.jsに関する知見あり。
                         </p>
                         <a
-                          class="chakra-link css-18re5bi"
+                          class="chakra-link css-wmzrah"
                           href="https://zenn.dev/a_da_chi/articles/105dac5573b2f5"
                           rel="noopener noreferrer"
                           target="_blank"
@@ -631,7 +631,7 @@ exports[`ホームページ 1`] = `
                   <button
                     aria-controls="accordion-panel-5"
                     aria-expanded="false"
-                    class="chakra-accordion__button css-3hmx3p"
+                    class="chakra-accordion__button css-2d0lu1"
                     data-index="1"
                     id="accordion-button-5"
                     type="button"
@@ -685,7 +685,7 @@ exports[`ホームページ 1`] = `
       class="chakra-stack css-1a65krd"
     >
       <a
-        class="chakra-link css-18re5bi"
+        class="chakra-link css-wmzrah"
         href="https://docs.google.com/forms/d/e/1FAIpQLSdSMQFzMIm2oWZ9fk_r1RGIUl_gaf3r6ouHVK_Ysn2FERGxVA/viewform?usp=sf_link"
         rel="noopener noreferrer"
         target="_blank"

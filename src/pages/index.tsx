@@ -31,7 +31,6 @@ export default function HomePage({ posts }: HomePageProps) {
           <RecentPosts posts={posts} />
           <Jobs />
           <Achievements />
-          <p>hoge</p>
         </Box>
       </Center>
     </AppLayout>

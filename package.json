@@ -9,7 +9,9 @@
     "lint": "next lint --dir src/pages/ --dir src/components/ --dir src/lib/",
     "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "test": "jest",
-    "test:us": "jest --updateSnapshot"
+    "test:us": "jest --updateSnapshot",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@chakra-ui/icons": "1.0.13",
@@ -24,10 +26,12 @@
     "typeface-montserrat": "1.1.13"
   },
   "devDependencies": {
+    "@testing-library/cypress": "7.0.6",
     "@testing-library/react": "11.2.7",
     "@types/jest": "26.0.23",
     "@types/node": "14.17.3",
     "@types/react": "17.0.11",
+    "cypress": "7.5.0",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.0",
     "jest": "27.0.4",

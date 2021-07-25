@@ -14,7 +14,8 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "g": "hygen"
   },
   "dependencies": {
     "@chakra-ui/icons": "1.0.14",
@@ -44,6 +45,7 @@
     "eslint": "7.31.0",
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "8.3.0",
+    "hygen": "6.1.0",
     "jest": "27.0.6",
     "prettier": "2.3.2",
     "ts-jest": "27.0.4",

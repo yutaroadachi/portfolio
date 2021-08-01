@@ -1,11 +1,21 @@
+# My portfolio site
+My portfolio site created by Next.js.
+
 ## Getting Started
-
-First, run the development server:
-
 ```bash
-npm run dev
-# or
+yarn install
 yarn dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Storybook
+```bash
+yarn storybook
+```
+Open [http://localhost:6006](http://localhost:6006) with your browser to see the result.
+
+## Code Generator by hygen
+```bash
+yarn g component new
+```
+Prompt will be launched.

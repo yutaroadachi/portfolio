@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "lint": "next lint --dir src/pages/ --dir src/components/ --dir src/lib/",
+    "lint": "next lint --dir src/components/ --dir src/lib/ --dir src/pages/",
     "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "test": "jest",
     "test:us": "jest --updateSnapshot",

@@ -1,6 +1,5 @@
 module.exports = {
   eslint: {
-    ignoreDuringBuilds: true,
-    dirs: ['src/pages/', 'src/components/', 'src/lib/'],
+    dirs: ['src/components/', 'src/lib/', 'src/pages/'],
   },
 }

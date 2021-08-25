@@ -4,13 +4,17 @@ const textStyles = {
     fontWeight: 'bold',
     letterSpacing: '1px',
   },
+  h2: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+  },
   h2WithTreat: {
     fontSize: '24px',
     fontWeight: 'bold',
     textAlign: 'center',
     color: 'main',
     pos: 'relative',
-    mb: 6,
+    mb: 8,
     _after: {
       content: '""',
       w: '30px',

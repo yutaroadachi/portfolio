@@ -13,7 +13,7 @@ import React from 'react'
 
 export const Achievements = () => (
   <Box py={6}>
-    <chakra.h2 textStyle="h2">Achievements</chakra.h2>
+    <chakra.h2 textStyle="h2WithTreat">Achievements</chakra.h2>
     <Accordion defaultIndex={[0]} allowMultiple>
       <Stack spacing={4}>
         {achievements.map((achievement) => (

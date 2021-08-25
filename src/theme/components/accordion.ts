@@ -3,7 +3,7 @@ const baseStyleButton = {
 }
 
 const baseStylePanel = {
-  fontSize: 'xs',
+  fontSize: '12px',
   pb: 4,
 }
 
@@ -15,12 +15,11 @@ const baseStyle = {
 const variants = {
   card: {
     container: {
-      borderWidth: '1px',
-      borderRadius: 'lg',
-      borderColor: 'whiteAlpha.300',
+      borderTopWidth: 'none',
+      layerStyle: 'card',
     },
     button: {
-      borderRadius: 'lg',
+      borderRadius: '10px',
     },
   },
 }

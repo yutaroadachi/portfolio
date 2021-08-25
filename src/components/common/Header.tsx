@@ -1,19 +1,22 @@
+import { HamburgerIcon } from '@chakra-ui/icons'
 import { Box, Center, chakra, HStack } from '@chakra-ui/react'
 import React from 'react'
-import { ContactButton } from './buttons'
 
 export const Header = () => (
   <>
-    <Center as="header" w="full" h="70px" pos="fixed" zIndex={2}>
+    <Center as="header" w="full" h="64px" bgColor="main" pos="fixed" zIndex={2}>
       <HStack
         justify="space-between"
         w={{ base: 'full', lg: 'container.md' }}
         px={{ base: 4, lg: 0 }}
       >
-        <chakra.h1 textStyle="h1">adachi</chakra.h1>
-        <ContactButton size="sm" />
+        <HamburgerIcon boxSize="24px" color="white" />
+        <chakra.h1 textStyle="h1" color="white">
+          adachi
+        </chakra.h1>
+        <Box boxSize="24px" />
       </HStack>
     </Center>
-    <Box w="full" h="70px" />
+    <Box w="full" h="64px" />
   </>
 )

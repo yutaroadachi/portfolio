@@ -1,34 +1,26 @@
 const textStyles = {
   h1: {
-    fontSize: '4xl',
+    fontSize: '32px',
     fontWeight: 'bold',
-    letterSpacing: '2px',
-    color: 'primary',
-    textAlign: 'center',
+    letterSpacing: '1px',
   },
-  h2: {
-    fontSize: '2xl',
+  h2WithTreat: {
+    fontSize: '24px',
     fontWeight: 'bold',
-    color: 'primary',
     textAlign: 'center',
+    color: 'main',
     pos: 'relative',
-    mb: 8,
+    mb: 6,
     _after: {
       content: '""',
       w: '30px',
       h: '3px',
-      bgColor: 'primary',
+      bgColor: 'main',
       pos: 'absolute',
       bottom: '-3px',
       left: '50%',
       ml: '-15px',
     },
-  },
-  h3: {
-    fontSize: 'xl',
-    fontWeight: 'bold',
-    color: 'primary',
-    textAlign: 'center',
   },
 }
 

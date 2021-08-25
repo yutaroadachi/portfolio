@@ -6,7 +6,7 @@ import { GitHubIcon, TwitterIcon, ZennIcon } from 'src/components/icons'
 export const Biography = () => (
   <Box py={6}>
     <VStack spacing={4}>
-      <chakra.p textStyle="h1">
+      <chakra.p textStyle="h1" textAlign="center" color="main">
         Yutaro
         <br />
         Adachi
@@ -29,13 +29,13 @@ export const Biography = () => (
       </chakra.p>
       <HStack spacing={8}>
         <Link href="https://github.com/yutaroadachi" isExternal>
-          <GitHubIcon boxSize="25px" />
+          <GitHubIcon boxSize="24px" />
         </Link>
         <Link href="https://zenn.dev/a_da_chi" isExternal>
-          <ZennIcon boxSize="25px" />
+          <ZennIcon boxSize="24px" />
         </Link>
         <Link href="https://twitter.com/a_da_chi_" isExternal>
-          <TwitterIcon boxSize="25px" />
+          <TwitterIcon boxSize="24px" />
         </Link>
       </HStack>
     </VStack>

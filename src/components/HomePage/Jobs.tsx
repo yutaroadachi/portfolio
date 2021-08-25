@@ -13,7 +13,7 @@ import React from 'react'
 
 export const Jobs = () => (
   <Box py={6}>
-    <chakra.h2 textStyle="h2">Jobs</chakra.h2>
+    <chakra.h2 textStyle="h2WithTreat">Jobs</chakra.h2>
     <Accordion defaultIndex={[0]} allowMultiple>
       <Stack spacing={4}>
         {jobs.map((job) => (

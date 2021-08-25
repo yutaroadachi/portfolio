@@ -15,7 +15,7 @@ import { RssFeedItem } from 'src/types/rss'
 
 export const RecentPosts = ({ posts }: { posts: RssFeedItem[] }) => (
   <Box py={6}>
-    <chakra.h2 textStyle="h2">Recent Posts</chakra.h2>
+    <chakra.h2 textStyle="h2WithTreat">Recent Posts</chakra.h2>
     <VStack spacing={4}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4} w="full">
         {posts.length > 0 ? (

@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Skills = () => (
   <Box py={6}>
-    <chakra.h2 textStyle="h2">Skills</chakra.h2>
+    <chakra.h2 textStyle="h2WithTreat">Skills</chakra.h2>
     <Center>
       <UnorderedList>
         {skills.map((skill) => (

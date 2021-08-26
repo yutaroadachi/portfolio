@@ -1,10 +1,10 @@
 import { Box, Center } from '@chakra-ui/react'
 import React from 'react'
 import { Biography, MetaTag } from 'src/components/common'
-import { Jobs, Skills } from 'src/components/HomePage'
+import { Jobs, Skills } from 'src/components/ResumePage'
 import { AppLayout } from 'src/components/layout'
 
-export default function HomePage() {
+export default function ResumePage() {
   return (
     <AppLayout>
       <MetaTag

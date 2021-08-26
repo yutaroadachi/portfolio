@@ -3,15 +3,15 @@ import { GetStaticProps } from 'next'
 import React from 'react'
 import Parser from 'rss-parser'
 import { Biography, MetaTag } from 'src/components/common'
-import { Achievements, RecentPosts } from 'src/components/HomePage'
 import { AppLayout } from 'src/components/layout'
+import { Achievements, RecentPosts } from 'src/components/ResumePage'
 import { RssFeed, RssFeedItem } from 'src/types/rss'
 
-type HomePageProps = {
+type WorksPageProps = {
   posts: RssFeedItem[]
 }
 
-export default function HomePage({ posts }: HomePageProps) {
+export default function WorksPage({ posts }: WorksPageProps) {
   return (
     <AppLayout>
       <MetaTag title="Works" description="技術記事や実績を確認できます。" />
@@ -26,7 +26,7 @@ export default function HomePage({ posts }: HomePageProps) {
   )
 }
 
-export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
+export const getStaticProps: GetStaticProps<WorksPageProps> = async () => {
   const parser: Parser<RssFeed, RssFeedItem> = new Parser()
   const feed = await parser.parseURL('https://zenn.dev/a_da_chi/feed')
 

@@ -21,7 +21,7 @@ export const Jobs = () => (
             <AccordionButton>
               <Box flex="1" textAlign="left">
                 <chakra.p>{job.companyName}</chakra.p>
-                <chakra.p fontSize="xs" fontWeight="normal" color="secondary">
+                <chakra.p fontSize="xs" fontWeight="normal">
                   {job.period}
                 </chakra.p>
               </Box>

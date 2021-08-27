@@ -1,4 +1,4 @@
-const textStyles = {
+const headings = {
   h1: {
     fontSize: '32px',
     fontWeight: 'bold',
@@ -26,6 +26,10 @@ const textStyles = {
       ml: '-15px',
     },
   },
+}
+
+const textStyles = {
+  ...headings,
 }
 
 export default textStyles

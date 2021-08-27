@@ -1,8 +1,8 @@
-import { Box, Center } from '@chakra-ui/react'
+import { Center, VStack } from '@chakra-ui/react'
 import React from 'react'
-import { Biography, MetaTag } from 'src/components/common'
-import { Jobs, Skills } from 'src/components/ResumePage'
+import { Biography, MetaTag, Navigation } from 'src/components/common'
 import { AppLayout } from 'src/components/layout'
+import { Jobs, Skills } from 'src/components/ResumePage'
 
 export default function ResumePage() {
   return (
@@ -11,12 +11,17 @@ export default function ResumePage() {
         title="Resume"
         description="スキルや職歴・学歴を確認できます。"
       />
-      <Biography />
       <Center w="full">
-        <Box w={{ base: 'full', lg: 'container.md' }} px={{ base: 4, lg: 0 }}>
+        <VStack
+          spacing={8}
+          w={{ base: 'full', lg: 'container.md' }}
+          px={{ base: 4, lg: 0 }}
+        >
+          <Biography mt={8} />
+          <Navigation active="resume" />
           <Skills />
           <Jobs />
-        </Box>
+        </VStack>
       </Center>
     </AppLayout>
   )

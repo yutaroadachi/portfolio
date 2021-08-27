@@ -45,7 +45,7 @@ const PostCard = ({ post }: { post: RssFeedItem }) => (
       <ZennIcon boxSize="32px" />
       <Box>
         <chakra.p fontWeight="bold">{post.title}</chakra.p>
-        <chakra.p fontSize="xs" color="secondary">
+        <chakra.p fontSize="xs">
           {`Published at ${formatYYYYMMDD(new Date(post.pubDate))}`}
         </chakra.p>
       </Box>

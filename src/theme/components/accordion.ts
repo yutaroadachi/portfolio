@@ -28,8 +28,10 @@ const defaultProps = {
   variant: 'card',
 }
 
-export default {
+const accordion = {
   baseStyle,
   variants,
   defaultProps,
 }
+
+export default accordion

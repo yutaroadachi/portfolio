@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react'
 import React from 'react'
-import { Header } from './Header'
+import { Header, HeaderProps } from './Header'
 
 export default {
   title: 'Common/Header',
@@ -8,9 +8,9 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
-} as Meta<{}>
+} as Meta<HeaderProps>
 
-type Template = Story<{}>
+type Template = Story<HeaderProps>
 
 const Template: Template = (args) => <Header {...args} />
 

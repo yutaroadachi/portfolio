@@ -1,16 +1,13 @@
 import { Meta, Story } from '@storybook/react'
 import React from 'react'
-import { Biography } from './Biography'
+import { Biography, BiographyProps } from './Biography'
 
 export default {
   title: 'Common/Biography',
   component: Biography,
-  parameters: {
-    layout: 'fullscreen',
-  },
-} as Meta<{}>
+} as Meta<BiographyProps>
 
-type Template = Story<{}>
+type Template = Story<BiographyProps>
 
 const Template: Template = (args) => <Biography {...args} />
 

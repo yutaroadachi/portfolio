@@ -5,7 +5,7 @@ import { GitHubIcon, TwitterIcon, ZennIcon } from 'src/components/icons'
 export type BiographyProps = StackProps
 
 export const Biography = (props: BiographyProps) => (
-  <VStack spacing={4} pt={8} px={4} {...props}>
+  <VStack spacing={4} {...props}>
     <Img
       src="/assets/home-page/profile.png"
       w="128px"

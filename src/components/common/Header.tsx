@@ -2,7 +2,9 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import { Box, Center, chakra, HStack } from '@chakra-ui/react'
 import React from 'react'
 
-export const Header = () => (
+export type HeaderProps = {}
+
+export const Header = (props: HeaderProps) => (
   <>
     <Center as="header" w="full" h="64px" bgColor="main" pos="fixed" zIndex={2}>
       <HStack

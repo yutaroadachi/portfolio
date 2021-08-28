@@ -13,8 +13,8 @@
     "test:us": "jest --updateSnapshot",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
+    "sb": "start-storybook -p 6006 -s public",
+    "build-sb": "build-storybook -s public",
     "g": "hygen"
   },
   "dependencies": {

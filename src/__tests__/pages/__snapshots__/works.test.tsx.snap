@@ -33,7 +33,7 @@ exports[`/works 1`] = `
             <img
               alt="Yutaro Adachiのプロフィール画像"
               class="chakra-image css-1rf2fjf"
-              src="/assets/home-page/profile.png"
+              src="/assets/profile.png"
             />
             <div
               class="chakra-stack css-igigla"

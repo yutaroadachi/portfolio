@@ -6,7 +6,7 @@ export type SkillsProps = BoxProps
 export const Skills = (props: SkillsProps) => (
   <Box {...props}>
     <chakra.h2 textStyle="h2WithTreat">Skills</chakra.h2>
-    <Wrap>
+    <Wrap w="full" maxW="340px">
       {skills.map(({ label, field }) => (
         <WrapItem key={label}>
           <Tag variant={field === 'frontend' ? 'primary' : 'outlined'}>

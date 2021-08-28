@@ -4,8 +4,11 @@ import React from 'react'
 import Parser from 'rss-parser'
 import { Biography, MetaTag, Navigation } from 'src/components/common'
 import { AppLayout } from 'src/components/layout'
-import { Achievements } from 'src/components/ResumePage'
-import { RecentPosts, RecentPostsProps } from 'src/components/WorksPage'
+import {
+  Achievements,
+  RecentPosts,
+  RecentPostsProps,
+} from 'src/components/WorksPage'
 import { RssFeed, RssFeedItem } from 'src/types/rss'
 
 type WorksPageProps = RecentPostsProps

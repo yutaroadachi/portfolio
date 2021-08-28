@@ -4,14 +4,13 @@ import React from 'react'
 import Parser from 'rss-parser'
 import { Biography, MetaTag, Navigation } from 'src/components/common'
 import { AppLayout } from 'src/components/layout'
-import { Achievements, RecentPosts } from 'src/components/ResumePage'
+import { Achievements } from 'src/components/ResumePage'
+import { RecentPosts, RecentPostsProps } from 'src/components/WorksPage'
 import { RssFeed, RssFeedItem } from 'src/types/rss'
 
-type WorksPageProps = {
-  posts: RssFeedItem[]
-}
+type WorksPageProps = RecentPostsProps
 
-export default function WorksPage({ posts }: WorksPageProps) {
+export default function WorksPage(props: WorksPageProps) {
   return (
     <AppLayout>
       <MetaTag title="Works" description="技術記事や実績を確認できます。" />
@@ -23,7 +22,7 @@ export default function WorksPage({ posts }: WorksPageProps) {
         >
           <Biography mt={8} />
           <Navigation active="works" />
-          <RecentPosts posts={posts} />
+          <RecentPosts posts={props.posts} />
           <Achievements />
         </VStack>
       </Center>

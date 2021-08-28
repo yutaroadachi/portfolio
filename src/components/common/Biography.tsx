@@ -1,6 +1,7 @@
 import { chakra, HStack, Img, Link, StackProps, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { GitHubIcon, TwitterIcon, ZennIcon } from 'src/components/icons'
+import { URL } from 'src/constants/url'
 
 export type BiographyProps = StackProps
 
@@ -25,13 +26,13 @@ export const Biography = (props: BiographyProps) => (
       フロントエンドが得意です
     </chakra.p>
     <HStack spacing={8}>
-      <Link href="https://github.com/yutaroadachi" isExternal>
+      <Link href={URL.github} isExternal>
         <GitHubIcon boxSize="24px" />
       </Link>
-      <Link href="https://zenn.dev/a_da_chi" isExternal>
+      <Link href={URL.zenn} isExternal>
         <ZennIcon boxSize="24px" />
       </Link>
-      <Link href="https://twitter.com/a_da_chi_" isExternal>
+      <Link href={URL.twitter} isExternal>
         <TwitterIcon boxSize="24px" />
       </Link>
     </HStack>

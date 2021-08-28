@@ -26,6 +26,10 @@ const headings = {
       ml: '-15px',
     },
   },
+  h3: {
+    fontSize: '20px',
+    fontWeight: 'bold',
+  },
 }
 
 const textStyles = {

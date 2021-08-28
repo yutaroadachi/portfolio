@@ -1,10 +1,10 @@
-import { Box, chakra, Tag, Wrap, WrapItem } from '@chakra-ui/react'
+import { Box, BoxProps, chakra, Tag, Wrap, WrapItem } from '@chakra-ui/react'
 import React from 'react'
 
-export type SkillsProps = {}
+export type SkillsProps = BoxProps
 
 export const Skills = (props: SkillsProps) => (
-  <Box>
+  <Box {...props}>
     <chakra.h2 textStyle="h2WithTreat">Skills</chakra.h2>
     <Wrap>
       {skills.map(({ label, field }) => (

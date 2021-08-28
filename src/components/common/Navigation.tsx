@@ -3,6 +3,7 @@ import { Button, SimpleGrid, SimpleGridProps } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from 'react'
 import { PATH } from 'src/constants/path'
+import { URL } from 'src/constants/url'
 
 export type NavigationProps = {
   active: 'resume' | 'works'
@@ -44,7 +45,7 @@ export const Navigation = (props: NavigationProps) => {
         minW="108px"
         rightIcon={<ExternalLinkIcon />}
         as="a"
-        href={PATH.contact}
+        href={URL.contact}
         target="_blank"
         rel="noopener noreferrer"
       >

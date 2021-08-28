@@ -2,7 +2,7 @@ import { Center, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { Biography, MetaTag, Navigation } from 'src/components/common'
 import { AppLayout } from 'src/components/layout'
-import { Jobs, Skills } from 'src/components/ResumePage'
+import { Histories, Skills } from 'src/components/ResumePage'
 
 export default function ResumePage() {
   return (
@@ -20,7 +20,7 @@ export default function ResumePage() {
           <Biography mt={8} />
           <Navigation active="resume" />
           <Skills />
-          <Jobs />
+          <Histories />
         </VStack>
       </Center>
     </AppLayout>

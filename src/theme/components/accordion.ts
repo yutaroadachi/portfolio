@@ -1,14 +1,8 @@
-const baseStyleButton = {
-  fontWeight: 'bold',
-}
-
 const baseStylePanel = {
-  fontSize: '12px',
   pb: 4,
 }
 
 const baseStyle = {
-  button: baseStyleButton,
   panel: baseStylePanel,
 }
 

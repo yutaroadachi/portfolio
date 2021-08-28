@@ -1,0 +1,1001 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/works 1`] = `
+<div>
+  <div
+    class="css-zf0iqh"
+  >
+    <header
+      class="css-ldezkp"
+    >
+      <div
+        class="chakra-stack css-1yqjmwb"
+      >
+        <h1
+          class="css-1099rex"
+        >
+          adachi
+        </h1>
+      </div>
+    </header>
+    <main
+      class="css-r1rqor"
+    >
+      <div
+        class="css-1jif775"
+      >
+        <div
+          class="chakra-stack css-4o7qs6"
+        >
+          <div
+            class="chakra-stack css-1byv5eb"
+          >
+            <img
+              alt="Yutaro Adachiのプロフィール画像"
+              class="chakra-image css-1rf2fjf"
+              src="/assets/home-page/profile.png"
+            />
+            <div
+              class="chakra-stack css-igigla"
+            >
+              <h2
+                class="css-553wiy"
+              >
+                Yutaro Adachi
+              </h2>
+              <p
+                class="css-1vf9ext"
+              >
+                Software Engineer
+              </p>
+            </div>
+            <p
+              class="css-xi606m"
+            >
+              ソフトウェアエンジニア3年目
+              <br />
+              フロントエンドが得意です
+            </p>
+            <div
+              class="chakra-stack css-1ocidfa"
+            >
+              <a
+                class="chakra-link css-f4h6uy"
+                href="https://github.com/yutaroadachi"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="chakra-icon css-n059si"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    fill="#000"
+                  />
+                </svg>
+              </a>
+              <a
+                class="chakra-link css-f4h6uy"
+                href="https://zenn.dev/a_da_chi"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="chakra-icon css-n059si"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                    fill="#000"
+                  />
+                </svg>
+              </a>
+              <a
+                class="chakra-link css-f4h6uy"
+                href="https://twitter.com/a_da_chi_"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="chakra-icon css-n059si"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                    fill="#000"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="css-1pqb59e"
+            id="navigation"
+          >
+            <a
+              class="chakra-button css-iad4m2"
+              href="/"
+            >
+              Resume
+              <span
+                class="chakra-button__icon css-1hzyiq5"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="chakra-icon css-onkibi"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21.843,3.455a6.961,6.961,0,0,0-9.846,0L1.619,13.832a5.128,5.128,0,0,0,7.252,7.252L17.3,12.653A3.293,3.293,0,1,0,12.646,8L7.457,13.184A1,1,0,1,0,8.871,14.6L14.06,9.409a1.294,1.294,0,0,1,1.829,1.83L7.457,19.67a3.128,3.128,0,0,1-4.424-4.424L13.411,4.869a4.962,4.962,0,1,1,7.018,7.018L12.646,19.67a1,1,0,1,0,1.414,1.414L21.843,13.3a6.96,6.96,0,0,0,0-9.846Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </a>
+            <a
+              class="chakra-button css-ugr3ao"
+              href="/works"
+            >
+              Works
+              <span
+                class="chakra-button__icon css-1hzyiq5"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="chakra-icon css-onkibi"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                    />
+                    <path
+                      d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <a
+              class="chakra-button css-iad4m2"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdSMQFzMIm2oWZ9fk_r1RGIUl_gaf3r6ouHVK_Ysn2FERGxVA/viewform?usp=sf_link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Contact
+              <span
+                class="chakra-button__icon css-1hzyiq5"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="chakra-icon css-onkibi"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    />
+                    <path
+                      d="M15 3h6v6"
+                    />
+                    <path
+                      d="M10 14L21 3"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div
+            class="css-0"
+            id="recent-posts"
+          >
+            <h2
+              class="css-1yh9w4u"
+            >
+              Recent Posts
+            </h2>
+            <div
+              class="chakra-stack css-1byv5eb"
+            >
+              <div
+                class="css-jnj68a"
+              >
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事1
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事2テスト記事2
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事3テスト記事3テスト記事3
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事4テスト記事4テスト記事4テスト記事4
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事5テスト記事5テスト記事5テスト記事5テスト記事5
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事6テスト記事6テスト記事6テスト記事6テスト記事6テスト記事6
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事7テスト記事7テスト記事7テスト記事7テスト記事7テスト記事7テスト記事7
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事8テスト記事8テスト記事8テスト記事8テスト記事8テスト記事8テスト記事8テスト記事8
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事9テスト記事9テスト記事9テスト記事9テスト記事9テスト記事9テスト記事9テスト記事9テ…
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事10テスト記事10テスト記事10テスト記事10テスト記事10テスト記事10テスト記事10…
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事11テスト記事11テスト記事11テスト記事11テスト記事11テスト記事11テスト記事11…
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="chakra-linkbox css-w0ckzj"
+                >
+                  <div
+                    class="chakra-stack css-1x5q9bm"
+                  >
+                    <div
+                      class="css-1cuc9uf"
+                    >
+                      <svg
+                        class="chakra-icon css-n059si"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
+                          fill="#000"
+                        />
+                      </svg>
+                    </div>
+                    <a
+                      class="chakra-linkbox__overlay css-xgm6yf"
+                      href="http://example.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h3
+                        class="css-xjfnk3"
+                      >
+                        テスト記事12テスト記事12テスト記事12テスト記事12テスト記事12テスト記事12テスト記事12…
+                      </h3>
+                    </a>
+                    <p
+                      class="css-1e82jug"
+                    >
+                      Posted at 2021/8/28
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <a
+                class="chakra-button css-f0ktdl"
+                href="https://zenn.dev/a_da_chi"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Zennでもっと読む
+                <span
+                  class="chakra-button__icon css-1hzyiq5"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-onkibi"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <path
+                        d="M15 3h6v6"
+                      />
+                      <path
+                        d="M10 14L21 3"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="css-0"
+            id="achievements"
+          >
+            <h2
+              class="css-1yh9w4u"
+            >
+              Achievements
+            </h2>
+            <div
+              class="chakra-accordion css-0"
+            >
+              <div
+                class="chakra-stack css-egoftb"
+              >
+                <div
+                  class="chakra-accordion__item css-ejn068"
+                >
+                  <button
+                    aria-controls="accordion-panel-1"
+                    aria-expanded="true"
+                    class="chakra-accordion__button css-df84mh"
+                    data-index="0"
+                    id="accordion-button-1"
+                    type="button"
+                  >
+                    <p
+                      class="css-1nt47b5"
+                    >
+                      Next.jsに関する記事がZennのTrendingでTech部門1位を達成
+                    </p>
+                    <svg
+                      aria-hidden="true"
+                      class="chakra-icon chakra-accordion__icon css-j2ph2z"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="chakra-collapse"
+                    style="overflow: hidden; display: block; opacity: 0; height: 0px;"
+                  >
+                    <div
+                      aria-labelledby="accordion-button-1"
+                      class="chakra-accordion__panel css-1hb5ode"
+                      id="accordion-panel-1"
+                      role="region"
+                    >
+                      <div
+                        class="chakra-stack css-46p1lt"
+                      >
+                        <p
+                          class="css-1qxtz39"
+                        >
+                          「Next.jsプロジェクトにCypressを導入してGitHub ActionsでVercelのPreview環境のE2Eテストをする」の記事がZennのTrendingでTech部門1位を達成。その他にも「Next.jsにおけるSSG/SSR/ISR/CSRの違いと使い分け」の記事が同2位、「Next.js最速セットアップ」の記事が同6位を達成するなど、Next.jsに関する記事を多数執筆。
+                        </p>
+                        <a
+                          class="chakra-link css-1lyjkv1"
+                          href="https://zenn.dev/a_da_chi/articles/7ba871c23c5510"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Zennで読む
+                          <svg
+                            class="chakra-icon css-u969r1"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="2"
+                            >
+                              <path
+                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              />
+                              <path
+                                d="M15 3h6v6"
+                              />
+                              <path
+                                d="M10 14L21 3"
+                              />
+                            </g>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="chakra-accordion__item css-ejn068"
+                >
+                  <button
+                    aria-controls="accordion-panel-2"
+                    aria-expanded="false"
+                    class="chakra-accordion__button css-df84mh"
+                    data-index="1"
+                    id="accordion-button-2"
+                    type="button"
+                  >
+                    <p
+                      class="css-1nt47b5"
+                    >
+                      映画「僕とオトウト」公式HP製作
+                    </p>
+                    <svg
+                      aria-hidden="true"
+                      class="chakra-icon chakra-accordion__icon css-186l2rg"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="chakra-collapse"
+                    style="overflow: hidden; display: none; opacity: 0; height: 0px;"
+                  >
+                    <div
+                      aria-labelledby="accordion-button-2"
+                      class="chakra-accordion__panel css-1hb5ode"
+                      id="accordion-panel-2"
+                      role="region"
+                    >
+                      <div
+                        class="chakra-stack css-46p1lt"
+                      >
+                        <p
+                          class="css-1qxtz39"
+                        >
+                          知人が撮影した映画「僕とオトウト」の公式HPを製作。使用技術はSTUDIO。ディレクション、デザイン、実装、リリース（独自ドメイン対応など）と全ての行程を担当。映画の内容が監督自身が重度の知的障害をもつ弟にカメラを向けたドキュメンタリーであったことから、映画の世界観を壊さないデザインとSTUDIOでできる範囲のアクセシビリティ（画像のalt設定やセマンティックなマークアップなど）を意識。
+                        </p>
+                        <a
+                          class="chakra-link css-1lyjkv1"
+                          href="https://boku-to-otouto.com/"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          公式HPを見る
+                          <svg
+                            class="chakra-icon css-u969r1"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="2"
+                            >
+                              <path
+                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              />
+                              <path
+                                d="M15 3h6v6"
+                              />
+                              <path
+                                d="M10 14L21 3"
+                              />
+                            </g>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="css-16jkoub"
+    >
+      <div
+        class="chakra-stack css-1tb09gc"
+      >
+        <div
+          class="css-1sp57bk"
+        >
+          <div
+            class="chakra-stack css-46p1lt"
+          >
+            <a
+              class="chakra-link css-1p5ludt"
+              href="/#navigation"
+            >
+              Resume
+            </a>
+            <a
+              class="chakra-link css-pgb619"
+              href="/#skills"
+            >
+              Skills
+            </a>
+            <a
+              class="chakra-link css-pgb619"
+              href="/#histories"
+            >
+              Histories
+            </a>
+          </div>
+          <div
+            class="chakra-stack css-46p1lt"
+          >
+            <a
+              class="chakra-link css-1p5ludt"
+              href="/works#navigation"
+            >
+              Works
+            </a>
+            <a
+              class="chakra-link css-pgb619"
+              href="/works#recent-posts"
+            >
+              Recent Posts
+            </a>
+            <a
+              class="chakra-link css-pgb619"
+              href="/works#achievements"
+            >
+              Achievements
+            </a>
+          </div>
+          <a
+            class="chakra-link css-54ixng"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdSMQFzMIm2oWZ9fk_r1RGIUl_gaf3r6ouHVK_Ysn2FERGxVA/viewform?usp=sf_link"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Contact
+            <svg
+              class="chakra-icon css-u969r1"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                />
+                <path
+                  d="M15 3h6v6"
+                />
+                <path
+                  d="M10 14L21 3"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <p
+          class="css-0"
+        >
+          Copyright© adachi All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>
+`;

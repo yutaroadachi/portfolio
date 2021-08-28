@@ -33,7 +33,7 @@ export const RecentPosts = (props: RecentPostsProps) => {
           {posts.length > 0 &&
             posts
               .slice(0, 12)
-              .map((post) => <PostCard key={post.link} post={post} />)}
+              .map((post, idx) => <PostCard post={post} key={idx} />)}
         </SimpleGrid>
         <Button
           variant="outlined"

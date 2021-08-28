@@ -8,7 +8,7 @@ export type BiographyProps = StackProps
 export const Biography = (props: BiographyProps) => (
   <VStack spacing={4} {...props}>
     <Img
-      src="/assets/home-page/profile.png"
+      src="/assets/profile.png"
       w="128px"
       h="128px"
       alt="Yutaro Adachiのプロフィール画像"

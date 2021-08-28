@@ -33,6 +33,7 @@ export const Footer = (props: FooterProps) => (
                   fontSize={!!link.isParent ? '20px' : '16px'}
                   fontWeight={!!link.isParent ? 'bold' : 'normal'}
                   pl={!!link.isParent ? 0 : 4}
+                  data-test-id={`footer-navigation-${link.key}`}
                 >
                   {link.label}
                 </Link>
@@ -51,6 +52,7 @@ export const Footer = (props: FooterProps) => (
 )
 
 type Link = {
+  key: string
   label: string
   href: string
   isParent?: boolean
@@ -58,15 +60,18 @@ type Link = {
 
 const resumeLinks: Link[] = [
   {
+    key: 'resume',
     label: 'Resume',
     href: PATH.resume + '#navigation',
     isParent: true,
   },
   {
+    key: 'skills',
     label: 'Skills',
     href: PATH.resume + '#skills',
   },
   {
+    key: 'histories',
     label: 'Histories',
     href: PATH.resume + '#histories',
   },
@@ -74,15 +79,18 @@ const resumeLinks: Link[] = [
 
 const worksLinks: Link[] = [
   {
+    key: 'works',
     label: 'Works',
     href: PATH.works + '#navigation',
     isParent: true,
   },
   {
+    key: 'recent-posts',
     label: 'Recent Posts',
     href: PATH.works + '#recent-posts',
   },
   {
+    key: 'achievements',
     label: 'Achievements',
     href: PATH.works + '#achievements',
   },

@@ -31,6 +31,7 @@ export const Navigation = (props: NavigationProps) => {
           minW="108px"
           rightIcon={<AttachmentIcon />}
           as="a"
+          data-test-id="navigation-resume"
         >
           Resume
         </Button>
@@ -42,6 +43,7 @@ export const Navigation = (props: NavigationProps) => {
           minW="108px"
           rightIcon={<EditIcon />}
           as="a"
+          data-test-id="navigation-works"
         >
           Works
         </Button>

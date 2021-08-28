@@ -16,9 +16,9 @@ import React from 'react'
 export type AchievementsProps = BoxProps
 
 export const Achievements = (props: AchievementsProps) => (
-  <Box id="achievements" {...props}>
+  <Box id="achievements" w="full" {...props}>
     <chakra.h2 textStyle="h2WithTreat">Achievements</chakra.h2>
-    <Accordion defaultIndex={[0]} allowMultiple>
+    <Accordion defaultIndex={[0]} allowMultiple w="full">
       <Stack spacing={4}>
         {achievements.map((achievement) => (
           <AccordionItem key={achievement.title}>

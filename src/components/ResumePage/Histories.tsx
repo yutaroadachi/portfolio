@@ -19,7 +19,7 @@ import { URL } from 'src/constants/url'
 export type HistoriesProps = BoxProps
 
 export const Histories = (props: HistoriesProps) => (
-  <Box id="histories" {...props}>
+  <Box id="histories" w="full" {...props}>
     <chakra.h2 textStyle="h2WithTreat">Histories</chakra.h2>
     <JobHistory />
     <Spacer w="full" h={4} />
@@ -29,7 +29,7 @@ export const Histories = (props: HistoriesProps) => (
 
 const JobHistory = () => {
   return (
-    <VStack spacing={4} w="full">
+    <VStack spacing={4}>
       <chakra.h3 textStyle="h3" color="main">
         Job History
       </chakra.h3>
@@ -72,7 +72,7 @@ const JobHistory = () => {
 
 const AcademicHistory = () => {
   return (
-    <VStack spacing={4} w="full">
+    <VStack spacing={4}>
       <chakra.h3 textStyle="h3" color="main">
         Academic History
       </chakra.h3>

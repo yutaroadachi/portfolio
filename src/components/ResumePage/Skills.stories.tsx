@@ -3,7 +3,7 @@ import React from 'react'
 import { Skills, SkillsProps } from './Skills'
 
 export default {
-  title: 'HomePage/Skills',
+  title: 'ResumePage/Skills',
   component: Skills,
 } as Meta<SkillsProps>
 

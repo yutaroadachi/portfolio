@@ -3,7 +3,7 @@ import React from 'react'
 import { Histories, HistoriesProps } from './Histories'
 
 export default {
-  title: 'HomePage/Histories',
+  title: 'ResumePage/Histories',
   component: Histories,
 } as Meta<HistoriesProps>
 

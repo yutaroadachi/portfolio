@@ -3,7 +3,7 @@ import React from 'react'
 import { Achievements, AchievementsProps } from './Achievements'
 
 export default {
-  title: 'HomePage/Achievements',
+  title: 'WorksPage/Achievements',
   component: Achievements,
 } as Meta<AchievementsProps>
 

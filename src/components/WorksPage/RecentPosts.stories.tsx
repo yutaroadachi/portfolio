@@ -4,7 +4,7 @@ import { dummyPosts } from 'src/data/dummy/posts'
 import { RecentPosts, RecentPostsProps } from './RecentPosts'
 
 export default {
-  title: 'HomePage/RecentPosts',
+  title: 'WorksPage/RecentPosts',
   component: RecentPosts,
   args: {
     posts: dummyPosts,

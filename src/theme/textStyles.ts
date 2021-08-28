@@ -8,6 +8,10 @@ const headings = {
     fontSize: '24px',
     fontWeight: 'bold',
   },
+  h3: {
+    fontSize: '20px',
+    fontWeight: 'bold',
+  },
   h2WithTreat: {
     fontSize: '24px',
     fontWeight: 'bold',
@@ -25,10 +29,6 @@ const headings = {
       left: '50%',
       ml: '-15px',
     },
-  },
-  h3: {
-    fontSize: '20px',
-    fontWeight: 'bold',
   },
 }
 

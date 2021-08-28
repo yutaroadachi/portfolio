@@ -8,7 +8,7 @@ export const AppLayout = ({
 }: PropsWithChildren<FlexProps>) => (
   <Flex direction="column" minH="100vh">
     <Header />
-    <Flex as="main" direction="column" flexGrow={1} {...props}>
+    <Flex direction="column" flexGrow={1} py={8} as="main" {...props}>
       {children}
     </Flex>
     <Footer />

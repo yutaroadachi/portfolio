@@ -7,8 +7,14 @@ const baseStyle = {
 
 const variants = {
   primary: {
-    bgColor: 'primary',
-    color: 'gray.800',
+    bgColor: 'main',
+    color: 'white',
+  },
+  outlined: {
+    bgColor: 'base',
+    color: 'main',
+    borderWidth: '1px',
+    borderColor: 'main',
   },
 }
 
@@ -16,8 +22,10 @@ const defaultProps = {
   variant: 'primary',
 }
 
-export default {
+const button = {
   baseStyle,
   variants,
   defaultProps,
 }
+
+export default button

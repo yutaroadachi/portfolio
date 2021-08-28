@@ -1,8 +1,8 @@
 const layerStyles = {
   card: {
-    borderWidth: '1px',
-    borderRadius: 'lg',
-    borderColor: 'whiteAlpha.300',
+    bgColor: 'white',
+    borderRadius: '10px',
+    boxShadow: 'sm',
   },
 }
 

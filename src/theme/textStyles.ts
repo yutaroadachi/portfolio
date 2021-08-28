@@ -1,35 +1,39 @@
-const textStyles = {
+const headings = {
   h1: {
-    fontSize: '4xl',
+    fontSize: '32px',
     fontWeight: 'bold',
-    letterSpacing: '2px',
-    color: 'primary',
-    textAlign: 'center',
+    letterSpacing: '1px',
   },
   h2: {
-    fontSize: '2xl',
+    fontSize: '24px',
     fontWeight: 'bold',
-    color: 'primary',
+  },
+  h3: {
+    fontSize: '20px',
+    fontWeight: 'bold',
+  },
+  h2WithTreat: {
+    fontSize: '24px',
+    fontWeight: 'bold',
     textAlign: 'center',
+    color: 'main',
     pos: 'relative',
     mb: 8,
     _after: {
       content: '""',
       w: '30px',
       h: '3px',
-      bgColor: 'primary',
+      bgColor: 'main',
       pos: 'absolute',
       bottom: '-3px',
       left: '50%',
       ml: '-15px',
     },
   },
-  h3: {
-    fontSize: 'xl',
-    fontWeight: 'bold',
-    color: 'primary',
-    textAlign: 'center',
-  },
+}
+
+const textStyles = {
+  ...headings,
 }
 
 export default textStyles

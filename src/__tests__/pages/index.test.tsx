@@ -1,9 +1,8 @@
 import React from 'react'
-import HomePage from 'src/pages'
-import { posts } from '../data/posts'
+import ResumePage from 'src/pages'
 import { render } from '../utils'
 
-test('ホームページ', () => {
-  const { container } = render(<HomePage posts={posts} />)
+test('/', () => {
+  const { container } = render(<ResumePage />)
   expect(container).toMatchSnapshot()
 })

@@ -7,14 +7,14 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "lint": "next lint --dir src/components/ --dir src/lib/ --dir src/pages/",
+    "lint": "next lint --dir src/",
     "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "test": "jest",
     "test:us": "jest --updateSnapshot",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
+    "sb": "start-storybook -p 6006 -s public",
+    "build-sb": "build-storybook -s public",
     "g": "hygen"
   },
   "dependencies": {

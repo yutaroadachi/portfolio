@@ -1,19 +1,17 @@
-import { Box, Center, chakra, HStack } from '@chakra-ui/react'
+import { Box, BoxProps, chakra, HStack } from '@chakra-ui/react'
 import React from 'react'
-import { ContactButton } from './buttons'
 
-export const Header = () => (
-  <>
-    <Center as="header" w="full" h="70px" pos="fixed" zIndex={2}>
-      <HStack
-        justify="space-between"
-        w={{ base: 'full', lg: 'container.md' }}
-        px={{ base: 4, lg: 0 }}
-      >
-        <chakra.h1 textStyle="h1">adachi</chakra.h1>
-        <ContactButton size="sm" />
-      </HStack>
-    </Center>
-    <Box w="full" h="70px" />
-  </>
+export type HeaderProps = BoxProps
+
+export const Header = (props: HeaderProps) => (
+  <chakra.header w="full" h="64px" bgColor="main" color="white" {...props}>
+    <HStack
+      justify="center"
+      w={{ base: 'full', lg: 'container.md' }}
+      h="full"
+      mx={{ base: 0, lg: 'auto' }}
+    >
+      <chakra.h1 textStyle="h1">adachi</chakra.h1>
+    </HStack>
+  </chakra.header>
 )

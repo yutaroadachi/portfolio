@@ -1,61 +1,28 @@
-import { Box, Center } from '@chakra-ui/react'
-import { GetStaticProps } from 'next'
+import { Center, VStack } from '@chakra-ui/react'
 import React from 'react'
-import Parser from 'rss-parser'
-import { MetaTag } from 'src/components/common'
-import {
-  Achievements,
-  Biography,
-  Jobs,
-  RecentPosts,
-  Skills,
-} from 'src/components/HomePage'
+import { Biography, MetaTag, Navigation } from 'src/components/common'
 import { AppLayout } from 'src/components/layout'
-import { RssFeed, RssFeedItem } from 'src/types/rss'
+import { Histories, Skills } from 'src/components/ResumePage'
 
-type HomePageProps = {
-  posts: RssFeedItem[]
-}
-
-export default function HomePage({ posts }: HomePageProps) {
+export default function ResumePage() {
   return (
     <AppLayout>
       <MetaTag
-        title="Home"
-        description="各種アカウントへのリンク、スキルなどが確認できます。"
+        title="Resume"
+        description="スキルや職歴・学歴を確認できます。"
       />
       <Center w="full">
-        <Box w={{ base: 'full', lg: 'container.md' }} px={{ base: 4, lg: 0 }}>
+        <VStack
+          spacing={8}
+          w={{ base: 'full', lg: 'container.md' }}
+          px={{ base: 4, lg: 0 }}
+        >
           <Biography />
+          <Navigation active="resume" />
           <Skills />
-          <RecentPosts posts={posts} />
-          <Jobs />
-          <Achievements />
-        </Box>
+          <Histories />
+        </VStack>
       </Center>
     </AppLayout>
   )
-}
-
-export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
-  try {
-    const parser: Parser<RssFeed, RssFeedItem> = new Parser()
-    const feed = await parser.parseURL('https://zenn.dev/a_da_chi/feed')
-
-    return {
-      props: {
-        posts: feed.items,
-      },
-      revalidate: 300,
-    }
-  } catch (e) {
-    console.error(e)
-
-    return {
-      props: {
-        posts: [],
-      },
-      revalidate: 300,
-    }
-  }
 }

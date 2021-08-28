@@ -1,7 +1,11 @@
 import Accordion from './accordion'
 import Button from './button'
+import Tag from './tag'
 
-export default {
+const components = {
   Accordion,
   Button,
+  Tag,
 }
+
+export default components

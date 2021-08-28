@@ -1,26 +1,19 @@
-const baseStyleButton = {
-  fontWeight: 'bold',
-}
-
 const baseStylePanel = {
-  fontSize: 'xs',
   pb: 4,
 }
 
 const baseStyle = {
-  button: baseStyleButton,
   panel: baseStylePanel,
 }
 
 const variants = {
   card: {
     container: {
-      borderWidth: '1px',
-      borderRadius: 'lg',
-      borderColor: 'whiteAlpha.300',
+      borderTopWidth: 'none',
+      layerStyle: 'card',
     },
     button: {
-      borderRadius: 'lg',
+      borderRadius: '10px',
     },
   },
 }
@@ -29,8 +22,10 @@ const defaultProps = {
   variant: 'card',
 }
 
-export default {
+const accordion = {
   baseStyle,
   variants,
   defaultProps,
 }
+
+export default accordion

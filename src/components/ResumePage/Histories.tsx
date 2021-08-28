@@ -19,7 +19,7 @@ import { URL } from 'src/constants/url'
 export type HistoriesProps = BoxProps
 
 export const Histories = (props: HistoriesProps) => (
-  <Box {...props}>
+  <Box id="histories" {...props}>
     <chakra.h2 textStyle="h2WithTreat">Histories</chakra.h2>
     <JobHistory />
     <Spacer w="full" h={4} />

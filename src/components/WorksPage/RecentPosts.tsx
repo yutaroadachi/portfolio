@@ -26,7 +26,7 @@ export const RecentPosts = (props: RecentPostsProps) => {
   const { posts, ...rest } = props
 
   return (
-    <Box {...rest}>
+    <Box id="recent-posts" {...rest}>
       <chakra.h2 textStyle="h2WithTreat">Recent Posts</chakra.h2>
       <VStack spacing={4}>
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} w="full">

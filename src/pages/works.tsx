@@ -23,7 +23,7 @@ export default function WorksPage(props: WorksPageProps) {
           w={{ base: 'full', lg: 'container.md' }}
           px={{ base: 4, lg: 0 }}
         >
-          <Biography mt={8} />
+          <Biography />
           <Navigation active="works" />
           <RecentPosts posts={props.posts} />
           <Achievements />

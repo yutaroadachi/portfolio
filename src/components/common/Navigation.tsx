@@ -16,7 +16,14 @@ export const Navigation = (props: NavigationProps) => {
   const isWorksActive = active === 'works'
 
   return (
-    <SimpleGrid columns={3} spacing={4} w="full" maxW="340px" {...rest}>
+    <SimpleGrid
+      id="navigation"
+      columns={3}
+      spacing={4}
+      w="full"
+      maxW="340px"
+      {...rest}
+    >
       <NextLink href={PATH.resume} passHref scroll={false}>
         <Button
           variant={isResumeActive ? 'primary' : 'outlined'}

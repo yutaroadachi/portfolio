@@ -16,7 +16,7 @@ import React from 'react'
 export type AchievementsProps = BoxProps
 
 export const Achievements = (props: AchievementsProps) => (
-  <Box {...props}>
+  <Box id="achievements" {...props}>
     <chakra.h2 textStyle="h2WithTreat">Achievements</chakra.h2>
     <Accordion defaultIndex={[0]} allowMultiple>
       <Stack spacing={4}>

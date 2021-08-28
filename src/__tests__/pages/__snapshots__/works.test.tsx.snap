@@ -118,6 +118,7 @@ exports[`/works 1`] = `
           >
             <a
               class="chakra-button css-iad4m2"
+              data-test-id="navigation-resume"
               href="/"
             >
               Resume
@@ -139,6 +140,7 @@ exports[`/works 1`] = `
             </a>
             <a
               class="chakra-button css-ugr3ao"
+              data-test-id="navigation-works"
               href="/works"
             >
               Works
@@ -725,7 +727,7 @@ exports[`/works 1`] = `
             </div>
           </div>
           <div
-            class="css-0"
+            class="css-1ki54i"
             id="achievements"
           >
             <h2
@@ -734,7 +736,7 @@ exports[`/works 1`] = `
               Achievements
             </h2>
             <div
-              class="chakra-accordion css-0"
+              class="chakra-accordion css-1ki54i"
             >
               <div
                 class="chakra-stack css-egoftb"
@@ -919,18 +921,21 @@ exports[`/works 1`] = `
           >
             <a
               class="chakra-link css-1p5ludt"
+              data-test-id="footer-navigation-resume"
               href="/#navigation"
             >
               Resume
             </a>
             <a
               class="chakra-link css-pgb619"
+              data-test-id="footer-navigation-skills"
               href="/#skills"
             >
               Skills
             </a>
             <a
               class="chakra-link css-pgb619"
+              data-test-id="footer-navigation-histories"
               href="/#histories"
             >
               Histories
@@ -941,18 +946,21 @@ exports[`/works 1`] = `
           >
             <a
               class="chakra-link css-1p5ludt"
+              data-test-id="footer-navigation-works"
               href="/works#navigation"
             >
               Works
             </a>
             <a
               class="chakra-link css-pgb619"
+              data-test-id="footer-navigation-recent-posts"
               href="/works#recent-posts"
             >
               Recent Posts
             </a>
             <a
               class="chakra-link css-pgb619"
+              data-test-id="footer-navigation-achievements"
               href="/works#achievements"
             >
               Achievements

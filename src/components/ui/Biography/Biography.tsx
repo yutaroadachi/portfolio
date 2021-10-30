@@ -1,6 +1,6 @@
 import { chakra, HStack, Img, Link, StackProps, VStack } from '@chakra-ui/react'
 import React from 'react'
-import { GitHubIcon, TwitterIcon, ZennIcon } from 'src/components/icons'
+import { GitHubIcon, TwitterIcon, ZennIcon } from 'src/components/ui/Icon'
 import { URL } from 'src/constants/url'
 
 export type BiographyProps = StackProps

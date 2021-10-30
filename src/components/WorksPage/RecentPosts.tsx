@@ -12,7 +12,7 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import React from 'react'
-import { ZennIcon } from 'src/components/icons'
+import { ZennIcon } from 'src/components/ui/Icon'
 import { URL } from 'src/constants/url'
 import { formatYYYYMMDD } from 'src/lib/date-format'
 import { truncate } from 'src/lib/format'

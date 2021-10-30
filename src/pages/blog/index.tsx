@@ -3,7 +3,7 @@ import React from 'react'
 import { BlogListPage, BlogListPageProps } from 'src/components/page/BlogList'
 import { getBlogList } from 'src/lib/microCMS/client'
 
-export default ({ blog }: BlogListPageProps) => {
+export default function _BlogListPage({ blog }: BlogListPageProps) {
   return <BlogListPage blog={blog} />
 }
 

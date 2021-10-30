@@ -9,9 +9,7 @@ export type NavigationProps = {
   active: 'resume' | 'works'
 } & SimpleGridProps
 
-export const Navigation = (props: NavigationProps) => {
-  const { active, ...rest } = props
-
+export const Navigation = ({ active, ...props }: NavigationProps) => {
   const isResumeActive = active === 'resume'
   const isWorksActive = active === 'works'
 
@@ -22,7 +20,7 @@ export const Navigation = (props: NavigationProps) => {
       spacing={4}
       w="full"
       maxW="340px"
-      {...rest}
+      {...props}
     >
       <NextLink href={PATH.resume} passHref scroll={false}>
         <Button

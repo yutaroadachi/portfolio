@@ -2,10 +2,10 @@ import { VStack } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import React from 'react'
 import Parser from 'rss-parser'
-import { Navigation } from 'src/components/common'
 import { Biography } from 'src/components/ui/Biography'
 import { Layout } from 'src/components/ui/Layout'
 import { MetaTag } from 'src/components/ui/MetaTag'
+import { Navigation } from 'src/components/ui/Navigation'
 import {
   Achievements,
   RecentPosts,

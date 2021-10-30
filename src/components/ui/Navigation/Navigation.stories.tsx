@@ -4,7 +4,7 @@ import React from 'react'
 import { Navigation, NavigationProps } from './Navigation'
 
 export default {
-  title: 'Common/Navigation',
+  title: 'ui/Navigation',
   component: Navigation,
 } as Meta<NavigationProps>
 

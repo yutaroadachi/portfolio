@@ -1,10 +1,10 @@
 import { VStack } from '@chakra-ui/react'
 import React from 'react'
-import { Navigation } from 'src/components/common'
 import { Histories, Skills } from 'src/components/ResumePage'
 import { Biography } from 'src/components/ui/Biography'
 import { Layout } from 'src/components/ui/Layout'
 import { MetaTag } from 'src/components/ui/MetaTag'
+import { Navigation } from 'src/components/ui/Navigation'
 
 export default function ResumePage() {
   return (

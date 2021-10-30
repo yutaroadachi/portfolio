@@ -41,6 +41,6 @@ export const getStaticProps: GetStaticProps<WorksPageProps> = async () => {
     props: {
       posts: feed.items,
     },
-    revalidate: 300,
+    revalidate: 5 * 60,
   }
 }

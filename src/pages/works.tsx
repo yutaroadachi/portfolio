@@ -1,9 +1,9 @@
-import { Center, VStack } from '@chakra-ui/react'
+import { VStack } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import React from 'react'
 import Parser from 'rss-parser'
 import { Biography, MetaTag, Navigation } from 'src/components/common'
-import { AppLayout } from 'src/components/layout'
+import { Layout } from 'src/components/ui/Layout'
 import {
   Achievements,
   RecentPosts,
@@ -15,21 +15,15 @@ type WorksPageProps = RecentPostsProps
 
 export default function WorksPage(props: WorksPageProps) {
   return (
-    <AppLayout>
+    <Layout>
       <MetaTag title="Works" description="技術記事や実績を確認できます。" />
-      <Center w="full">
-        <VStack
-          spacing={8}
-          w={{ base: 'full', lg: 'container.md' }}
-          px={{ base: 4, lg: 0 }}
-        >
-          <Biography />
-          <Navigation active="works" />
-          <RecentPosts posts={props.posts} />
-          <Achievements />
-        </VStack>
-      </Center>
-    </AppLayout>
+      <VStack spacing={8}>
+        <Biography />
+        <Navigation active="works" />
+        <RecentPosts posts={props.posts} />
+        <Achievements />
+      </VStack>
+    </Layout>
   )
 }
 

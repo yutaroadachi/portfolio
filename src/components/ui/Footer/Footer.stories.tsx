@@ -3,7 +3,7 @@ import React from 'react'
 import { Footer, FooterProps } from './Footer'
 
 export default {
-  title: 'Common/Footer',
+  title: 'ui/Footer',
   component: Footer,
   parameters: {
     layout: 'fullscreen',

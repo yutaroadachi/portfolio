@@ -3,7 +3,7 @@ import React from 'react'
 import { Header, HeaderProps } from './Header'
 
 export default {
-  title: 'Common/Header',
+  title: 'ui/Header',
   component: Header,
   parameters: {
     layout: 'fullscreen',

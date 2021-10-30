@@ -1,6 +1,6 @@
 import React, { ComponentProps } from 'react'
-import { MetaTag } from 'src/components/common'
 import { Layout } from 'src/components/ui/Layout'
+import { MetaTag } from 'src/components/ui/MetaTag'
 import { BlogDetail } from './BlogDetail'
 
 export type BlogDetailPageProps = ComponentProps<typeof BlogDetail>

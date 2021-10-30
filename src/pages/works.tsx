@@ -2,8 +2,9 @@ import { VStack } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import React from 'react'
 import Parser from 'rss-parser'
-import { Biography, MetaTag, Navigation } from 'src/components/common'
+import { Biography, Navigation } from 'src/components/common'
 import { Layout } from 'src/components/ui/Layout'
+import { MetaTag } from 'src/components/ui/MetaTag'
 import {
   Achievements,
   RecentPosts,
@@ -16,7 +17,10 @@ type WorksPageProps = RecentPostsProps
 export default function WorksPage(props: WorksPageProps) {
   return (
     <Layout>
-      <MetaTag title="Works" description="技術記事や実績を確認できます。" />
+      <MetaTag
+        title="Works"
+        description="Yutaro Adachi(Software Engineer)の最近の投稿や実績を確認できます。"
+      />
       <VStack spacing={8}>
         <Biography />
         <Navigation active="works" />

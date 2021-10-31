@@ -1,7 +1,7 @@
 import { chakra, LinkBox, LinkOverlay, Stack } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from 'react'
-import { formatYYYYMMDD } from 'src/lib/date-format'
+import { formatYYYYMMDD } from 'src/lib/format/date-format'
 import { BlogList as TBlogList } from 'src/types/blog'
 
 export type BlogListProps = {
@@ -14,7 +14,7 @@ export const BlogList = ({ blog }: BlogListProps) => {
       <chakra.h2 id="blog-list" textStyle="h2WithTreat">
         Blog
       </chakra.h2>
-      <Stack>
+      <Stack spacing={4}>
         {blog.map((blog) => {
           return (
             <LinkBox layerStyle="card" p={4} key={blog.id}>

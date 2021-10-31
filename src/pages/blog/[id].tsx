@@ -6,7 +6,7 @@ import {
 } from 'src/components/page/BlogDetail'
 import { getBlogDetail } from 'src/lib/microCMS/client'
 
-export default ({ blog }: BlogDetailPageProps) => {
+export default function _BlogDetailPage({ blog }: BlogDetailPageProps) {
   return <BlogDetailPage blog={blog} />
 }
 

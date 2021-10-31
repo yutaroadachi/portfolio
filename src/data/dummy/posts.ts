@@ -16,5 +16,5 @@ export const dummyPosts: RssFeedItem[] = Array(13)
     isoDate: '',
     link: 'http://example.com',
     pubDate: 'Sat, 28 Aug 2021 00:00:00 GMT',
-    title: `テスト記事${idx + 1}`.repeat(idx + 1),
+    title: `テスト技術ブログ${idx + 1}`.repeat(idx + 1),
   }))

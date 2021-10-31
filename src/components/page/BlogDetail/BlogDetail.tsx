@@ -1,6 +1,6 @@
 import { Box, chakra, Stack } from '@chakra-ui/react'
 import React from 'react'
-import { formatYYYYMMDD } from 'src/lib/date-format'
+import { formatYYYYMMDD } from 'src/lib/format/date-format'
 import { BlogDetail as TBlogDetail } from 'src/types/blog'
 
 export type BlogDetailProps = {

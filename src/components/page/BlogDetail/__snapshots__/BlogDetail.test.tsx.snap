@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogDetail 1`] = `
+<div>
+  <div
+    class="chakra-stack css-egoftb"
+  >
+    <div
+      class="css-0"
+    >
+      <h2
+        class="css-553wiy"
+        id="blog-detail"
+      >
+        テスト個人ブログ1
+      </h2>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="blog-detail css-0"
+    >
+      <p>
+        テスト個人ブログ1です。
+        <br />
+        <br />
+        <a
+          href="http://example.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          テストリンク
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;

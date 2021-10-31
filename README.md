@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Storybook
 
 ```bash
-yarn storybook
+yarn sb
 ```
 
 Open [http://localhost:6006](http://localhost:6006) with your browser to see the result.
@@ -22,7 +22,8 @@ Open [http://localhost:6006](http://localhost:6006) with your browser to see the
 ## Code Generator by hygen
 
 ```bash
-yarn g component new
+yarn g page new
+yarn g ui new
 ```
 
 Prompt will be launched.

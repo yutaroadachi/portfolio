@@ -21,6 +21,12 @@ const styles: Styles = {
         fontSize: '20px',
         fontWeight: 'bold',
       },
+      a: {
+        color: 'link',
+        '&:hover': {
+          textDecoration: 'underline',
+        },
+      },
     },
   },
 }

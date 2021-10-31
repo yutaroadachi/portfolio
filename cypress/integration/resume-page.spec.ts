@@ -1,6 +1,6 @@
 describe('resume-page', () => {
   beforeEach(() => {
-    cy.visit('/')
+    cy.visit('/resume')
   })
 
   it('navigationを使用して/worksに遷移する', () => {

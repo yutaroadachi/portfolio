@@ -8,7 +8,7 @@ describe('works-page', () => {
       .scrollIntoView()
       .should('be.visible')
       .click()
-    cy.location('pathname').should('eq', '/')
+    cy.location('pathname').should('eq', '/resume')
   })
 
   it('footer-navigationを使用して/#navigationに遷移する', () => {
@@ -16,7 +16,7 @@ describe('works-page', () => {
       .scrollIntoView()
       .should('be.visible')
       .click()
-    cy.location('pathname').should('eq', '/')
+    cy.location('pathname').should('eq', '/resume')
     cy.location('hash').should('eq', '#navigation')
   })
 
@@ -25,7 +25,7 @@ describe('works-page', () => {
       .scrollIntoView()
       .should('be.visible')
       .click()
-    cy.location('pathname').should('eq', '/')
+    cy.location('pathname').should('eq', '/resume')
     cy.location('hash').should('eq', '#skills')
   })
 
@@ -34,7 +34,7 @@ describe('works-page', () => {
       .scrollIntoView()
       .should('be.visible')
       .click()
-    cy.location('pathname').should('eq', '/')
+    cy.location('pathname').should('eq', '/resume')
     cy.location('hash').should('eq', '#histories')
   })
 })

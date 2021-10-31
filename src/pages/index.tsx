@@ -1,3 +1,3 @@
-import { ResumePage } from 'src/components/page/Resume'
+import { TopPage } from 'src/components/page/Top'
 
-export default ResumePage
+export default TopPage

@@ -14,8 +14,8 @@ import {
 import React from 'react'
 import { ZennIcon } from 'src/components/ui/Icon'
 import { URL } from 'src/constants/url'
-import { formatYYYYMMDD } from 'src/lib/date-format'
-import { truncate } from 'src/lib/format'
+import { formatYYYYMMDD } from 'src/lib/format/date-format'
+import { truncate } from 'src/lib/format/string-format'
 import { RssFeedItem } from 'src/types/rss'
 
 export type RecentPostsProps = {

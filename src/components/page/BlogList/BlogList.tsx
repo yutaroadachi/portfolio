@@ -1,7 +1,7 @@
 import { chakra, LinkBox, LinkOverlay, Stack } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from 'react'
-import { formatYYYYMMDD } from 'src/lib/date-format'
+import { formatYYYYMMDD } from 'src/lib/format/date-format'
 import { BlogList as TBlogList } from 'src/types/blog'
 
 export type BlogListProps = {

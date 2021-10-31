@@ -1,4 +1,4 @@
-import { truncate } from './format'
+import { truncate } from './string-format'
 
 describe('truncate', () => {
   test.each`

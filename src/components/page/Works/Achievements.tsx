@@ -66,11 +66,4 @@ const achievements: Achievement[] = [
     href: 'https://zenn.dev/a_da_chi/articles/7ba871c23c5510',
     linkTitle: 'Zennで読む',
   },
-  {
-    title: '映画「僕とオトウト」公式HP製作',
-    description:
-      '知人が撮影した映画「僕とオトウト」の公式HPを製作。使用技術はSTUDIO。ディレクション、デザイン、実装、リリース（独自ドメイン対応など）と全ての行程を担当。映画の内容が監督自身が重度の知的障害をもつ弟にカメラを向けたドキュメンタリーであったことから、映画の世界観を壊さないデザインとSTUDIOでできる範囲のアクセシビリティ（画像のalt設定やセマンティックなマークアップなど）を意識。',
-    href: 'https://boku-to-otouto.com/',
-    linkTitle: '公式HPを見る',
-  },
 ]

@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogList 1`] = `
+<div>
+  <h2
+    class="css-1yh9w4u"
+    id="blog-list"
+  >
+    Blog
+  </h2>
+  <div
+    class="chakra-stack css-egoftb"
+  >
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/1"
+        >
+          テスト個人ブログ1
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/2"
+        >
+          テスト個人ブログ2
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/3"
+        >
+          テスト個人ブログ3
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/4"
+        >
+          テスト個人ブログ4
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/5"
+        >
+          テスト個人ブログ5
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/6"
+        >
+          テスト個人ブログ6
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/7"
+        >
+          テスト個人ブログ7
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/8"
+        >
+          テスト個人ブログ8
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/9"
+        >
+          テスト個人ブログ9
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/10"
+        >
+          テスト個人ブログ10
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/11"
+        >
+          テスト個人ブログ11
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/12"
+        >
+          テスト個人ブログ12
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+    <div
+      class="chakra-linkbox css-w0ckzj"
+    >
+      <h3
+        class="css-0"
+      >
+        <a
+          class="chakra-linkbox__overlay css-1hnz6hu"
+          href="/blog/13"
+        >
+          テスト個人ブログ13
+        </a>
+      </h3>
+      <p
+        class="css-1e82jug"
+      >
+        Posted at 2021/10/31
+      </p>
+    </div>
+  </div>
+</div>
+`;

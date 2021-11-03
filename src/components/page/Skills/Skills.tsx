@@ -28,10 +28,10 @@ export const Skills = ({}: SkillsProps) => {
   return (
     <Box>
       <chakra.h1 id="skills" textStyle="h1" color="main" mb={8}>
-        Skills
+        スキル
       </chakra.h1>
       <VStack spacing={8}>
-        <Box>
+        <Box w="full">
           <ForPC />
           <ForSP />
         </Box>
@@ -74,21 +74,24 @@ const ForSP = () => {
       allowMultiple
     >
       <Stack spacing={4}>
-        {skills.map((skill) => (
-          <AccordionItem key={skill.name}>
-            <AccordionButton>
-              <Box flex="1" textAlign="left">
-                <chakra.p fontWeight="bold">
-                  {skill.name} - {skill.years}
-                </chakra.p>
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-            <AccordionPanel>
-              <chakra.p fontSize="12px">{skill.detail}</chakra.p>
-            </AccordionPanel>
-          </AccordionItem>
-        ))}
+        {skills.map((skill) => {
+          return (
+            <AccordionItem key={skill.name}>
+              <AccordionButton>
+                <Box flex="1" textAlign="left">
+                  <chakra.h3 textStyle="h3">{skill.name}</chakra.h3>
+                  <chakra.p fontSize="14px" color="gray.500">
+                    {skill.years}
+                  </chakra.p>
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+              <AccordionPanel>
+                <chakra.p>{skill.detail}</chakra.p>
+              </AccordionPanel>
+            </AccordionItem>
+          )
+        })}
       </Stack>
     </Accordion>
   )
@@ -108,7 +111,8 @@ const skills: {
         <UnorderedList listStylePos="inside" mt={4}>
           <ListItem>スタイリング：styled-components</ListItem>
           <ListItem>UIライブラリ：Chakra UI/MUI</ListItem>
-          <ListItem>グローバルな状態管理：Context API</ListItem>
+          <ListItem>グローバルステート管理：Context API</ListItem>
+          <ListItem>フォーム管理：Formik/Yup</ListItem>
           <ListItem>データフェッチ：SWR</ListItem>
           <ListItem>単体テスト：Jest</ListItem>
           <ListItem>結合テスト：Testing Library</ListItem>
@@ -136,12 +140,12 @@ const skills: {
           color="link"
         >
           基本的なNext.jsプロジェクトのセットアップ
-          <ExternalLinkIcon mx="2px" />
+          <ExternalLinkIcon pb="3px" mx="2px" />
         </Link>
         から対応可能です。上記の記事以外にも
         <Link href="https://zenn.dev/a_da_chi" isExternal color="link">
           Zenn
-          <ExternalLinkIcon mx="2px" />
+          <ExternalLinkIcon pb="3px" mx="2px" />
         </Link>
         でNext.jsに関する記事を複数執筆しており、累計で500近くのLikeを頂いております。
       </>

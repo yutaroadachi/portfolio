@@ -75,8 +75,8 @@ const Hero = () => {
 const AboutMe = () => {
   return (
     <Box>
-      <chakra.h2 id="about-me" textStyle="h2WithTreat">
-        About me
+      <chakra.h2 id="about-me" textStyle="h2WithTreat" color="main" mb={8}>
+        私について
       </chakra.h2>
       <Biography />
     </Box>
@@ -86,8 +86,8 @@ const AboutMe = () => {
 const Links = () => {
   return (
     <Box w="full">
-      <chakra.h2 id="links" textStyle="h2WithTreat">
-        Links
+      <chakra.h2 id="links" textStyle="h2WithTreat" color="main" mb={8}>
+        リンク
       </chakra.h2>
       <SimpleGrid columns={{ base: 2, md: 4 }} gap={4}>
         {links.map((link) => {

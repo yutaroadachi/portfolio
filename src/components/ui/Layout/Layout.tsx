@@ -10,7 +10,7 @@ export const Layout = ({ children, ...props }: LayoutProps) => (
     <Header />
     <Flex direction="column" flexGrow={1} as="main">
       <Container
-        maxW={{ base: 'full', lg: 'container.md' }}
+        maxW={{ base: 'full', lg: 'container.md', xl: 'container.lg' }}
         px={{ base: 4, lg: 0 }}
         py={8}
         {...props}

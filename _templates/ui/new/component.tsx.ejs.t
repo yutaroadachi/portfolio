@@ -1,15 +1,15 @@
 ---
 to: src/components/ui/<%= name %>/<%= name %>.tsx
 ---
-import { chakra } from '@chakra-ui/react'
+import { Box, chakra } from '@chakra-ui/react'
 import React from 'react'
 
 export type <%= name %>Props = {}
 
 export const <%= name %> = ({}: <%= name %>Props) => {
   return (
-    <chakra.div>
-      <%= name %>
-    </chakra.div>
+    <Box>
+      <chakra.p><%= name %></chakra.p>
+    </Box>
   )
 }

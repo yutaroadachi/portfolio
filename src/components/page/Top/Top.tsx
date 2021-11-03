@@ -12,6 +12,7 @@ import {
 import Head from 'next/head'
 import NextLink from 'next/link'
 import React from 'react'
+import { IconType } from 'react-icons'
 import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact } from 'react-icons/fa'
 import { GrBlog } from 'react-icons/gr'
@@ -106,7 +107,11 @@ const Links = () => {
   )
 }
 
-const links = [
+const links: {
+  title: string
+  icon: IconType
+  href: string
+}[] = [
   {
     title: 'スキル',
     icon: FaReact,

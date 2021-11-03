@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react'
 import NextImage from 'next/image'
 import React from 'react'
+import { IconType } from 'react-icons'
 import { FiGithub, FiMail, FiTwitter } from 'react-icons/fi'
 import { URL } from 'src/constants/url'
 
@@ -57,7 +58,10 @@ export const Biography = (props: BiographyProps) => {
   )
 }
 
-const links = [
+const links: {
+  href: string
+  icon: IconType
+}[] = [
   {
     href: URL.github,
     icon: FiGithub,

@@ -24,7 +24,7 @@ const customViewports = {
     },
     type: 'mobile',
   },
-  /** iPad */
+  /** iPad mini */
   md: {
     name: 'md',
     styles: {
@@ -33,7 +33,7 @@ const customViewports = {
     },
     type: 'tablet',
   },
-  /** MacBook Air */
+  /** MacBook Pro 13インチ */
   lg: {
     name: 'lg',
     styles: {
@@ -47,7 +47,7 @@ const customViewports = {
 export const parameters = {
   viewport: {
     viewports: customViewports,
-    defaultViewport: 'base',
+    defaultViewport: 'lg',
   },
 }
 

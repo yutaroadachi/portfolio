@@ -16,7 +16,7 @@ import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact } from 'react-icons/fa'
 import { GrBlog } from 'react-icons/gr'
 import { IoDocumentTextOutline } from 'react-icons/io5'
-import { Biography } from 'src/components/ui/Biography'
+import { Biography } from 'src/components/domain/Biography'
 import { PATH } from 'src/constants/path'
 
 export type TopProps = {}

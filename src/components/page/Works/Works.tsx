@@ -1,6 +1,6 @@
 import { VStack } from '@chakra-ui/react'
 import React from 'react'
-import { Biography } from 'src/components/ui/Biography'
+import { Biography } from 'src/components/domain/Biography'
 import { Navigation } from 'src/components/ui/Navigation'
 import { RssFeedItem } from 'src/types/rss'
 import { Achievements } from './Achievements'

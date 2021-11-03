@@ -1,5 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { Story } from '@storybook/react'
+import * as nextImage from 'next/image'
 import React from 'react'
 import theme from '../src/theme'
 
@@ -49,3 +50,8 @@ export const parameters = {
     defaultViewport: 'base',
   },
 }
+
+Object.defineProperty(nextImage, 'default', {
+  configurable: true,
+  value: (props) => <img {...props} />,
+})

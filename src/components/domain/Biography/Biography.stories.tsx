@@ -3,7 +3,7 @@ import React from 'react'
 import { Biography, BiographyProps } from './Biography'
 
 export default {
-  title: 'ui/Biography',
+  title: 'domain/Biography',
   component: Biography,
 } as Meta<BiographyProps>
 

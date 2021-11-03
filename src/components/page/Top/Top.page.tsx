@@ -7,10 +7,10 @@ export type TopPageProps = ComponentProps<typeof Top>
 
 export const TopPage = ({}: TopPageProps) => {
   return (
-    <Layout>
+    <Layout pt={0}>
       <MetaTag
         title="Top"
-        description="Topページです。"
+        description="Yutaro Adachi(フロントエンドエンジニア)のポートフォリオサイトです。"
       />
       <Top />
     </Layout>

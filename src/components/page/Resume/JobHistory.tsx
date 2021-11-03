@@ -36,7 +36,7 @@ const ForPC = () => {
     <Stack d={{ base: 'none', md: 'flex' }} spacing={8}>
       {jobs.map((job) => {
         return (
-          <Stack spacing={4}>
+          <Stack spacing={4} key={job.companyName}>
             <Box>
               <chakra.h3 textStyle="h3">{job.companyName}</chakra.h3>
             </Box>
@@ -59,12 +59,12 @@ const ForPC = () => {
                   <Td>{job.detail}</Td>
                   <Td whiteSpace="nowrap">
                     {job.skills.map((skill) => (
-                      <chakra.p>{skill}</chakra.p>
+                      <chakra.p key={skill}>{skill}</chakra.p>
                     ))}
                   </Td>
                   <Td whiteSpace="nowrap">
                     {job.role.map((role) => (
-                      <chakra.p>{role}</chakra.p>
+                      <chakra.p key={role}>{role}</chakra.p>
                     ))}
                   </Td>
                 </Tr>

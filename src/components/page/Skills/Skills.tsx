@@ -86,9 +86,7 @@ const ForSP = () => {
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
-              <AccordionPanel>
-                <chakra.p>{skill.detail}</chakra.p>
-              </AccordionPanel>
+              <AccordionPanel>{skill.detail}</AccordionPanel>
             </AccordionItem>
           )
         })}

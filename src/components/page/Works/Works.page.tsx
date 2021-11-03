@@ -5,14 +5,14 @@ import { Works } from './Works'
 
 export type WorksPageProps = ComponentProps<typeof Works>
 
-export const WorksPage = ({ posts }: WorksPageProps) => {
+export const WorksPage = ({}: WorksPageProps) => {
   return (
     <Layout>
       <MetaTag
         title="Works"
-        description="Yutaro Adachi(Software Engineer)の最近の投稿や実績を確認できます。"
+        description="Yutaro Adachi(フロントエンドエンジニア)の成果物です。"
       />
-      <Works posts={posts} />
+      <Works />
     </Layout>
   )
 }

@@ -1,22 +1,19 @@
-import { VStack } from '@chakra-ui/react'
+import { Box, chakra, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { Biography } from 'src/components/domain/Biography'
-import { Navigation } from 'src/components/ui/Navigation'
-import { RssFeedItem } from 'src/types/rss'
-import { Achievements } from './Achievements'
-import { RecentPosts } from './RecentPosts'
 
-export type WorksProps = {
-  posts: RssFeedItem[]
-}
+export type WorksProps = {}
 
-export const Works = ({ posts }: WorksProps) => {
+export const Works = ({}: WorksProps) => {
   return (
-    <VStack spacing={8}>
-      <Biography />
-      <Navigation active="works" />
-      <RecentPosts posts={posts} />
-      <Achievements />
-    </VStack>
+    <Box>
+      <chakra.h1 id="works" textStyle="h1" color="main" mb={8}>
+        成果物
+      </chakra.h1>
+      <VStack spacing={8}>
+        <chakra.p>TODO</chakra.p>
+        <Biography />
+      </VStack>
+    </Box>
   )
 }

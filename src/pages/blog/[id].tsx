@@ -4,7 +4,7 @@ import {
   BlogDetailPage,
   BlogDetailPageProps,
 } from 'src/components/page/BlogDetail'
-import { getBlogDetail } from 'src/lib/microCMS/client'
+import { getPersonalBlogDetail } from 'src/lib/microCMS/client'
 
 export default function _BlogDetailPage({ blog }: BlogDetailPageProps) {
   return <BlogDetailPage blog={blog} />
@@ -21,7 +21,7 @@ export const getServerSideProps: GetServerSideProps<BlogDetailPageProps> =
       }
     }
 
-    const blog = await getBlogDetail(contentId)
+    const blog = await getPersonalBlogDetail(contentId)
 
     res.setHeader(
       'Cache-Control',

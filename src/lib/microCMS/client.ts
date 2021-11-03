@@ -3,21 +3,23 @@ import {
   GetListDetailRequest,
   GetListRequest,
 } from 'microcms-js-sdk'
-import { Blog } from 'src/types/blog'
+import { PersonalBlog } from 'src/types/blog'
 
-export const getBlogList = async (queries?: GetListRequest['queries']) => {
-  const data = await client.getList<Blog>({
+export const getPersonalBlogList = async (
+  queries?: GetListRequest['queries']
+) => {
+  const data = await client.getList<PersonalBlog>({
     endpoint: BLOG_ENDPOINT,
     queries: queries,
   })
   return data.contents
 }
 
-export const getBlogDetail = async (
+export const getPersonalBlogDetail = async (
   contentId: GetListDetailRequest['contentId'],
   queries?: GetListDetailRequest['queries']
 ) => {
-  const data = await client.getListDetail<Blog>({
+  const data = await client.getListDetail<PersonalBlog>({
     endpoint: BLOG_ENDPOINT,
     contentId: contentId,
     queries: queries,

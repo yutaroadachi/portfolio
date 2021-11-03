@@ -1,6 +1,29 @@
-import { BlogDetail, BlogList } from 'src/types/blog'
+import {
+  PersonalBlogDetail,
+  PersonalBlogList,
+  TechBlogList,
+} from 'src/types/blog'
 
-export const dummyBlogList: BlogList = Array(13)
+export const dummyTechBlogList: TechBlogList = Array(13)
+  .fill(0)
+  .map((_, idx) => ({
+    content: '',
+    contentSnippet: '',
+    creator: '',
+    'dc:creator': '',
+    enclosure: {
+      url: '',
+      length: '',
+      type: '',
+    },
+    guid: '',
+    isoDate: '',
+    link: 'http://example.com',
+    pubDate: 'Sat, 28 Aug 2021 00:00:00 GMT',
+    title: `テスト技術ブログ${idx + 1}`.repeat(idx + 1),
+  }))
+
+export const dummyPersonalBlogList: PersonalBlogList = Array(13)
   .fill(0)
   .map((_, idx) => ({
     id: (idx + 1).toString(),
@@ -15,7 +38,7 @@ export const dummyBlogList: BlogList = Array(13)
     description: `テスト個人ブログ${idx + 1}です。`,
   }))
 
-export const dummyBlogDetail: BlogDetail = {
+export const dummyPersonalBlogDetail: PersonalBlogDetail = {
   id: '1',
   createdAt: '2021-10-31T00:00:00.0000',
   updatedAt: '2021-10-31T00:00:00.0000',

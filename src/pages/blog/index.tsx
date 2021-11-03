@@ -1,18 +1,26 @@
 import { GetStaticProps } from 'next'
 import React from 'react'
 import { BlogListPage, BlogListPageProps } from 'src/components/page/BlogList'
-import { getBlogList } from 'src/lib/microCMS/client'
+import { getPersonalBlogList } from 'src/lib/microCMS/client'
+import { getZennFeed } from 'src/lib/rss/client'
 
-export default function _BlogListPage({ blog }: BlogListPageProps) {
-  return <BlogListPage blog={blog} />
+export default function _BlogListPage({
+  techBlog,
+  personalBlog,
+}: BlogListPageProps) {
+  return <BlogListPage techBlog={techBlog} personalBlog={personalBlog} />
 }
 
 export const getStaticProps: GetStaticProps<BlogListPageProps> = async () => {
-  const blog = await getBlogList()
+  const [techBlog, personalBlog] = await Promise.all([
+    getZennFeed(),
+    getPersonalBlogList(),
+  ])
 
   return {
     props: {
-      blog: blog,
+      techBlog: techBlog,
+      personalBlog: personalBlog,
     },
     revalidate: 5 * 60,
   }

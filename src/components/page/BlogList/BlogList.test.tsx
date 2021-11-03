@@ -1,9 +1,14 @@
 import React from 'react'
-import { dummyBlogList } from 'src/data/dummy/blog'
+import { dummyPersonalBlogList, dummyTechBlogList } from 'src/data/dummy/blog'
 import { render } from 'src/__tests__/utils'
 import { BlogList } from './BlogList'
 
 test('BlogList', () => {
-  const { container } = render(<BlogList blog={dummyBlogList} />)
+  const { container } = render(
+    <BlogList
+      techBlog={dummyTechBlogList}
+      personalBlog={dummyPersonalBlogList}
+    />
+  )
   expect(container).toMatchSnapshot()
 })

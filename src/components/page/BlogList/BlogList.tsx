@@ -1,35 +1,73 @@
-import { chakra, LinkBox, LinkOverlay, Stack } from '@chakra-ui/react'
-import NextLink from 'next/link'
+import { Box, chakra, SimpleGrid, VStack } from '@chakra-ui/react'
 import React from 'react'
-import { formatYYYYMMDD } from 'src/lib/format/date-format'
-import { BlogList as TBlogList } from 'src/types/blog'
+import { Biography } from 'src/components/domain/Biography'
+import { BlogCard } from 'src/components/domain/BlogCard'
+import { PersonalBlogList, TechBlogList } from 'src/types/blog'
 
 export type BlogListProps = {
-  blog: TBlogList
+  techBlog: TechBlogList
+  personalBlog: PersonalBlogList
 }
 
-export const BlogList = ({ blog }: BlogListProps) => {
+export const BlogList = ({ techBlog, personalBlog }: BlogListProps) => {
   return (
-    <>
-      <chakra.h2 id="blog-list" textStyle="h2WithTreat">
-        Blog
+    <Box>
+      <chakra.h1 id="blog-list" textStyle="h1" color="main" mb={8}>
+        ブログ
+      </chakra.h1>
+      <VStack spacing={8}>
+        <TechBlog techBlog={techBlog} />
+        <PersonalBlog personalBlog={personalBlog} />
+        <Biography />
+      </VStack>
+    </Box>
+  )
+}
+
+const TechBlog = ({ techBlog }: Pick<BlogListProps, 'techBlog'>) => {
+  return (
+    <Box w="full">
+      <chakra.h2 id="tech-blog" textStyle="h2WithTreat" color="main" mb={8}>
+        テックブログ
       </chakra.h2>
-      <Stack spacing={4}>
-        {blog.map((blog) => {
+      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} w="full">
+        {techBlog.map((blog, idx) => {
           return (
-            <LinkBox layerStyle="card" p={4} key={blog.id}>
-              <chakra.h3>
-                <NextLink href={`/blog/${blog.id}`} passHref>
-                  <LinkOverlay>{blog.title}</LinkOverlay>
-                </NextLink>
-              </chakra.h3>
-              <chakra.p fontSize="12px" color="gray.500">
-                {`Posted at ${formatYYYYMMDD(new Date(blog.createdAt))}`}
-              </chakra.p>
-            </LinkBox>
+            <BlogCard
+              href={blog.link}
+              title={blog.title}
+              publishDate={new Date(blog.pubDate)}
+              kind="tech"
+              key={idx}
+            />
           )
         })}
-      </Stack>
-    </>
+      </SimpleGrid>
+    </Box>
+  )
+}
+
+const PersonalBlog = ({
+  personalBlog,
+}: Pick<BlogListProps, 'personalBlog'>) => {
+  return (
+    <Box w="full">
+      <chakra.h2 id="personal-blog" textStyle="h2WithTreat" color="main" mb={8}>
+        個人ブログ
+      </chakra.h2>
+      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} w="full">
+        {personalBlog.map((blog) => {
+          return (
+            <BlogCard
+              href={`/blog/${blog.id}`}
+              title={blog.title}
+              publishDate={new Date(blog.publishedAt)}
+              kind="personal"
+              key={blog.id}
+            />
+          )
+        })}
+      </SimpleGrid>
+    </Box>
   )
 }

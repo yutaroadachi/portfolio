@@ -7,19 +7,14 @@ import {
   LinkBox,
   LinkOverlay,
   SimpleGrid,
-  VStack,
   Stack,
+  VStack,
 } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import React from 'react'
-import { IconType } from 'react-icons'
-import { CgWorkAlt } from 'react-icons/cg'
-import { FaReact } from 'react-icons/fa'
-import { GrBlog } from 'react-icons/gr'
-import { IoDocumentTextOutline } from 'react-icons/io5'
 import { Biography } from 'src/components/domain/Biography'
-import { PATH } from 'src/constants/path'
+import { LINKS } from 'src/constants/links'
 
 export type TopProps = {}
 
@@ -91,7 +86,7 @@ const Links = () => {
         リンク
       </chakra.h2>
       <SimpleGrid columns={{ base: 2, md: 4 }} gap={4}>
-        {links.map((link) => {
+        {LINKS.map((link) => {
           return (
             <LinkBox layerStyle="card" p={4} key={link.title}>
               <VStack spacing={1}>
@@ -107,30 +102,3 @@ const Links = () => {
     </Box>
   )
 }
-
-const links: {
-  title: string
-  icon: IconType
-  href: string
-}[] = [
-  {
-    title: 'スキル',
-    icon: FaReact,
-    href: PATH.skills,
-  },
-  {
-    title: '履歴書',
-    icon: IoDocumentTextOutline,
-    href: PATH.resume,
-  },
-  {
-    title: 'ブログ',
-    icon: GrBlog,
-    href: PATH.blog,
-  },
-  {
-    title: '成果物',
-    icon: CgWorkAlt,
-    href: PATH.works,
-  },
-]

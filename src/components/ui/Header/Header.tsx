@@ -1,5 +1,6 @@
 import { BoxProps, chakra, HStack } from '@chakra-ui/react'
 import React from 'react'
+import { Logo } from '../Logo'
 
 export type HeaderProps = BoxProps
 
@@ -11,7 +12,7 @@ export const Header = (props: HeaderProps) => (
       h="full"
       mx={{ base: 0, lg: 'auto' }}
     >
-      <chakra.h1 textStyle="h1">adachi</chakra.h1>
+      <Logo />
     </HStack>
   </chakra.header>
 )

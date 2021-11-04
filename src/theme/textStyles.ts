@@ -2,7 +2,6 @@ const headings = {
   h1: {
     fontSize: '32px',
     fontWeight: 'bold',
-    letterSpacing: '1px',
   },
   h2: {
     fontSize: '24px',
@@ -10,6 +9,18 @@ const headings = {
   },
   h3: {
     fontSize: '20px',
+    fontWeight: 'bold',
+  },
+  h4: {
+    fontSize: '16px',
+    fontWeight: 'bold',
+  },
+  h5: {
+    fontSize: '16px',
+    fontWeight: 'bold',
+  },
+  h6: {
+    fontSize: '16px',
     fontWeight: 'bold',
   },
   h2WithTreat: {
@@ -27,6 +38,11 @@ const headings = {
       left: '50%',
       ml: '-15px',
     },
+  },
+  logo: {
+    fontSize: '32px',
+    fontWeight: 'bold',
+    letterSpacing: '1px',
   },
 }
 

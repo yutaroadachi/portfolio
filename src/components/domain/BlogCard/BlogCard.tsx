@@ -32,8 +32,7 @@ export const BlogCard = ({
     <LinkBox layerStyle="card" p={4} as="article" {...props}>
       <Stack spacing={0} h={{ base: '220px', md: '200px' }}>
         <Center mb={4}>
-          {kind === 'tech' && <ZennIcon boxSize="24px" />}
-          {kind === 'personal' && <Icon boxSize="24px" as={GrBlog} />}
+          <Icon boxSize="24px" as={kind === 'tech' ? ZennIcon : GrBlog} />
         </Center>
         <chakra.h3 fontWeight="bold" flexGrow={1} overflow="hidden">
           {kind === 'tech' && (

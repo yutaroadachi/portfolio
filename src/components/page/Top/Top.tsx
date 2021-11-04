@@ -92,7 +92,12 @@ const Links = () => {
               <VStack spacing={1}>
                 <Icon boxSize="48px" as={link.icon} />
                 <NextLink href={link.href} passHref>
-                  <LinkOverlay fontWeight="700">{link.title}</LinkOverlay>
+                  <LinkOverlay
+                    fontWeight="700"
+                    data-test-id={`top-to-${link.key}`}
+                  >
+                    {link.title}
+                  </LinkOverlay>
                 </NextLink>
               </VStack>
             </LinkBox>

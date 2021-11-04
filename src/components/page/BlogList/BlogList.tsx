@@ -1,4 +1,4 @@
-import { Box, chakra, SimpleGrid, VStack } from '@chakra-ui/react'
+import { Box, chakra, SimpleGrid, Stack } from '@chakra-ui/react'
 import React from 'react'
 import { Biography } from 'src/components/domain/Biography'
 import { BlogCard } from 'src/components/domain/BlogCard'
@@ -15,11 +15,11 @@ export const BlogList = ({ techBlog, personalBlog }: BlogListProps) => {
       <chakra.h1 id="blog-list" textStyle="h1" color="main" mb={8}>
         ブログ
       </chakra.h1>
-      <VStack spacing={8}>
+      <Stack spacing={8}>
         <TechBlog techBlog={techBlog} />
         <PersonalBlog personalBlog={personalBlog} />
         <Biography />
-      </VStack>
+      </Stack>
     </Box>
   )
 }

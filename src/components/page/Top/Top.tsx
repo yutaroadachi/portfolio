@@ -8,6 +8,7 @@ import {
   LinkOverlay,
   SimpleGrid,
   VStack,
+  Stack,
 } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
@@ -24,11 +25,11 @@ export type TopProps = {}
 
 export const Top = ({}: TopProps) => {
   return (
-    <VStack spacing={8}>
+    <Stack spacing={8}>
       <Hero />
       <AboutMe />
       <Links />
-    </VStack>
+    </Stack>
   )
 }
 

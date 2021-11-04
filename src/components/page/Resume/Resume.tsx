@@ -1,5 +1,5 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Box, chakra, Link, VStack } from '@chakra-ui/react'
+import { Box, chakra, Link, Stack } from '@chakra-ui/react'
 import React from 'react'
 import { Biography } from 'src/components/domain/Biography'
 import { URL } from 'src/constants/url'
@@ -13,11 +13,11 @@ export const Resume = ({}: ResumeProps) => {
       <chakra.h1 id="resume" textStyle="h1" color="main" mb={8}>
         履歴書
       </chakra.h1>
-      <VStack spacing={8}>
+      <Stack spacing={8}>
         <JobHistory />
         <AcademicHistory />
         <Biography />
-      </VStack>
+      </Stack>
     </Box>
   )
 }

@@ -17,7 +17,6 @@ import {
   Thead,
   Tr,
   UnorderedList,
-  VStack,
 } from '@chakra-ui/react'
 import React from 'react'
 import { Biography } from 'src/components/domain/Biography'
@@ -30,13 +29,13 @@ export const Skills = ({}: SkillsProps) => {
       <chakra.h1 id="skills" textStyle="h1" color="main" mb={8}>
         スキル
       </chakra.h1>
-      <VStack spacing={8}>
+      <Stack spacing={8}>
         <Box w="full">
           <ForPC />
           <ForSP />
         </Box>
         <Biography />
-      </VStack>
+      </Stack>
     </Box>
   )
 }

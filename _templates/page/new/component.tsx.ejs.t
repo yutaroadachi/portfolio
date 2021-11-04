@@ -1,7 +1,7 @@
 ---
 to: src/components/page/<%= name %>/<%= name %>.tsx
 ---
-import { Box, chakra } from '@chakra-ui/react'
+import { Box, chakra, Stack } from '@chakra-ui/react'
 import React from 'react'
 
 export type <%= name %>Props = {}
@@ -12,7 +12,9 @@ export const <%= name %> = ({}: <%= name %>Props) => {
       <chakra.h1 id="<%= h.changeCase.paramCase(name) %>" textStyle="h1" color="main" mb={8}>
         <%= name %>
       </chakra.h1>
-      <chakra.p><%= name %> content</chakra.p>
+      <Stack spacing={8}>
+        <Box><%= name %> content</Box>
+      </Stack>
     </Box>
   )
 }

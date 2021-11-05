@@ -22,12 +22,6 @@ describe('/', () => {
 
     it.skip('/blogへ遷移するかはmicroCMSのデータ転送料節約のため、テストしない', () => {})
 
-    it('/worksへ遷移すること', () => {
-      cy.findByTestId('top-to-works')
-        .scrollIntoView()
-        .should('be.visible')
-        .click()
-      cy.location('pathname').should('eq', '/works')
-    })
+    it.skip('お問い合わせへ遷移するかは外部リンクのため、テストしない', () => {})
   })
 })

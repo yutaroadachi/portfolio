@@ -45,7 +45,7 @@ const ForPC = () => {
     <Table d={{ base: 'none', md: 'block' }} colorScheme="blackAlpha" size="lg">
       <Thead>
         <Tr>
-          <Th whiteSpace="nowrap">スキル名</Th>
+          <Th whiteSpace="nowrap">技術</Th>
           <Th whiteSpace="nowrap">経験年数</Th>
           <Th>詳細</Th>
         </Tr>
@@ -108,9 +108,9 @@ const skills: {
         <UnorderedList listStylePos="inside" mt={4}>
           <ListItem>スタイリング：styled-components</ListItem>
           <ListItem>UIライブラリ：Chakra UI/MUI</ListItem>
-          <ListItem>グローバルステート管理：Context API</ListItem>
-          <ListItem>フォーム管理：Formik/Yup</ListItem>
+          <ListItem>状態管理：Context API</ListItem>
           <ListItem>データフェッチ：SWR</ListItem>
+          <ListItem>フォームライブラリ：Formik/Yup</ListItem>
           <ListItem>単体テスト：Jest</ListItem>
           <ListItem>結合テスト：Testing Library</ListItem>
           <ListItem>E2E：Cypress</ListItem>

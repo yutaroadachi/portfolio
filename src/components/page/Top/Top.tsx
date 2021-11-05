@@ -91,14 +91,26 @@ const Links = () => {
             <LinkBox layerStyle="card" p={4} key={link.title}>
               <VStack spacing={1}>
                 <Icon boxSize="48px" as={link.icon} />
-                <NextLink href={link.href} passHref>
+                {link.isExternal && (
                   <LinkOverlay
+                    href={link.href}
+                    isExternal
                     fontWeight="700"
                     data-test-id={`top-to-${link.key}`}
                   >
                     {link.title}
                   </LinkOverlay>
-                </NextLink>
+                )}
+                {!link.isExternal && (
+                  <NextLink href={link.href} passHref>
+                    <LinkOverlay
+                      fontWeight="700"
+                      data-test-id={`top-to-${link.key}`}
+                    >
+                      {link.title}
+                    </LinkOverlay>
+                  </NextLink>
+                )}
               </VStack>
             </LinkBox>
           )

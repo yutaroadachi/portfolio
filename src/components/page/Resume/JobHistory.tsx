@@ -45,7 +45,7 @@ const ForPC = () => {
                 <Tr>
                   <Th whiteSpace="nowrap">期間</Th>
                   <Th>業務内容</Th>
-                  <Th whiteSpace="nowrap">スキル</Th>
+                  <Th whiteSpace="nowrap">使用技術</Th>
                   <Th whiteSpace="nowrap">役割</Th>
                 </Tr>
               </Thead>
@@ -63,7 +63,7 @@ const ForPC = () => {
                     ))}
                   </Td>
                   <Td whiteSpace="nowrap">
-                    {job.role.map((role) => (
+                    {job.roles.map((role) => (
                       <chakra.p key={role}>{role}</chakra.p>
                     ))}
                   </Td>
@@ -106,6 +106,18 @@ const ForSP = () => {
               <AccordionPanel>
                 <Stack spacing={4}>
                   <chakra.p>{job.detail}</chakra.p>
+                  <Box>
+                    <chakra.p fontWeight={700}>使用技術</chakra.p>
+                    {job.skills.map((skill) => {
+                      return <chakra.p key={skill}>{skill}</chakra.p>
+                    })}
+                  </Box>
+                  <Box>
+                    <chakra.p fontWeight={700}>役割</chakra.p>
+                    {job.roles.map((role) => {
+                      return <chakra.p key={role}>{role}</chakra.p>
+                    })}
+                  </Box>
                   <Link href={job.href} isExternal color="link">
                     会社のHPを見る
                     <ExternalLinkIcon pb="2px" ml="2px" />
@@ -126,7 +138,7 @@ const jobs: {
   end?: string
   detail: React.ReactNode
   skills: string[]
-  role: string[]
+  roles: string[]
   href: string
 }[] = [
   {
@@ -158,7 +170,7 @@ const jobs: {
       </>
     ),
     skills: ['React', 'TypeScript', 'Next.js', 'Ruby on Rails', 'Go'],
-    role: ['メンバ'],
+    roles: ['メンバ'],
     href: URL.monicle,
   },
   {
@@ -168,7 +180,7 @@ const jobs: {
     detail:
       '上場企業のIR部門と機関投資家、証券会社をつなぐプラットフォームの企画・開発に従事し、フロントエンド開発からバックエンド開発まで幅広く経験しました。',
     skills: ['React', 'Ruby on Rails'],
-    role: ['メンバ'],
+    roles: ['メンバ'],
     href: URL.msetsu,
   },
   {
@@ -178,7 +190,7 @@ const jobs: {
     detail:
       '某大手金融機関に常駐して社内稟議などのペーパーレス化システムの開発・保守に従事し、メンバとしてはテスト設計やリリース作業を自動化するbashスクリプトの製造を、保守チーム（5名程度）のリーダーとしては顧客折衝やマネジメント、資料作成を経験しました。',
     skills: ['bash', 'SQL'],
-    role: ['メンバ', 'チームリーダー'],
+    roles: ['メンバ', 'チームリーダー'],
     href: URL.nttcom,
   },
 ]

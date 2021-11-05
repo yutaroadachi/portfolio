@@ -12,14 +12,22 @@ export const Footer = (props: FooterProps) => (
       <Logo />
       <HStack spacing={4}>
         {LINKS.map((link) => {
-          return (
-            <NextLink href={link.href} passHref key={link.title}>
-              <Link fontWeight="700">{link.title}</Link>
-            </NextLink>
-          )
+          return <_Link link={link} key={link.title} />
         })}
       </HStack>
       <chakra.p>Copyright© adachi All Rights Reserved.</chakra.p>
     </VStack>
   </chakra.footer>
 )
+
+const _Link = ({ link }: { link: typeof LINKS[number] }) => {
+  return link.isExternal ? (
+    <Link href={link.href} isExternal fontWeight="700">
+      {link.title}
+    </Link>
+  ) : (
+    <NextLink href={link.href} passHref>
+      <Link fontWeight="700">{link.title}</Link>
+    </NextLink>
+  )
+}

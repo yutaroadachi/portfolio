@@ -10,7 +10,7 @@ import {
 import NextImage from 'next/image'
 import React from 'react'
 import { IconType } from 'react-icons'
-import { FiGithub, FiMail, FiTwitter } from 'react-icons/fi'
+import { FiGithub, FiTwitter } from 'react-icons/fi'
 import { URL } from 'src/constants/url'
 
 export type BiographyProps = StackProps
@@ -40,10 +40,10 @@ export const Biography = (props: BiographyProps) => {
           </chakra.p>
         </VStack>
         <HStack spacing={4}>
-          {links.map((link, idx) => {
+          {accounts.map((account, idx) => {
             return (
-              <Link href={link.href} isExternal key={idx}>
-                <Icon boxSize="24px" as={link.icon} />
+              <Link href={account.href} isExternal key={idx}>
+                <Icon boxSize="24px" as={account.icon} />
               </Link>
             )
           })}
@@ -58,7 +58,7 @@ export const Biography = (props: BiographyProps) => {
   )
 }
 
-const links: {
+const accounts: {
   href: string
   icon: IconType
 }[] = [
@@ -69,9 +69,5 @@ const links: {
   {
     href: URL.twitter,
     icon: FiTwitter,
-  },
-  {
-    href: URL.contact,
-    icon: FiMail,
   },
 ]

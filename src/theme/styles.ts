@@ -7,6 +7,10 @@ const styles: Styles = {
       fontFamily: `Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`,
       bgColor: 'base',
     },
+    // next/image用
+    '.circle-image': {
+      borderRadius: '50%',
+    },
     '.blog-detail': {
       h1: {
         fontSize: '32px',

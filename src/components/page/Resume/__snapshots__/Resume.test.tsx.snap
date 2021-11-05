@@ -3,358 +3,510 @@
 exports[`Resume 1`] = `
 <div>
   <div
-    class="chakra-stack css-uc6l60"
+    class="css-0"
   >
-    <div
-      class="chakra-stack css-1byv5eb"
+    <h1
+      class="css-15mzpqr"
+      id="resume"
     >
-      <img
-        alt="Yutaro Adachiのプロフィール画像"
-        class="chakra-image css-1rf2fjf"
-        src="/assets/profile.png"
-      />
+      履歴書
+    </h1>
+    <div
+      class="chakra-stack css-aajx3r"
+    >
       <div
-        class="chakra-stack css-igigla"
+        class="css-1ki54i"
       >
         <h2
-          class="css-553wiy"
+          class="css-jjss8v"
+          id="job-history"
         >
-          Yutaro Adachi
+          職歴
         </h2>
-        <p
-          class="css-1vf9ext"
-        >
-          Software Engineer
-        </p>
-      </div>
-      <p
-        class="css-xi606m"
-      >
-        ソフトウェアエンジニア3年目
-        <br />
-        フロントエンドが得意です
-      </p>
-      <div
-        class="chakra-stack css-1ocidfa"
-      >
-        <a
-          class="chakra-link css-f4h6uy"
-          href="https://github.com/yutaroadachi"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <svg
-            class="chakra-icon css-n059si"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-              fill="#000"
-            />
-          </svg>
-        </a>
-        <a
-          class="chakra-link css-f4h6uy"
-          href="https://zenn.dev/a_da_chi"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <svg
-            class="chakra-icon css-n059si"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L19.614.874c.176-.293-.029-.645-.381-.645h-4.72c-.235 0-.44.117-.557.323L.03 23.361c-.088.176.029.41.234.41zM17.445 23.419l6.479-10.408c.205-.323-.029-.733-.41-.733h-4.691c-.176 0-.352.088-.44.235l-6.655 10.643c-.176.264.029.616.352.616h4.779c.234-.001.468-.118.586-.353z"
-              fill="#000"
-            />
-          </svg>
-        </a>
-        <a
-          class="chakra-link css-f4h6uy"
-          href="https://twitter.com/a_da_chi_"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <svg
-            class="chakra-icon css-n059si"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-              fill="#000"
-            />
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div
-      class="css-1pqb59e"
-      id="navigation"
-    >
-      <a
-        class="chakra-button css-ugr3ao"
-        data-test-id="navigation-resume"
-        href="/"
-      >
-        Resume
-        <span
-          class="chakra-button__icon css-1hzyiq5"
-        >
-          <svg
-            aria-hidden="true"
-            class="chakra-icon css-onkibi"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M21.843,3.455a6.961,6.961,0,0,0-9.846,0L1.619,13.832a5.128,5.128,0,0,0,7.252,7.252L17.3,12.653A3.293,3.293,0,1,0,12.646,8L7.457,13.184A1,1,0,1,0,8.871,14.6L14.06,9.409a1.294,1.294,0,0,1,1.829,1.83L7.457,19.67a3.128,3.128,0,0,1-4.424-4.424L13.411,4.869a4.962,4.962,0,1,1,7.018,7.018L12.646,19.67a1,1,0,1,0,1.414,1.414L21.843,13.3a6.96,6.96,0,0,0,0-9.846Z"
-              fill="currentColor"
-            />
-          </svg>
-        </span>
-      </a>
-      <a
-        class="chakra-button css-iad4m2"
-        data-test-id="navigation-works"
-        href="/works"
-      >
-        Works
-        <span
-          class="chakra-button__icon css-1hzyiq5"
-        >
-          <svg
-            aria-hidden="true"
-            class="chakra-icon css-onkibi"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-width="2"
-            >
-              <path
-                d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
-              />
-              <path
-                d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
-              />
-            </g>
-          </svg>
-        </span>
-      </a>
-      <a
-        class="chakra-button css-iad4m2"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdSMQFzMIm2oWZ9fk_r1RGIUl_gaf3r6ouHVK_Ysn2FERGxVA/viewform?usp=sf_link"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Contact
-        <span
-          class="chakra-button__icon css-1hzyiq5"
-        >
-          <svg
-            aria-hidden="true"
-            class="chakra-icon css-onkibi"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-width="2"
-            >
-              <path
-                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-              />
-              <path
-                d="M15 3h6v6"
-              />
-              <path
-                d="M10 14L21 3"
-              />
-            </g>
-          </svg>
-        </span>
-      </a>
-    </div>
-    <div
-      class="css-0"
-      id="skills"
-    >
-      <h2
-        class="css-1yh9w4u"
-      >
-        Skills
-      </h2>
-      <div
-        class="chakra-wrap css-xa8pkd"
-      >
-        <ul
-          class="chakra-wrap__list css-umyqv7"
-        >
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              React
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              TypeScript
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              Next.js
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              Chakra UI
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              Context
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              SWR
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              Formik
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              Yup
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              Jest
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              Testing Library
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              Cypress
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              Storybook
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-23mvll"
-            >
-              Hygen
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-1td2fl2"
-            >
-              Ruby on Rails
-            </span>
-          </li>
-          <li
-            class="chakra-wrap__listitem css-1yp4ln"
-          >
-            <span
-              class="css-1td2fl2"
-            >
-              Go
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div
-      class="css-1ki54i"
-      id="histories"
-    >
-      <h2
-        class="css-1yh9w4u"
-      >
-        Histories
-      </h2>
-      <div
-        class="chakra-stack css-1byv5eb"
-      >
-        <h3
-          class="css-1bp538k"
-        >
-          Job History
-        </h3>
         <div
-          class="chakra-accordion css-1ki54i"
+          class="chakra-stack css-175wvn7"
+        >
+          <div
+            class="chakra-stack css-egoftb"
+          >
+            <div
+              class="css-0"
+            >
+              <h3
+                class="css-1vpdv9u"
+              >
+                株式会社モニクル
+              </h3>
+            </div>
+            <table
+              class="chakra-table css-5605sr"
+              role="table"
+            >
+              <thead
+                class="css-0"
+              >
+                <tr
+                  class="css-0"
+                  role="row"
+                >
+                  <th
+                    class="css-iz806w"
+                  >
+                    期間
+                  </th>
+                  <th
+                    class="css-1tk997h"
+                  >
+                    業務内容
+                  </th>
+                  <th
+                    class="css-iz806w"
+                  >
+                    使用技術
+                  </th>
+                  <th
+                    class="css-iz806w"
+                  >
+                    役割
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="css-0"
+              >
+                <tr
+                  class="css-0"
+                  role="row"
+                >
+                  <td
+                    class="css-1s6o4al"
+                    role="gridcell"
+                  >
+                    2020/9
+                    〜
+                    <br />
+                    現在
+                  </td>
+                  <td
+                    class="css-nzu2gk"
+                    role="gridcell"
+                  >
+                    「はたらく世代」の資産運用をサポートする会社のファイナンシャルアドバイザー向けCRMシステムおよび、お客様向けサービスサイトの開発に従事し、フロントエンド開発からバックエンド開発まで幅広く経験しております。
+                    <br />
+                    <span
+                      class="css-1ov1hvb"
+                    >
+                      ※株式会社モニクルは持株会社であり、正確には同グループ会社の
+                      <a
+                        class="chakra-link css-wmzrah"
+                        href="https://onemile.co.jp/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        株式会社OneMile Partners
+                        <svg
+                          class="chakra-icon css-lvnjke"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                            />
+                            <path
+                              d="M15 3h6v6"
+                            />
+                            <path
+                              d="M10 14L21 3"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                      に入社後、同グループ会社の
+                      <a
+                        class="chakra-link css-wmzrah"
+                        href="https://navipla.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        株式会社ナビゲータープラットフォーム
+                        <svg
+                          class="chakra-icon css-lvnjke"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                            />
+                            <path
+                              d="M15 3h6v6"
+                            />
+                            <path
+                              d="M10 14L21 3"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                      を経由して転籍した形になっておりますが、業務内容に変化はありません。
+                    </span>
+                  </td>
+                  <td
+                    class="css-1s6o4al"
+                    role="gridcell"
+                  >
+                    <p
+                      class="css-0"
+                    >
+                      React
+                    </p>
+                    <p
+                      class="css-0"
+                    >
+                      TypeScript
+                    </p>
+                    <p
+                      class="css-0"
+                    >
+                      Next.js
+                    </p>
+                    <p
+                      class="css-0"
+                    >
+                      Ruby on Rails
+                    </p>
+                    <p
+                      class="css-0"
+                    >
+                      Go
+                    </p>
+                  </td>
+                  <td
+                    class="css-1s6o4al"
+                    role="gridcell"
+                  >
+                    <p
+                      class="css-0"
+                    >
+                      メンバ
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="css-0"
+            >
+              <a
+                class="chakra-link css-1f26k5b"
+                href="https://monicle.co.jp/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                会社のHPを見る
+                <svg
+                  class="chakra-icon css-soaf0h"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    />
+                    <path
+                      d="M15 3h6v6"
+                    />
+                    <path
+                      d="M10 14L21 3"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="chakra-stack css-egoftb"
+          >
+            <div
+              class="css-0"
+            >
+              <h3
+                class="css-1vpdv9u"
+              >
+                株式会社みんせつ
+              </h3>
+            </div>
+            <table
+              class="chakra-table css-5605sr"
+              role="table"
+            >
+              <thead
+                class="css-0"
+              >
+                <tr
+                  class="css-0"
+                  role="row"
+                >
+                  <th
+                    class="css-iz806w"
+                  >
+                    期間
+                  </th>
+                  <th
+                    class="css-1tk997h"
+                  >
+                    業務内容
+                  </th>
+                  <th
+                    class="css-iz806w"
+                  >
+                    使用技術
+                  </th>
+                  <th
+                    class="css-iz806w"
+                  >
+                    役割
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="css-0"
+              >
+                <tr
+                  class="css-0"
+                  role="row"
+                >
+                  <td
+                    class="css-1s6o4al"
+                    role="gridcell"
+                  >
+                    2019/8
+                    〜
+                    <br />
+                    2020/8
+                  </td>
+                  <td
+                    class="css-nzu2gk"
+                    role="gridcell"
+                  >
+                    上場企業のIR部門と機関投資家、証券会社をつなぐプラットフォームの企画・開発に従事し、フロントエンド開発からバックエンド開発まで幅広く経験しました。
+                  </td>
+                  <td
+                    class="css-1s6o4al"
+                    role="gridcell"
+                  >
+                    <p
+                      class="css-0"
+                    >
+                      React
+                    </p>
+                    <p
+                      class="css-0"
+                    >
+                      Ruby on Rails
+                    </p>
+                  </td>
+                  <td
+                    class="css-1s6o4al"
+                    role="gridcell"
+                  >
+                    <p
+                      class="css-0"
+                    >
+                      メンバ
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="css-0"
+            >
+              <a
+                class="chakra-link css-1f26k5b"
+                href="https://msetsu.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                会社のHPを見る
+                <svg
+                  class="chakra-icon css-soaf0h"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    />
+                    <path
+                      d="M15 3h6v6"
+                    />
+                    <path
+                      d="M10 14L21 3"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="chakra-stack css-egoftb"
+          >
+            <div
+              class="css-0"
+            >
+              <h3
+                class="css-1vpdv9u"
+              >
+                NTTコムウェア株式会社
+              </h3>
+            </div>
+            <table
+              class="chakra-table css-5605sr"
+              role="table"
+            >
+              <thead
+                class="css-0"
+              >
+                <tr
+                  class="css-0"
+                  role="row"
+                >
+                  <th
+                    class="css-iz806w"
+                  >
+                    期間
+                  </th>
+                  <th
+                    class="css-1tk997h"
+                  >
+                    業務内容
+                  </th>
+                  <th
+                    class="css-iz806w"
+                  >
+                    使用技術
+                  </th>
+                  <th
+                    class="css-iz806w"
+                  >
+                    役割
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="css-0"
+              >
+                <tr
+                  class="css-0"
+                  role="row"
+                >
+                  <td
+                    class="css-1s6o4al"
+                    role="gridcell"
+                  >
+                    2018/4
+                    〜
+                    <br />
+                    2019/7
+                  </td>
+                  <td
+                    class="css-nzu2gk"
+                    role="gridcell"
+                  >
+                    某大手金融機関に常駐して社内稟議などのペーパーレス化システムの開発・保守に従事し、メンバとしてはテスト設計やリリース作業を自動化するbashスクリプトの製造を、保守チーム（5名程度）のリーダーとしては顧客折衝やマネジメント、資料作成を経験しました。
+                  </td>
+                  <td
+                    class="css-1s6o4al"
+                    role="gridcell"
+                  >
+                    <p
+                      class="css-0"
+                    >
+                      bash
+                    </p>
+                    <p
+                      class="css-0"
+                    >
+                      SQL
+                    </p>
+                  </td>
+                  <td
+                    class="css-1s6o4al"
+                    role="gridcell"
+                  >
+                    <p
+                      class="css-0"
+                    >
+                      メンバ
+                    </p>
+                    <p
+                      class="css-0"
+                    >
+                      チームリーダー
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="css-0"
+            >
+              <a
+                class="chakra-link css-1f26k5b"
+                href="https://www.nttcom.co.jp/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                会社のHPを見る
+                <svg
+                  class="chakra-icon css-soaf0h"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    />
+                    <path
+                      d="M15 3h6v6"
+                    />
+                    <path
+                      d="M10 14L21 3"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="chakra-accordion css-259i0c"
         >
           <div
             class="chakra-stack css-egoftb"
@@ -373,15 +525,17 @@ exports[`Resume 1`] = `
                 <div
                   class="css-1eziwv"
                 >
-                  <p
-                    class="css-722v25"
+                  <h3
+                    class="css-1vpdv9u"
                   >
-                    株式会社OneMile Partners
-                  </p>
+                    株式会社モニクル
+                  </h3>
                   <p
-                    class="css-1e82jug"
+                    class="css-1vf9ext"
                   >
-                    2020/9 ~ 現職
+                    2020/9
+                    〜
+                    現在
                   </p>
                 </div>
                 <svg
@@ -407,22 +561,138 @@ exports[`Resume 1`] = `
                   role="region"
                 >
                   <div
-                    class="chakra-stack css-46p1lt"
+                    class="chakra-stack css-egoftb"
                   >
                     <p
-                      class="css-1qxtz39"
+                      class="css-0"
                     >
-                      「はたらく世代」のお客様向けに、資産運用のサポートを提供する会社にて、業務支援のための管理画面やお客様向けサービスサイトの開発に従事。TypeScript, Next.js, Ruby on Railsをメインにフロントエンドからバックエンドまで幅広く経験。また、スクラム開発によるチーム開発も経験。
+                      「はたらく世代」の資産運用をサポートする会社のファイナンシャルアドバイザー向けCRMシステムおよび、お客様向けサービスサイトの開発に従事し、フロントエンド開発からバックエンド開発まで幅広く経験しております。
+                      <br />
+                      <span
+                        class="css-1ov1hvb"
+                      >
+                        ※株式会社モニクルは持株会社であり、正確には同グループ会社の
+                        <a
+                          class="chakra-link css-wmzrah"
+                          href="https://onemile.co.jp/"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          株式会社OneMile Partners
+                          <svg
+                            class="chakra-icon css-lvnjke"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="2"
+                            >
+                              <path
+                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              />
+                              <path
+                                d="M15 3h6v6"
+                              />
+                              <path
+                                d="M10 14L21 3"
+                              />
+                            </g>
+                          </svg>
+                        </a>
+                        に入社後、同グループ会社の
+                        <a
+                          class="chakra-link css-wmzrah"
+                          href="https://navipla.com/"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          株式会社ナビゲータープラットフォーム
+                          <svg
+                            class="chakra-icon css-lvnjke"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="2"
+                            >
+                              <path
+                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              />
+                              <path
+                                d="M15 3h6v6"
+                              />
+                              <path
+                                d="M10 14L21 3"
+                              />
+                            </g>
+                          </svg>
+                        </a>
+                        を経由して転籍した形になっておりますが、業務内容に変化はありません。
+                      </span>
                     </p>
+                    <div
+                      class="css-0"
+                    >
+                      <p
+                        class="css-1vg6q84"
+                      >
+                        使用技術
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        React
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        TypeScript
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        Next.js
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        Ruby on Rails
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        Go
+                      </p>
+                    </div>
+                    <div
+                      class="css-0"
+                    >
+                      <p
+                        class="css-1vg6q84"
+                      >
+                        役割
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        メンバ
+                      </p>
+                    </div>
                     <a
-                      class="chakra-link css-1lyjkv1"
-                      href="https://onemile.co.jp/"
+                      class="chakra-link css-wmzrah"
+                      href="https://monicle.co.jp/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       会社のHPを見る
                       <svg
-                        class="chakra-icon css-u969r1"
+                        class="chakra-icon css-soaf0h"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
@@ -462,15 +732,17 @@ exports[`Resume 1`] = `
                 <div
                   class="css-1eziwv"
                 >
-                  <p
-                    class="css-722v25"
+                  <h3
+                    class="css-1vpdv9u"
                   >
                     株式会社みんせつ
-                  </p>
+                  </h3>
                   <p
-                    class="css-1e82jug"
+                    class="css-1vf9ext"
                   >
-                    2019/8 ~ 2020/8
+                    2019/8
+                    〜
+                    2020/8
                   </p>
                 </div>
                 <svg
@@ -496,22 +768,55 @@ exports[`Resume 1`] = `
                   role="region"
                 >
                   <div
-                    class="chakra-stack css-46p1lt"
+                    class="chakra-stack css-egoftb"
                   >
                     <p
-                      class="css-1qxtz39"
+                      class="css-0"
                     >
-                      上場企業のIR部門と機関投資家、証券会社をつなぐプラットフォームを提供する会社にて、メインプロダクトのSaaSの企画・開発に従事。React, Ruby on Railsをメインにフロントエンドからバックエンドまで幅広く経験。
+                      上場企業のIR部門と機関投資家、証券会社をつなぐプラットフォームの企画・開発に従事し、フロントエンド開発からバックエンド開発まで幅広く経験しました。
                     </p>
+                    <div
+                      class="css-0"
+                    >
+                      <p
+                        class="css-1vg6q84"
+                      >
+                        使用技術
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        React
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        Ruby on Rails
+                      </p>
+                    </div>
+                    <div
+                      class="css-0"
+                    >
+                      <p
+                        class="css-1vg6q84"
+                      >
+                        役割
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        メンバ
+                      </p>
+                    </div>
                     <a
-                      class="chakra-link css-1lyjkv1"
+                      class="chakra-link css-wmzrah"
                       href="https://msetsu.com/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       会社のHPを見る
                       <svg
-                        class="chakra-icon css-u969r1"
+                        class="chakra-icon css-soaf0h"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
@@ -551,15 +856,17 @@ exports[`Resume 1`] = `
                 <div
                   class="css-1eziwv"
                 >
-                  <p
-                    class="css-722v25"
+                  <h3
+                    class="css-1vpdv9u"
                   >
                     NTTコムウェア株式会社
-                  </p>
+                  </h3>
                   <p
-                    class="css-1e82jug"
+                    class="css-1vf9ext"
                   >
-                    2018/4 ~ 2019/7
+                    2018/4
+                    〜
+                    2019/7
                   </p>
                 </div>
                 <svg
@@ -585,22 +892,60 @@ exports[`Resume 1`] = `
                   role="region"
                 >
                   <div
-                    class="chakra-stack css-46p1lt"
+                    class="chakra-stack css-egoftb"
                   >
                     <p
-                      class="css-1qxtz39"
+                      class="css-0"
                     >
-                      システムインテクグレータの会社にて、某金融機関に常駐して社内稟議などのペーパーレス化システムの保守に従事。保守チーム（5名程度）のリーダーとして顧客折衝やマネジメント、資料作成を経験。また開発面では、テスト設計やリリース作業を自動化するbashスクリプトの製造を経験。
+                      某大手金融機関に常駐して社内稟議などのペーパーレス化システムの開発・保守に従事し、メンバとしてはテスト設計やリリース作業を自動化するbashスクリプトの製造を、保守チーム（5名程度）のリーダーとしては顧客折衝やマネジメント、資料作成を経験しました。
                     </p>
+                    <div
+                      class="css-0"
+                    >
+                      <p
+                        class="css-1vg6q84"
+                      >
+                        使用技術
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        bash
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        SQL
+                      </p>
+                    </div>
+                    <div
+                      class="css-0"
+                    >
+                      <p
+                        class="css-1vg6q84"
+                      >
+                        役割
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        メンバ
+                      </p>
+                      <p
+                        class="css-0"
+                      >
+                        チームリーダー
+                      </p>
+                    </div>
                     <a
-                      class="chakra-link css-1lyjkv1"
+                      class="chakra-link css-wmzrah"
                       href="https://www.nttcom.co.jp/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       会社のHPを見る
                       <svg
-                        class="chakra-icon css-u969r1"
+                        class="chakra-icon css-soaf0h"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
@@ -630,64 +975,162 @@ exports[`Resume 1`] = `
         </div>
       </div>
       <div
-        class="css-t996ef"
-      />
-      <div
-        class="chakra-stack css-1byv5eb"
+        class="css-1ki54i"
       >
-        <h3
-          class="css-1bp538k"
+        <h2
+          class="css-jjss8v"
+          id="academic-history"
         >
-          Academic History
-        </h3>
+          最終学歴
+        </h2>
         <div
-          class="chakra-stack css-xwvc7b"
+          class="css-xi606m"
+        >
+          <h3
+            class="css-1vpdv9u"
+          >
+            岡山大学 経済学部
+          </h3>
+          <p
+            class="css-1vf9ext"
+          >
+            2014/4 ~ 2018/3
+          </p>
+          <a
+            class="chakra-link css-1lyjkv1"
+            href="https://www.okayama-u.ac.jp/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            大学のHPを見る
+            <svg
+              class="chakra-icon css-soaf0h"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                />
+                <path
+                  d="M15 3h6v6"
+                />
+                <path
+                  d="M10 14L21 3"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-cx70wh"
+      >
+        <div
+          class="chakra-stack css-3c05cu"
         >
           <div
-            class="chakra-stack css-u75t8c"
+            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
           >
-            <p
-              class="css-722v25"
+            <div
+              style="box-sizing: border-box; display: block; max-width: 100%;"
             >
-              岡山大学 経済学部
-            </p>
-            <p
-              class="css-1e82jug"
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+              />
+            </div>
+            <img
+              alt="Yutaro Adachiのプロフィール画像"
+              class="circle-image"
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+            <noscript />
+          </div>
+          <div
+            class="chakra-stack css-igigla"
+          >
+            <h2
+              class="css-553wiy"
             >
-              2014/4 ~ 2018/3
+              Yutaro Adachi
+            </h2>
+            <p
+              class="css-1vf9ext"
+            >
+              フロントエンドエンジニア
             </p>
+          </div>
+          <div
+            class="chakra-stack css-a9v878"
+          >
             <a
-              class="chakra-link css-1lyjkv1"
-              href="https://www.okayama-u.ac.jp/"
+              class="chakra-link css-f4h6uy"
+              href="https://github.com/yutaroadachi"
               rel="noopener noreferrer"
               target="_blank"
             >
-              学校のHPを見る
               <svg
-                class="chakra-icon css-u969r1"
+                class="chakra-icon css-1fmr1qf"
+                fill="none"
                 focusable="false"
+                height="1em"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
                 viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <g
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                  />
-                  <path
-                    d="M15 3h6v6"
-                  />
-                  <path
-                    d="M10 14L21 3"
-                  />
-                </g>
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
+            </a>
+            <a
+              class="chakra-link css-f4h6uy"
+              href="https://twitter.com/a_da_chi_"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <svg
+                class="chakra-icon css-1fmr1qf"
+                fill="none"
+                focusable="false"
+                height="1em"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                />
               </svg>
             </a>
           </div>
         </div>
+        <p
+          class="css-0"
+        >
+          大学で経済学を学んだのち、大手SIerでメンバーおよびチームリーダーとして客先常駐でのシステム開発を経験しました。この経験を通して、自分でもコードを書けるようになる必要があると感じ、エンジニアにキャリアチェンジすることを決意しました。
+          <br />
+          その後スタートアップでエンジニアとしてフロントエンド開発からバックエンド開発まで幅広く経験してきましたが、特にReactを中心としたフロントエンド開発が得意です。また要件定義や設計といった上流工程の経験もしてきたため、一人称で開発に携わることができると自負しております。
+        </p>
       </div>
     </div>
   </div>

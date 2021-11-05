@@ -1,5 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { Story } from '@storybook/react'
+import * as nextImage from 'next/image'
 import React from 'react'
 import theme from '../src/theme'
 
@@ -23,7 +24,7 @@ const customViewports = {
     },
     type: 'mobile',
   },
-  /** iPad */
+  /** iPad mini */
   md: {
     name: 'md',
     styles: {
@@ -32,7 +33,7 @@ const customViewports = {
     },
     type: 'tablet',
   },
-  /** MacBook Air */
+  /** MacBook Pro 13インチ */
   lg: {
     name: 'lg',
     styles: {
@@ -46,6 +47,11 @@ const customViewports = {
 export const parameters = {
   viewport: {
     viewports: customViewports,
-    defaultViewport: 'base',
+    defaultViewport: 'lg',
   },
 }
+
+Object.defineProperty(nextImage, 'default', {
+  configurable: true,
+  value: (props) => <img {...props} />,
+})

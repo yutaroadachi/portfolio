@@ -1,19 +1,48 @@
-import { VStack } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Box, chakra, Link, Stack } from '@chakra-ui/react'
 import React from 'react'
-import { Biography } from 'src/components/ui/Biography'
-import { Navigation } from 'src/components/ui/Navigation'
-import { Histories } from './Histories'
-import { Skills } from './Skills'
+import { Biography } from 'src/components/domain/Biography'
+import { URL } from 'src/constants/url'
+import { JobHistory } from './JobHistory'
 
 export type ResumeProps = {}
 
 export const Resume = ({}: ResumeProps) => {
   return (
-    <VStack spacing={8}>
-      <Biography />
-      <Navigation active="resume" />
-      <Skills />
-      <Histories />
-    </VStack>
+    <Box>
+      <chakra.h1 id="resume" textStyle="h1" color="main" mb={8}>
+        履歴書
+      </chakra.h1>
+      <Stack spacing={8}>
+        <JobHistory />
+        <AcademicHistory />
+        <Biography />
+      </Stack>
+    </Box>
+  )
+}
+
+const AcademicHistory = () => {
+  return (
+    <Box w="full">
+      <chakra.h2
+        id="academic-history"
+        textStyle="h2WithTreat"
+        color="main"
+        mb={8}
+      >
+        最終学歴
+      </chakra.h2>
+      <Box textAlign="center">
+        <chakra.h3 textStyle="h3">岡山大学 経済学部</chakra.h3>
+        <chakra.p fontSize="14px" color="gray.500">
+          2014/4 ~ 2018/3
+        </chakra.p>
+        <Link href={URL.okayamaU} isExternal fontSize="12px" color="link">
+          大学のHPを見る
+          <ExternalLinkIcon pb="2px" ml="2px" />
+        </Link>
+      </Box>
+    </Box>
   )
 }

@@ -5,11 +5,14 @@ import { BlogList } from './BlogList'
 
 export type BlogListPageProps = ComponentProps<typeof BlogList>
 
-export const BlogListPage = ({ blog }: BlogListPageProps) => {
+export const BlogListPage = ({ techBlog, personalBlog }: BlogListPageProps) => {
   return (
     <Layout>
-      <MetaTag title="Blog" description="adachiの個人ブログです。" />
-      <BlogList blog={blog} />
+      <MetaTag
+        title="Blog"
+        description="Yutaro Adachi(フロントエンドエンジニア)のブログです。"
+      />
+      <BlogList techBlog={techBlog} personalBlog={personalBlog} />
     </Layout>
   )
 }

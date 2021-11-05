@@ -1,13 +1,14 @@
 import { Meta, Story } from '@storybook/react'
 import React from 'react'
-import { dummyBlogList } from 'src/data/dummy/blog'
+import { dummyPersonalBlogList, dummyTechBlogList } from 'src/data/dummy/blog'
 import { BlogList, BlogListProps } from './BlogList'
 
 export default {
   title: 'page/BlogList',
   component: BlogList,
   args: {
-    blog: dummyBlogList,
+    techBlog: dummyTechBlogList,
+    personalBlog: dummyPersonalBlogList,
   },
 } as Meta<BlogListProps>
 

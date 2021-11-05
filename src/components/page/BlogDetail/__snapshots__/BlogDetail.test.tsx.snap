@@ -3,21 +3,21 @@
 exports[`BlogDetail 1`] = `
 <div>
   <div
-    class="chakra-stack css-egoftb"
+    class="css-0"
   >
     <div
-      class="css-0"
+      class="css-pr2tx6"
     >
-      <h2
-        class="css-553wiy"
+      <h1
+        class="css-pspsnv"
         id="blog-detail"
       >
         テスト個人ブログ1
-      </h2>
+      </h1>
       <p
-        class="css-1e82jug"
+        class="css-1vf9ext"
       >
-        Posted at 2021/10/31
+        2021/10/31に投稿
       </p>
     </div>
     <div

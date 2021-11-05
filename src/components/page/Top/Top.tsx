@@ -47,7 +47,7 @@ const Hero = () => {
         }}
       >
         <chakra.h1 id="hero" textStyle="h1" color="main" textAlign="center">
-          adachi's
+          adachi&apos;s
           <br />
           portfolio site
         </chakra.h1>

@@ -552,7 +552,7 @@ exports[`Resume 1`] = `
               </button>
               <div
                 class="chakra-collapse"
-                style="overflow: hidden; display: block; opacity: 0; height: 0px;"
+                style="overflow: hidden; display: block; opacity: 0; height: auto;"
               >
                 <div
                   aria-labelledby="accordion-button-1"

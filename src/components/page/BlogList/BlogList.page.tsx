@@ -9,7 +9,7 @@ export const BlogListPage = ({ techBlog, personalBlog }: BlogListPageProps) => {
   return (
     <Layout>
       <MetaTag
-        title="Blog"
+        title="ブログ"
         description="Yutaro Adachi(フロントエンドエンジニア)のブログです。"
       />
       <BlogList techBlog={techBlog} personalBlog={personalBlog} />

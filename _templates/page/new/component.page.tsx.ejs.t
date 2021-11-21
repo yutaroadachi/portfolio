@@ -13,7 +13,7 @@ export const <%= name %>Page = ({}: <%= name %>PageProps) => {
     <Layout>
       <MetaTag
         title="<%= name %>"
-        description="<%= name %>ページです。"
+        description="Yutaro Adachi(フロントエンドエンジニア)の<%= name %>です。"
       />
       <<%= name %> />
     </Layout>

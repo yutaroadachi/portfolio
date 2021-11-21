@@ -29,6 +29,18 @@ module.exports = {
           ),
         },
       },
+      // @see https://github.com/storybookjs/storybook/issues/16690
+      module: {
+        ...config.module,
+        rules: [
+          ...config.module.rules,
+          {
+            test: /\.mjs$/,
+            include: /node_modules/,
+            type: 'javascript/auto',
+          },
+        ],
+      },
     }
   },
 }

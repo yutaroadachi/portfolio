@@ -9,7 +9,7 @@ export const SkillsPage = ({}: SkillsPageProps) => {
   return (
     <Layout>
       <MetaTag
-        title="Skills"
+        title="スキル"
         description="Yutaro Adachi(フロントエンドエンジニア)のスキルです。"
       />
       <Skills />

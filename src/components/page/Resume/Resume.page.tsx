@@ -9,7 +9,7 @@ export const ResumePage = ({}: ResumePageProps) => {
   return (
     <Layout>
       <MetaTag
-        title="Resume"
+        title="履歴書"
         description="Yutaro Adachi(フロントエンドエンジニア)の履歴書です。"
       />
       <Resume />

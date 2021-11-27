@@ -52,10 +52,8 @@ jobs:
           restore-keys: ${{ runner.os }}-yarn-
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
-      - name: Run format
-        run: yarn format
-      - name: Check diff
-        run: git diff --exit-code
+      - name: Run format:check
+        run: yarn format:check
 
   test:
     runs-on: ubuntu-latest

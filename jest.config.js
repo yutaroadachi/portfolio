@@ -1,19 +1,22 @@
-module.exports = {
-  /** @link https://stackoverflow.com/questions/50863312/jest-gives-cannot-find-module-when-importing-components-with-absolute-paths */
-  moduleDirectories: ['node_modules', '<rootDir>'],
+const nextJest = require('next/jest')
+
+const createJestConfig = nextJest({
+  dir: './',
+})
+
+const customJestConfig = {
+  moduleDirectories: ['node_modules', '<rootDir>/'],
   /** @link https://stackoverflow.com/questions/47541393/syntaxerror-invalid-or-unexpected-token-import */
   moduleNameMapper: {
     'typeface-montserrat': '<rootDir>/src/__tests__/mocks/style.mock.js',
   },
-  roots: ['<rootDir>/src'],
-  testEnvironment: 'jsdom',
+  roots: ['<rootDir>/src/'],
+  testEnvironment: 'jest-environment-jsdom',
   testPathIgnorePatterns: [
     '/node_modules/',
-    '<rootDir>/src/__tests__/data',
-    '<rootDir>/src/__tests__/mocks',
-    '<rootDir>/src/__tests__/utils',
+    '<rootDir>/src/__tests__/mocks/',
+    '<rootDir>/src/__tests__/utils.tsx',
   ],
-  transform: {
-    '^.+\\.(ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
-  },
 }
+
+module.exports = createJestConfig(customJestConfig)

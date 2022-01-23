@@ -3,7 +3,7 @@
   "labels": ["dependencies"],
   "packageRules": [
     { "automerge": true, "matchDepTypes": ["devDependencies"] },
-    { "enabled": false, "matchPackageNames": ["node", "eslint"] }
+    { "enabled": false, "matchPackageNames": ["node"] }
   ],
   "timezone": "Asia/Tokyo",
   "schedule": ["every weekend"]

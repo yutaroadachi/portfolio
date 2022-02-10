@@ -1,5 +1,4 @@
 import { Styles } from '@chakra-ui/theme-tools'
-import 'typeface-montserrat'
 
 const styles: Styles = {
   global: {

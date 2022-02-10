@@ -1,3 +1,4 @@
+// @ts-ignore
 const path = require('path')
 
 module.exports = {
@@ -11,6 +12,7 @@ module.exports = {
       include: ['../src/**/*.stories.mdx', '../src/**/*.stories.tsx'],
     },
   },
+  // @ts-ignore
   webpackFinal: async (config) => {
     return {
       ...config,

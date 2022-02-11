@@ -1,12 +1,12 @@
 ---
-to: src/components/page/<%= name %>/<%= name %>.stories.tsx
+to: src/components/<%= kind %>/<%= name %>/<%= name %>.stories.tsx
 ---
 import { Meta, Story } from '@storybook/react'
 import React from 'react'
 import { <%= name %>, <%= name %>Props } from './<%= name %>'
 
 export default {
-  title: 'page/<%= name %>',
+  title: '<%= kind %>/<%= name %>',
   component: <%= name %>,
 } as Meta<<%= name %>Props>
 

@@ -1,5 +1,5 @@
 ---
-to: src/components/page/<%= name %>/<%= name %>.test.tsx
+to: src/components/<%= kind %>/<%= name %>/<%= name %>.test.tsx
 ---
 import React from 'react'
 import { render } from 'src/__tests__/utils'

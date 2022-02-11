@@ -16,7 +16,7 @@
     "cy:run": "cypress run",
     "sb": "start-storybook -p 6006 -s public",
     "build-sb": "build-storybook -s public",
-    "g": "hygen",
+    "g": "HYGEN_TMPLS=hygen hygen",
     "gen:theme-typings": "chakra-cli tokens ./src/theme/index.ts",
     "postinstall": "yarn gen:theme-typings"
   },

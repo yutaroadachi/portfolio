@@ -1,19 +1,15 @@
-name: Cypress
+name: Chromatic
 
-on: deployment_status
+on: push
 
 jobs:
-  cypress:
+  chromatic-deployment:
     timeout-minutes: 30
     runs-on: ubuntu-latest
-    if: |
-      github.event.deployment_status.state == 'success' && 
-      github.event.deployment_status.environment == 'Preview'
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          fetch-depth: 0
       - uses: actions/cache@v2
         with:
           path: ~/.cache/yarn
@@ -21,8 +17,8 @@ jobs:
           restore-keys: ${{ runner.os }}-yarn-
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
-      - name: Run cypress
-        uses: cypress-io/github-action@v2
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
         with:
-          install: false
-          config: baseUrl=${{ github.event.deployment_status.target_url }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}

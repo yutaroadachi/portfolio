@@ -23,8 +23,8 @@
   "dependencies": {
     "@chakra-ui/icons": "1.1.5",
     "@chakra-ui/react": "1.8.3",
-    "@emotion/react": "11.7.1",
-    "@emotion/styled": "11.6.0",
+    "@emotion/react": "11.8.1",
+    "@emotion/styled": "11.8.1",
     "framer-motion": "6.2.6",
     "microcms-js-sdk": "2.0.0",
     "next": "12.0.10",

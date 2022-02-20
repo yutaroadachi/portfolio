@@ -21,8 +21,8 @@
     "postinstall": "yarn gen:theme-typings"
   },
   "dependencies": {
-    "@chakra-ui/icons": "1.1.5",
-    "@chakra-ui/react": "1.8.3",
+    "@chakra-ui/icons": "1.1.7",
+    "@chakra-ui/react": "1.8.5",
     "@emotion/react": "11.8.1",
     "@emotion/styled": "11.8.1",
     "framer-motion": "6.2.6",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.17.5",
-    "@chakra-ui/cli": "1.8.1",
+    "@chakra-ui/cli": "1.8.2",
     "@storybook/addon-actions": "6.4.19",
     "@storybook/addon-essentials": "6.4.19",
     "@storybook/addon-links": "6.4.19",

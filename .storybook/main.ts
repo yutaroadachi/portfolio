@@ -12,6 +12,12 @@ module.exports = {
       include: ['../src/**/*.stories.mdx', '../src/**/*.stories.tsx'],
     },
   },
+  // @see https://github.com/chakra-ui/chakra-ui/issues/2263
+  refs: {
+    '@chakra-ui/react': {
+      disable: true,
+    },
+  },
   // @ts-ignore
   webpackFinal: async (config) => {
     return {

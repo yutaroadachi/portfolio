@@ -191,7 +191,7 @@ exports[`Top 1`] = `
               />
             </svg>
             <a
-              class="chakra-linkbox__overlay css-eu7zjb"
+              class="chakra-linkbox__overlay css-19sbzu9"
               data-test-id="top-to-skills"
               href="/skills"
             >
@@ -231,7 +231,7 @@ exports[`Top 1`] = `
               />
             </svg>
             <a
-              class="chakra-linkbox__overlay css-eu7zjb"
+              class="chakra-linkbox__overlay css-19sbzu9"
               data-test-id="top-to-resume"
               href="/resume"
             >
@@ -264,7 +264,7 @@ exports[`Top 1`] = `
               />
             </svg>
             <a
-              class="chakra-linkbox__overlay css-eu7zjb"
+              class="chakra-linkbox__overlay css-19sbzu9"
               data-test-id="top-to-blog"
               href="/blog"
             >
@@ -310,7 +310,7 @@ exports[`Top 1`] = `
               />
             </svg>
             <a
-              class="chakra-linkbox__overlay css-eu7zjb"
+              class="chakra-linkbox__overlay css-19sbzu9"
               data-test-id="top-to-contact"
               href="https://docs.google.com/forms/d/e/1FAIpQLSdSMQFzMIm2oWZ9fk_r1RGIUl_gaf3r6ouHVK_Ysn2FERGxVA/viewform?usp=sf_link"
               rel="noopener noreferrer"

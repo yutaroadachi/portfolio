@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: ~/.cache/yarn
           key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: ~/.cache/yarn
           key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
@@ -45,7 +45,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: ~/.cache/yarn
           key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
@@ -62,7 +62,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: ~/.cache/yarn
           key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}

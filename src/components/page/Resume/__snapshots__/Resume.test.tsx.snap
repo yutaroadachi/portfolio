@@ -100,7 +100,7 @@ exports[`Resume 1`] = `
                       <a
                         class="chakra-link css-wmzrah"
                         href="https://onemile.co.jp/"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         target="_blank"
                       >
                         株式会社OneMile Partners
@@ -131,7 +131,7 @@ exports[`Resume 1`] = `
                       <a
                         class="chakra-link css-wmzrah"
                         href="https://navipla.com/"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         target="_blank"
                       >
                         株式会社ナビゲータープラットフォーム
@@ -210,7 +210,7 @@ exports[`Resume 1`] = `
               <a
                 class="chakra-link css-1f26k5b"
                 href="https://monicle.co.jp/"
-                rel="noopener noreferrer"
+                rel="noopener"
                 target="_blank"
               >
                 会社のHPを見る
@@ -340,7 +340,7 @@ exports[`Resume 1`] = `
               <a
                 class="chakra-link css-1f26k5b"
                 href="https://msetsu.com/"
-                rel="noopener noreferrer"
+                rel="noopener"
                 target="_blank"
               >
                 会社のHPを見る
@@ -475,7 +475,7 @@ exports[`Resume 1`] = `
               <a
                 class="chakra-link css-1f26k5b"
                 href="https://www.nttcom.co.jp/"
-                rel="noopener noreferrer"
+                rel="noopener"
                 target="_blank"
               >
                 会社のHPを見る
@@ -575,7 +575,7 @@ exports[`Resume 1`] = `
                         <a
                           class="chakra-link css-wmzrah"
                           href="https://onemile.co.jp/"
-                          rel="noopener noreferrer"
+                          rel="noopener"
                           target="_blank"
                         >
                           株式会社OneMile Partners
@@ -606,7 +606,7 @@ exports[`Resume 1`] = `
                         <a
                           class="chakra-link css-wmzrah"
                           href="https://navipla.com/"
-                          rel="noopener noreferrer"
+                          rel="noopener"
                           target="_blank"
                         >
                           株式会社ナビゲータープラットフォーム
@@ -687,7 +687,7 @@ exports[`Resume 1`] = `
                     <a
                       class="chakra-link css-wmzrah"
                       href="https://monicle.co.jp/"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       target="_blank"
                     >
                       会社のHPを見る
@@ -811,7 +811,7 @@ exports[`Resume 1`] = `
                     <a
                       class="chakra-link css-wmzrah"
                       href="https://msetsu.com/"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       target="_blank"
                     >
                       会社のHPを見る
@@ -940,7 +940,7 @@ exports[`Resume 1`] = `
                     <a
                       class="chakra-link css-wmzrah"
                       href="https://www.nttcom.co.jp/"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       target="_blank"
                     >
                       会社のHPを見る
@@ -999,7 +999,7 @@ exports[`Resume 1`] = `
           <a
             class="chakra-link css-1lyjkv1"
             href="https://www.okayama-u.ac.jp/"
-            rel="noopener noreferrer"
+            rel="noopener"
             target="_blank"
           >
             大学のHPを見る
@@ -1077,7 +1077,7 @@ exports[`Resume 1`] = `
             <a
               class="chakra-link css-f4h6uy"
               href="https://github.com/yutaroadachi"
-              rel="noopener noreferrer"
+              rel="noopener"
               target="_blank"
             >
               <svg
@@ -1101,7 +1101,7 @@ exports[`Resume 1`] = `
             <a
               class="chakra-link css-f4h6uy"
               href="https://twitter.com/a_da_chi_"
-              rel="noopener noreferrer"
+              rel="noopener"
               target="_blank"
             >
               <svg

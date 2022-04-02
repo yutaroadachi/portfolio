@@ -101,7 +101,7 @@ exports[`Top 1`] = `
             <a
               class="chakra-link css-f4h6uy"
               href="https://github.com/yutaroadachi"
-              rel="noopener noreferrer"
+              rel="noopener"
               target="_blank"
             >
               <svg
@@ -125,7 +125,7 @@ exports[`Top 1`] = `
             <a
               class="chakra-link css-f4h6uy"
               href="https://twitter.com/a_da_chi_"
-              rel="noopener noreferrer"
+              rel="noopener"
               target="_blank"
             >
               <svg
@@ -170,7 +170,7 @@ exports[`Top 1`] = `
         class="css-1iv1hce"
       >
         <div
-          class="chakra-linkbox css-w0ckzj"
+          class="chakra-linkbox css-ujffn4"
         >
           <div
             class="chakra-stack css-126kq63"
@@ -200,7 +200,7 @@ exports[`Top 1`] = `
           </div>
         </div>
         <div
-          class="chakra-linkbox css-w0ckzj"
+          class="chakra-linkbox css-ujffn4"
         >
           <div
             class="chakra-stack css-126kq63"
@@ -240,7 +240,7 @@ exports[`Top 1`] = `
           </div>
         </div>
         <div
-          class="chakra-linkbox css-w0ckzj"
+          class="chakra-linkbox css-ujffn4"
         >
           <div
             class="chakra-stack css-126kq63"
@@ -273,7 +273,7 @@ exports[`Top 1`] = `
           </div>
         </div>
         <div
-          class="chakra-linkbox css-w0ckzj"
+          class="chakra-linkbox css-ujffn4"
         >
           <div
             class="chakra-stack css-126kq63"

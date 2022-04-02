@@ -172,7 +172,7 @@ exports[`Skills 1`] = `
                 <a
                   class="chakra-link css-wmzrah"
                   href="https://zenn.dev/a_da_chi/articles/181ea4ccc39580"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   target="_blank"
                 >
                   基本的なNext.jsプロジェクトのセットアップ
@@ -203,7 +203,7 @@ exports[`Skills 1`] = `
                 <a
                   class="chakra-link css-wmzrah"
                   href="https://zenn.dev/a_da_chi"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   target="_blank"
                 >
                   Zenn
@@ -494,7 +494,7 @@ exports[`Skills 1`] = `
                   <a
                     class="chakra-link css-wmzrah"
                     href="https://zenn.dev/a_da_chi/articles/181ea4ccc39580"
-                    rel="noopener noreferrer"
+                    rel="noopener"
                     target="_blank"
                   >
                     基本的なNext.jsプロジェクトのセットアップ
@@ -525,7 +525,7 @@ exports[`Skills 1`] = `
                   <a
                     class="chakra-link css-wmzrah"
                     href="https://zenn.dev/a_da_chi"
-                    rel="noopener noreferrer"
+                    rel="noopener"
                     target="_blank"
                   >
                     Zenn
@@ -710,7 +710,7 @@ exports[`Skills 1`] = `
             <a
               class="chakra-link css-f4h6uy"
               href="https://github.com/yutaroadachi"
-              rel="noopener noreferrer"
+              rel="noopener"
               target="_blank"
             >
               <svg
@@ -734,7 +734,7 @@ exports[`Skills 1`] = `
             <a
               class="chakra-link css-f4h6uy"
               href="https://twitter.com/a_da_chi_"
-              rel="noopener noreferrer"
+              rel="noopener"
               target="_blank"
             >
               <svg

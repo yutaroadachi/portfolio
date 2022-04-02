@@ -141,7 +141,7 @@ exports[`BlogDetail 1`] = `
             <a
               class="chakra-link css-f4h6uy"
               href="https://github.com/yutaroadachi"
-              rel="noopener noreferrer"
+              rel="noopener"
               target="_blank"
             >
               <svg
@@ -165,7 +165,7 @@ exports[`BlogDetail 1`] = `
             <a
               class="chakra-link css-f4h6uy"
               href="https://twitter.com/a_da_chi_"
-              rel="noopener noreferrer"
+              rel="noopener"
               target="_blank"
             >
               <svg

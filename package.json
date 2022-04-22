@@ -46,7 +46,7 @@
     "@types/jest": "27.4.1",
     "@types/node": "16.11.27",
     "@types/react": "18.0.1",
-    "babel-loader": "8.2.4",
+    "babel-loader": "8.2.5",
     "chromatic": "6.5.4",
     "cypress": "9.5.4",
     "eslint": "8.13.0",

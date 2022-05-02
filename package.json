@@ -41,7 +41,7 @@
     "@storybook/addon-links": "6.4.22",
     "@storybook/react": "6.4.22",
     "@testing-library/cypress": "8.0.2",
-    "@testing-library/react": "12.1.5",
+    "@testing-library/react": "13.1.1",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.32",
     "@types/react": "18.0.8",

@@ -11,7 +11,6 @@
     "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "format:check": "prettier --check \"./src/**/*.{ts,tsx}\"",
     "test": "jest",
-    "test:update-snapshot": "jest --updateSnapshot",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "storybook": "start-storybook -p 6006 -s public",

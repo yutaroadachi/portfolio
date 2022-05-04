@@ -26,7 +26,7 @@ export default function <%= pageName %>() {
     <>
       <MetaTag
         title="<%= pageName %>"
-        description="Yutaro Adachi(フロントエンドエンジニア)の<%= pageName %>です。"
+        description="Yutaro Adachi(ソフトウェアエンジニア)の<%= pageName %>です。"
       />
       <<%= componentName %> />
     </>

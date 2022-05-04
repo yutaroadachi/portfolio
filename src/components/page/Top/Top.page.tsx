@@ -10,7 +10,7 @@ export const TopPage = ({}: TopPageProps) => {
     <Layout pt={0}>
       <MetaTag
         title="トップ"
-        description="Yutaro Adachi(フロントエンドエンジニア)のポートフォリオサイトです。"
+        description="Yutaro Adachi(ソフトウェアエンジニア)のポートフォリオサイトです。"
       />
       <Top />
     </Layout>

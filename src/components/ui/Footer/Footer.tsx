@@ -22,12 +22,12 @@ export const Footer = (props: FooterProps) => (
 
 const _Link = ({ link }: { link: typeof LINKS[number] }) => {
   return link.isExternal ? (
-    <Link href={link.href} isExternal fontWeight="700">
+    <Link href={link.href} isExternal fontWeight="bold">
       {link.title}
     </Link>
   ) : (
     <NextLink href={link.href} passHref>
-      <Link fontWeight="700">{link.title}</Link>
+      <Link fontWeight="bold">{link.title}</Link>
     </NextLink>
   )
 }

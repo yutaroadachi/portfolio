@@ -1,4 +1,3 @@
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {
   Accordion,
   AccordionButton,
@@ -7,7 +6,6 @@ import {
   AccordionPanel,
   Box,
   chakra,
-  Link,
   Stack,
   Table,
   Tbody,
@@ -17,13 +15,12 @@ import {
   Tr,
 } from '@chakra-ui/react'
 import React from 'react'
-import { URL } from 'src/constants/url'
 
 export const JobHistory = () => {
   return (
     <Box w="full">
       <chakra.h2 id="job-history" textStyle="h2WithTreat" color="main" mb={8}>
-        職歴
+        職務経歴
       </chakra.h2>
       <ForPC />
       <ForSP />
@@ -34,9 +31,9 @@ export const JobHistory = () => {
 const ForPC = () => {
   return (
     <Stack d={{ base: 'none', md: 'flex' }} spacing={8}>
-      {jobs.map((job) => {
+      {jobs.map((job, idx) => {
         return (
-          <Stack spacing={4} key={job.companyName}>
+          <Stack spacing={4} key={idx}>
             <Box>
               <chakra.h3 textStyle="h3">{job.companyName}</chakra.h3>
             </Box>
@@ -59,23 +56,17 @@ const ForPC = () => {
                   <Td>{job.detail}</Td>
                   <Td whiteSpace="nowrap">
                     {job.skills.map((skill) => (
-                      <chakra.p key={skill}>{skill}</chakra.p>
+                      <chakra.div key={skill}>{skill}</chakra.div>
                     ))}
                   </Td>
                   <Td whiteSpace="nowrap">
                     {job.roles.map((role) => (
-                      <chakra.p key={role}>{role}</chakra.p>
+                      <chakra.div key={role}>{role}</chakra.div>
                     ))}
                   </Td>
                 </Tr>
               </Tbody>
             </Table>
-            <Box>
-              <Link href={job.href} isExternal color="link" float="right">
-                会社のHPを見る
-                <ExternalLinkIcon pb="2px" ml="2px" />
-              </Link>
-            </Box>
           </Stack>
         )
       })}
@@ -91,15 +82,15 @@ const ForSP = () => {
       allowMultiple
     >
       <Stack spacing={4}>
-        {jobs.map((job) => {
+        {jobs.map((job, idx) => {
           return (
-            <AccordionItem key={job.companyName}>
+            <AccordionItem key={idx}>
               <AccordionButton>
                 <Box flex="1" textAlign="left">
                   <chakra.h3 textStyle="h3">{job.companyName}</chakra.h3>
-                  <chakra.p fontSize="14px" color="gray.500">
+                  <chakra.div fontSize="14px" color="gray.500">
                     {job.start}〜{job.end ?? '現在'}
-                  </chakra.p>
+                  </chakra.div>
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
@@ -107,21 +98,17 @@ const ForSP = () => {
                 <Stack spacing={4}>
                   <chakra.p>{job.detail}</chakra.p>
                   <Box>
-                    <chakra.p fontWeight={700}>使用技術</chakra.p>
+                    <chakra.div fontWeight="bold">使用技術</chakra.div>
                     {job.skills.map((skill) => {
-                      return <chakra.p key={skill}>{skill}</chakra.p>
+                      return <chakra.div key={skill}>{skill}</chakra.div>
                     })}
                   </Box>
                   <Box>
-                    <chakra.p fontWeight={700}>役割</chakra.p>
+                    <chakra.div fontWeight="bold">役割</chakra.div>
                     {job.roles.map((role) => {
-                      return <chakra.p key={role}>{role}</chakra.p>
+                      return <chakra.div key={role}>{role}</chakra.div>
                     })}
                   </Box>
-                  <Link href={job.href} isExternal color="link">
-                    会社のHPを見る
-                    <ExternalLinkIcon pb="2px" ml="2px" />
-                  </Link>
                 </Stack>
               </AccordionPanel>
             </AccordionItem>
@@ -139,58 +126,31 @@ const jobs: {
   detail: React.ReactNode
   skills: string[]
   roles: string[]
-  href: string
 }[] = [
   {
-    companyName: '株式会社モニクル',
+    companyName: '金融系スタートアップ',
     start: '2020/9',
-    detail: (
-      <>
-        「はたらく世代」の資産運用をサポートする会社のファイナンシャルアドバイザー向けCRMシステムおよび、お客様向けサービスサイトの開発に従事し、フロントエンド開発からバックエンド開発まで幅広く経験しております。
-        <br />
-        <chakra.span
-          d="inline-block"
-          fontSize="12px"
-          lineHeight={4}
-          color="gray.500"
-          mt={1}
-        >
-          ※株式会社モニクルは持株会社であり、正確には同グループ会社の
-          <Link href={URL.onemile} isExternal color="link">
-            株式会社OneMile Partners
-            <ExternalLinkIcon pb="2px" mx="2px" />
-          </Link>
-          に入社後、同グループ会社の
-          <Link href={URL.navipla} isExternal color="link">
-            株式会社ナビゲータープラットフォーム
-            <ExternalLinkIcon pb="2px" mx="2px" />
-          </Link>
-          を経由して転籍した形になっておりますが、業務内容に変化はありません。
-        </chakra.span>
-      </>
-    ),
-    skills: ['React', 'TypeScript', 'Next.js', 'Ruby on Rails', 'Go'],
-    roles: ['メンバ'],
-    href: URL.monicle,
+    detail:
+      'くらしとお金の社会課題を解決するシステムとサービスを提供する会社にて、社内のファイナンシャルプランナー向けのCRM・SFAシステムやはたらく世代のお金の診断・相談サービスの開発に従事し、フロントエンド（Next.js, TypeScript）からバックエンド（Ruby on Rails）まで幅広く経験しています。また、チームリーダーとしてスクラム開発をリードする経験もしています。',
+    skills: ['Next.js', 'TypeScript', 'Ruby on Rails'],
+    roles: ['メンバー', 'チームリーダー'],
   },
   {
-    companyName: '株式会社みんせつ',
+    companyName: '金融系スタートアップ',
     start: '2019/8',
     end: '2020/8',
     detail:
-      '上場企業のIR部門と機関投資家、証券会社をつなぐプラットフォームの企画・開発に従事し、フロントエンド開発からバックエンド開発まで幅広く経験しました。',
+      '上場企業のIR部門と機関投資家、証券会社をつなぐプラットフォームを提供する会社にて、メインプロダクトの開発に従事し、フロントエンド（React）からバックエンド（Ruby on Rails）まで幅広く経験しました。また、営業同行やカスタマーサポート、企画などのビジネスサイドに近い経験もしました。',
     skills: ['React', 'Ruby on Rails'],
-    roles: ['メンバ'],
-    href: URL.msetsu,
+    roles: ['メンバー'],
   },
   {
-    companyName: 'NTTコムウェア株式会社',
+    companyName: '大手SIer',
     start: '2018/4',
     end: '2019/7',
     detail:
-      '某大手金融機関に常駐して社内稟議などのペーパーレス化システムの開発・保守に従事し、メンバとしてはテスト設計やリリース作業を自動化するbashスクリプトの製造を、保守チーム（5名程度）のリーダーとしては顧客折衝やマネジメント、資料作成を経験しました。',
-    skills: ['bash', 'SQL'],
-    roles: ['メンバ', 'チームリーダー'],
-    href: URL.nttcom,
+      '大手SIerの会社にて、大手金融機関のシステム子会社に常駐して社内稟議などのペーパーレス化システムの改修・保守に従事し、リリース作業を自動化するBashスクリプトの開発や保守チームのリーダーを経験しました。',
+    skills: ['Bash'],
+    roles: ['メンバー', 'チームリーダー'],
   },
 ]

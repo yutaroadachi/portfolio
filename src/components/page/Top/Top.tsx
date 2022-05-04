@@ -59,7 +59,7 @@ const Hero = () => {
         />
         <VStack spacing={0} color="main">
           <ChevronDownIcon boxSize="48px" />
-          <chakra.p fontSize="24px" fontWeight="700">
+          <chakra.p fontSize="24px" fontWeight="bold">
             Scroll
           </chakra.p>
         </VStack>
@@ -95,7 +95,7 @@ const Links = () => {
                   <LinkOverlay
                     href={link.href}
                     isExternal
-                    fontWeight="700"
+                    fontWeight="bold"
                     data-test-id={`top-to-${link.key}`}
                   >
                     {link.title}
@@ -104,7 +104,7 @@ const Links = () => {
                 {!link.isExternal && (
                   <NextLink href={link.href} passHref>
                     <LinkOverlay
-                      fontWeight="700"
+                      fontWeight="bold"
                       data-test-id={`top-to-${link.key}`}
                     >
                       {link.title}

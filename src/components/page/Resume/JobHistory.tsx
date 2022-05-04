@@ -98,13 +98,13 @@ const ForSP = () => {
                 <Stack spacing={4}>
                   <chakra.p>{job.detail}</chakra.p>
                   <Box>
-                    <chakra.div fontWeight={700}>使用技術</chakra.div>
+                    <chakra.div fontWeight="bold">使用技術</chakra.div>
                     {job.skills.map((skill) => {
                       return <chakra.div key={skill}>{skill}</chakra.div>
                     })}
                   </Box>
                   <Box>
-                    <chakra.div fontWeight={700}>役割</chakra.div>
+                    <chakra.div fontWeight="bold">役割</chakra.div>
                     {job.roles.map((role) => {
                       return <chakra.div key={role}>{role}</chakra.div>
                     })}

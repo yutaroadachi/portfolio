@@ -10,7 +10,7 @@ export const BlogListPage = ({ techBlog, personalBlog }: BlogListPageProps) => {
     <Layout>
       <MetaTag
         title="ブログ"
-        description="Yutaro Adachi(フロントエンドエンジニア)のブログです。"
+        description="Yutaro Adachi(ソフトウェアエンジニア)のブログです。"
       />
       <BlogList techBlog={techBlog} personalBlog={personalBlog} />
     </Layout>

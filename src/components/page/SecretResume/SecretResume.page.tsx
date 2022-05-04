@@ -10,7 +10,7 @@ export const SecretResumePage = ({}: SecretResumePageProps) => {
     <Layout>
       <MetaTag
         title="職務経歴書"
-        description="Yutaro Adachi(フロントエンドエンジニア)の職務経歴書です。"
+        description="Yutaro Adachi(ソフトウェアエンジニア)の職務経歴書です。"
         noindex
       />
       <SecretResume />

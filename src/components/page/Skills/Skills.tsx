@@ -78,7 +78,7 @@ const ForSP = () => {
             <AccordionItem key={skill.name}>
               <AccordionButton>
                 <Box flex="1" textAlign="left">
-                  <chakra.h3 textStyle="h3">{skill.name}</chakra.h3>
+                  <chakra.h2 textStyle="h2">{skill.name}</chakra.h2>
                   <chakra.p fontSize="14px" color="gray.500">
                     {skill.years}
                   </chakra.p>
@@ -101,62 +101,82 @@ const skills: {
 }[] = [
   {
     name: 'React',
-    years: '2.5年',
+    years: '3年',
     detail: (
       <>
-        Hooksを使用して関数コンポーネントを宣言的に書くことができます。
-        <UnorderedList listStylePos="inside" mt={4}>
-          <ListItem>スタイリング：styled-components</ListItem>
-          <ListItem>UIライブラリ：Chakra UI/MUI</ListItem>
-          <ListItem>状態管理：Context API</ListItem>
-          <ListItem>データフェッチ：SWR</ListItem>
-          <ListItem>フォームライブラリ：Formik/Yup</ListItem>
-          <ListItem>単体テスト：Jest</ListItem>
-          <ListItem>結合テスト：Testing Library</ListItem>
-          <ListItem>E2E：Cypress</ListItem>
-          <ListItem>コンポーネントカタログ：Storybook</ListItem>
-          <ListItem>コードジェネレータ：Hygen</ListItem>
-        </UnorderedList>
+        LPやコーポレートサイト、採用サイトなどのHeadless
+        CMSを使用したJamstackなサイトから、複雑なUIやロジックを持ったアプリケーションまで対応可能です。Hooksを使用してロジックとビューを適切に分離したり、再利用性の高いコンポーネントを作ったりすることを意識しています。
+        <br />
+        また、JestやCypressをGitHub
+        Actionsで実行してテストを自動化したり、Storybookを使用してコンポーネントをカタログ化してデザイナーやビジネスサイドとのコミュニケーションをスムーズにしたり、Hygenを使用してテンプレートファイルの自動生成をして開発を効率化したりといったフロントエンド周辺のDevOpsの整備も意識しています。
+        <Stack spacing={1} mt={4}>
+          <chakra.h3 textStyle="h3">使用経験のあるライブラリ</chakra.h3>
+          <UnorderedList listStylePos="inside">
+            <ListItem>UIライブラリ: Chakra UI / MUI</ListItem>
+            <ListItem>
+              CSSフレームワーク: Tailwind CSS / Bootstrap / Bulma
+            </ListItem>
+            <ListItem>
+              CSS in JS: styled-components / Emotion / CSS Modules
+            </ListItem>
+            <ListItem>状態管理: Context API</ListItem>
+            <ListItem>データフェッチ: SWR</ListItem>
+            <ListItem>フォーム管理: Formik</ListItem>
+            <ListItem>バリデーションスキーマ: Yup</ListItem>
+            <ListItem>単体テスト: Jest</ListItem>
+            <ListItem>結合テスト: Testing Library</ListItem>
+            <ListItem>E2E: Cypress</ListItem>
+            <ListItem>コンポーネントカタログ: Storybook</ListItem>
+            <ListItem>コードジェネレータ: Hygen</ListItem>
+          </UnorderedList>
+        </Stack>
       </>
     ),
   },
   {
     name: 'TypeScript',
-    years: '1.5年',
+    years: '2年',
     detail:
-      '基本的な型付けからジェネリクスを用いた少し応用的な型付けまで対応可能です。',
+      '基本的なデータ構造に対する型付けから、それらを組み合わせたり、ジェネリクスを使用したりする必要がある複雑なデータ構造に対する型付けまで対応可能です。きちんと型を当てて保守性を高めるだけではなく、ドキュメントとしての役割も果たせるように命名を意識しています。',
   },
   {
     name: 'Next.js',
-    years: '1.5年',
+    years: '2年',
     detail: (
       <>
+        LPやコーポレートサイト、採用サイトなどのHeadless
+        CMSを併用したJamstackなサイトから、複雑なUIやロジックを持ったアプリケーションまで対応可能です。Zennにて
         <Link
           href="https://zenn.dev/a_da_chi/articles/181ea4ccc39580"
           isExternal
           color="link"
         >
-          基本的なNext.jsプロジェクトのセットアップ
+          Next.js最速セットアップ
           <ExternalLinkIcon pb="3px" mx="2px" />
         </Link>
-        から対応可能です。上記の記事以外にも
-        <Link href="https://zenn.dev/a_da_chi" isExternal color="link">
-          Zenn
+        や
+        <Link
+          href="https://zenn.dev/a_da_chi/articles/105dac5573b2f5"
+          isExternal
+          color="link"
+        >
+          もう迷わないNext.jsのCSR/SSR/SSG/ISR
           <ExternalLinkIcon pb="3px" mx="2px" />
         </Link>
-        でNext.jsに関する記事を複数執筆しており、累計で500近くのLikeを頂いております。
+        などNext.jsに関する技術記事を複数執筆しており、累計で1000以上のLikeを頂いています。
       </>
     ),
   },
   {
     name: 'Ruby on Rails',
-    years: '2.5年',
+    years: '3年',
     detail:
-      'モノリシックなアプリケーション開発からAPI開発まで対応可能です。Fat Controllerにならないようにするのはもちろん、デコレータ層やユースケース層を使用してFat Modelにならないように意識しています。テストにはminitestを使用することが多く、日常的にテストを書いています。',
+      'モノリシックなアプリケーション開発から、API開発まで対応可能です。Fat Controllerにならないようにするのはもちろん、サービス層やデコレータ層を使用してFat Modelにならないように意識しています。テストにはminitestを使用することが多く、日常的にテストを書いています。',
   },
   {
     name: 'Go',
-    years: '0.1年',
-    detail: '社内ツールの作成で触ったことがある程度です。',
+    years: '1ヶ月',
+    detail:
+      '社内ツールの改修、および機能追加に伴うコードリーディングと実装の経験があります。',
   },
 ]

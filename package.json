@@ -43,7 +43,7 @@
     "@testing-library/react": "13.2.0",
     "@types/jest": "27.5.0",
     "@types/node": "16.11.33",
-    "@types/react": "18.0.8",
+    "@types/react": "18.0.9",
     "babel-loader": "8.2.5",
     "chromatic": "6.5.4",
     "cypress": "9.6.0",

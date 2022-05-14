@@ -49,9 +49,12 @@ const ForSP = () => {
   return (
     <Box display={{ base: 'block', md: 'none' }}>
       <Icon
-        boxSize={isOpen ? '24px' : '32px'}
-        onClick={onOpen}
         as={isOpen ? CloseIcon : HamburgerIcon}
+        onClick={onOpen}
+        boxSize={isOpen ? '24px' : '32px'}
+        _hover={{
+          cursor: 'pointer',
+        }}
       />
       <Modal
         isOpen={isOpen}

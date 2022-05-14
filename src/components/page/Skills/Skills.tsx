@@ -42,7 +42,11 @@ export const Skills = ({}: SkillsProps) => {
 
 const ForPC = () => {
   return (
-    <Table d={{ base: 'none', md: 'block' }} colorScheme="blackAlpha" size="lg">
+    <Table
+      display={{ base: 'none', md: 'block' }}
+      colorScheme="blackAlpha"
+      size="lg"
+    >
       <Thead>
         <Tr>
           <Th whiteSpace="nowrap">技術</Th>
@@ -68,7 +72,7 @@ const ForPC = () => {
 const ForSP = () => {
   return (
     <Accordion
-      d={{ base: 'block', md: 'none' }}
+      display={{ base: 'block', md: 'none' }}
       defaultIndex={[0]}
       allowMultiple
     >

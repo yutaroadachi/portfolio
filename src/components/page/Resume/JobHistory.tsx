@@ -30,7 +30,7 @@ export const JobHistory = () => {
 
 const ForPC = () => {
   return (
-    <Stack d={{ base: 'none', md: 'flex' }} spacing={8}>
+    <Stack display={{ base: 'none', md: 'flex' }} spacing={8}>
       {jobs.map((job, idx) => {
         return (
           <Stack spacing={4} key={idx}>
@@ -77,7 +77,7 @@ const ForPC = () => {
 const ForSP = () => {
   return (
     <Accordion
-      d={{ base: 'block', md: 'none' }}
+      display={{ base: 'block', md: 'none' }}
       defaultIndex={[0]}
       allowMultiple
     >

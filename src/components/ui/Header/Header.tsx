@@ -35,7 +35,7 @@ export const Header = (props: HeaderProps) => (
 
 const ForPC = () => {
   return (
-    <HStack d={{ base: 'none', md: 'flex' }} spacing={4}>
+    <HStack display={{ base: 'none', md: 'flex' }} spacing={4}>
       {LINKS.map((link) => {
         return <_Link link={link} key={link.title} />
       })}
@@ -47,7 +47,7 @@ const ForSP = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Box d={{ base: 'block', md: 'none' }}>
+    <Box display={{ base: 'block', md: 'none' }}>
       <Icon
         boxSize={isOpen ? '24px' : '32px'}
         onClick={onOpen}

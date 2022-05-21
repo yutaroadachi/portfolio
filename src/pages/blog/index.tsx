@@ -1,15 +1,12 @@
 import { GetStaticProps } from 'next'
 import React from 'react'
-import { BlogListPage, BlogListPageProps } from 'src/components/page/BlogList'
+import { BlogList, BlogListProps } from 'src/components/page/BlogList'
+import { createGetLayout } from 'src/components/ui/Layout'
+import { MetaTag } from 'src/components/ui/MetaTag'
 import { getPersonalBlogList } from 'src/lib/microCMS/client'
 import { getZennFeed } from 'src/lib/rss/client'
 
-export default function _BlogListPage({
-  techBlog,
-  personalBlog,
-}: BlogListPageProps) {
-  return <BlogListPage techBlog={techBlog} personalBlog={personalBlog} />
-}
+export type BlogListPageProps = BlogListProps
 
 export const getStaticProps: GetStaticProps<BlogListPageProps> = async () => {
   const [techBlog, personalBlog] = await Promise.all([
@@ -25,3 +22,20 @@ export const getStaticProps: GetStaticProps<BlogListPageProps> = async () => {
     revalidate: 5 * 60,
   }
 }
+
+export default function BlogListPage({
+  techBlog,
+  personalBlog,
+}: BlogListPageProps) {
+  return (
+    <>
+      <MetaTag
+        title="ブログ"
+        description="Yutaro Adachi(ソフトウェアエンジニア)のブログです。"
+      />
+      <BlogList techBlog={techBlog} personalBlog={personalBlog} />
+    </>
+  )
+}
+
+BlogListPage.getLayout = createGetLayout()

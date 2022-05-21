@@ -1,1 +1,1 @@
-export * from './Top.page'
+export * from './Top'

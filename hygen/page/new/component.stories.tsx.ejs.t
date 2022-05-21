@@ -1,7 +1,9 @@
 ---
-to: src/components/page/<%= h.changeCase.pascalCase(path.split("/").join(".")) %>Page/<%= h.changeCase.pascalCase(path.split("/").join(".")) %>Page.stories.tsx
+to: src/components/page/<%= h.changeCase.pascalCase(path.split("/").join(".")) %>/<%= h.changeCase.pascalCase(path.split("/").join(".")) %>.stories.tsx
 ---
-<%_ componentName = `${h.changeCase.pascalCase(path.split("/").join("."))}Page` _%>
+<%_ 
+  componentName = h.changeCase.pascalCase(path.split("/").join("."))
+_%>
 import { Meta, Story } from '@storybook/react'
 import React from 'react'
 import { <%= componentName %>, <%= componentName %>Props } from './<%= componentName %>'

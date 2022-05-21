@@ -12,6 +12,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 import { LINKS } from 'src/constants/links'
 import { Logo } from '../Logo'
@@ -44,7 +45,17 @@ const ForPC = () => {
 }
 
 const ForSP = () => {
+  const router = useRouter()
   const { isOpen, onOpen, onClose } = useDisclosure()
+
+  // NextLinkをクリックしたらモーダルを閉じる
+  React.useEffect(() => {
+    router.events.on('routeChangeStart', onClose)
+
+    return () => {
+      router.events.off('routeChangeStart', onClose)
+    }
+  }, [router.events, onClose])
 
   return (
     <Box display={{ base: 'block', md: 'none' }}>

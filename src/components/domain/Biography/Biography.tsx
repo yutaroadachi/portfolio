@@ -31,7 +31,9 @@ export const Biography = (props: BiographyProps) => {
           width={128}
           height={128}
           alt="Yutaro Adachiのプロフィール画像"
-          className="circle-image"
+          style={{
+            borderRadius: '50%',
+          }}
         />
         <VStack spacing="2px">
           <chakra.h2 textStyle="h2">Yutaro Adachi</chakra.h2>

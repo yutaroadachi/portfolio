@@ -3,9 +3,12 @@ import React, { PropsWithChildren } from 'react'
 import { Footer } from 'src/components/ui/Footer'
 import { Header } from 'src/components/ui/Header'
 
-export type LayoutProps = PropsWithChildren<ContainerProps>
+export type LayoutProps = ContainerProps
 
-export const Layout = ({ children, ...props }: LayoutProps) => (
+export const Layout = ({
+  children,
+  ...props
+}: PropsWithChildren<LayoutProps>) => (
   <Flex direction="column" minH="100vh">
     <Header />
     <Flex direction="column" flexGrow={1} as="main">
@@ -21,3 +24,11 @@ export const Layout = ({ children, ...props }: LayoutProps) => (
     <Footer />
   </Flex>
 )
+
+export const createGetLayout = (
+  layoutProps?: LayoutProps
+): ((page: React.ReactElement) => React.ReactNode) => {
+  return function getLayout(page: React.ReactElement): React.ReactNode {
+    return <Layout {...layoutProps}>{page}</Layout>
+  }
+}

@@ -1,1 +1,1 @@
-export * from './SecretResume.page'
+export * from './SecretResume'

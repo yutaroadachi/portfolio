@@ -1,19 +1,15 @@
 import { GetServerSideProps } from 'next'
 import React from 'react'
-import {
-  BlogDetailPage,
-  BlogDetailPageProps,
-} from 'src/components/page/BlogDetail'
+import { BlogDetail, BlogDetailProps } from 'src/components/page/BlogDetail'
+import { createGetLayout } from 'src/components/ui/Layout'
+import { MetaTag } from 'src/components/ui/MetaTag'
 import { getPersonalBlogDetail } from 'src/lib/microCMS/client'
 
-export default function _BlogDetailPage({ blog }: BlogDetailPageProps) {
-  return <BlogDetailPage blog={blog} />
-}
-
 /** ブログ詳細ページはmicroCMSのデータ転送料節約のため、データまでプリフェッチしなくて良いのでgetServerSidePropsを使う */
-export const getServerSideProps: GetServerSideProps<
-  BlogDetailPageProps
-> = async ({ params, res }) => {
+export const getServerSideProps: GetServerSideProps<BlogDetailProps> = async ({
+  params,
+  res,
+}) => {
   const contentId = params?.id?.toString()
 
   if (!contentId) {
@@ -35,3 +31,17 @@ export const getServerSideProps: GetServerSideProps<
     },
   }
 }
+
+export default function BlogDetailPage({ blog }: BlogDetailProps) {
+  return (
+    <>
+      <MetaTag
+        title={blog.title}
+        description={blog.description ?? blog.title}
+      />
+      <BlogDetail blog={blog} />
+    </>
+  )
+}
+
+BlogDetailPage.getLayout = createGetLayout()

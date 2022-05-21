@@ -1,5 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { Story } from '@storybook/react'
+import { RouterContext } from 'next/dist/shared/lib/router-context'
 import * as nextImage from 'next/image'
 import React from 'react'
 import theme from '../src/theme'
@@ -45,6 +46,9 @@ const customViewports = {
 }
 
 export const parameters = {
+  nextRouter: {
+    Provider: RouterContext.Provider,
+  },
   viewport: {
     viewports: customViewports,
     defaultViewport: 'lg',

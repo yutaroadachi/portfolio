@@ -5,11 +5,12 @@ import { createGetLayout } from 'src/components/ui/Layout'
 import { MetaTag } from 'src/components/ui/MetaTag'
 import { getPersonalBlogDetail } from 'src/lib/microCMS/client'
 
+export type BlogDetailPageProps = BlogDetailProps
+
 /** ブログ詳細ページはmicroCMSのデータ転送料節約のため、データまでプリフェッチしなくて良いのでgetServerSidePropsを使う */
-export const getServerSideProps: GetServerSideProps<BlogDetailProps> = async ({
-  params,
-  res,
-}) => {
+export const getServerSideProps: GetServerSideProps<
+  BlogDetailPageProps
+> = async ({ params, res }) => {
   const contentId = params?.id?.toString()
 
   if (!contentId) {
@@ -32,7 +33,7 @@ export const getServerSideProps: GetServerSideProps<BlogDetailProps> = async ({
   }
 }
 
-export default function BlogDetailPage({ blog }: BlogDetailProps) {
+export default function BlogDetailPage({ blog }: BlogDetailPageProps) {
   return (
     <>
       <MetaTag

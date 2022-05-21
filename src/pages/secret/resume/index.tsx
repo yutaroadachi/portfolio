@@ -1,3 +1,4 @@
+import React from 'react'
 import { SecretResume } from 'src/components/page/SecretResume'
 import { createGetLayout } from 'src/components/ui/Layout'
 import { MetaTag } from 'src/components/ui/MetaTag'

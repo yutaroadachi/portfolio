@@ -1,3 +1,4 @@
+import React from 'react'
 import { Top } from 'src/components/page/Top'
 import { createGetLayout } from 'src/components/ui/Layout'
 import { MetaTag } from 'src/components/ui/MetaTag'

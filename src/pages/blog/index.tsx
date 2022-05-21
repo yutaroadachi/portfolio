@@ -6,7 +6,9 @@ import { MetaTag } from 'src/components/ui/MetaTag'
 import { getPersonalBlogList } from 'src/lib/microCMS/client'
 import { getZennFeed } from 'src/lib/rss/client'
 
-export const getStaticProps: GetStaticProps<BlogListProps> = async () => {
+export type BlogListPageProps = BlogListProps
+
+export const getStaticProps: GetStaticProps<BlogListPageProps> = async () => {
   const [techBlog, personalBlog] = await Promise.all([
     getZennFeed(),
     getPersonalBlogList(),
@@ -24,7 +26,7 @@ export const getStaticProps: GetStaticProps<BlogListProps> = async () => {
 export default function BlogListPage({
   techBlog,
   personalBlog,
-}: BlogListProps) {
+}: BlogListPageProps) {
   return (
     <>
       <MetaTag

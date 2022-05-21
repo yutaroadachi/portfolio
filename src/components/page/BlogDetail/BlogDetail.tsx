@@ -7,6 +7,7 @@ import {
   Button,
   Center,
   chakra,
+  CSSObject,
   Stack,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
@@ -51,7 +52,7 @@ export const BlogDetail = ({ blog }: BlogDetailProps) => {
           dangerouslySetInnerHTML={{
             __html: `${blog.body}`,
           }}
-          className="blog-detail"
+          sx={blogDetailBodyCSS}
         />
         <Center>
           <NextLink href={PATH.blog} passHref>
@@ -64,4 +65,37 @@ export const BlogDetail = ({ blog }: BlogDetailProps) => {
       </Stack>
     </Box>
   )
+}
+
+const blogDetailBodyCSS: CSSObject = {
+  h1: {
+    fontSize: '32px',
+    fontWeight: 'bold',
+  },
+  h2: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+  },
+  h3: {
+    fontSize: '20px',
+    fontWeight: 'bold',
+  },
+  h4: {
+    fontSize: '16px',
+    fontWeight: 'bold',
+  },
+  h5: {
+    fontSize: '16px',
+    fontWeight: 'bold',
+  },
+  h6: {
+    fontSize: '16px',
+    fontWeight: 'bold',
+  },
+  a: {
+    color: 'link',
+    '&:hover': {
+      textDecoration: 'underline',
+    },
+  },
 }

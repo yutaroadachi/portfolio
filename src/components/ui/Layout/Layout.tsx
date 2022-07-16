@@ -1,7 +1,7 @@
 import { Container, ContainerProps, Flex } from '@chakra-ui/react'
 import React, { PropsWithChildren } from 'react'
-import { Footer } from 'src/components/ui/Footer'
-import { Header } from 'src/components/ui/Header'
+import { Footer } from './Footer'
+import { Header } from './Header'
 
 export type LayoutProps = ContainerProps
 

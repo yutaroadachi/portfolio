@@ -10521,9 +10521,10 @@ methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
-microcms-js-sdk@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/microcms-js-sdk/-/microcms-js-sdk-2.0.0.tgz#89de2fed08c2be76296675e0f1fe2723548fc66b"
+microcms-js-sdk@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/microcms-js-sdk/-/microcms-js-sdk-2.1.0.tgz#aa69cb5d52b511bd031c37b7962b7e50bec43e9d"
+  integrity sha512-pF80n4HLzEdZL7yxY8RgnXnLdd1OyPRFQX+pOugM5oIPvtZ1nhkNXt+wigHvJ0/glZ1dB0ogXxbAgdfzWYo41A==
   dependencies:
     node-fetch "^2.6.1"
     qs "^6.10.1"

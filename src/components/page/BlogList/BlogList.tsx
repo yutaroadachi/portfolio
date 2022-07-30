@@ -61,7 +61,7 @@ const PersonalBlog = ({
             <BlogCard
               href={`/blog/${blog.id}`}
               title={blog.title}
-              publishDate={new Date(blog.publishedAt)}
+              publishDate={new Date(blog.publishedAt ?? blog.createdAt)}
               kind="personal"
               key={blog.id}
             />

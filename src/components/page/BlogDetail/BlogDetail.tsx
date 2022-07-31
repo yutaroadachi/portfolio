@@ -44,7 +44,9 @@ export const BlogDetail = ({ blog }: BlogDetailProps) => {
           {blog.title}
         </chakra.h1>
         <chakra.p fontSize="14px" color="gray.500">
-          {`${formatYYYYMMDD(new Date(blog.publishedAt))}に投稿`}
+          {`${formatYYYYMMDD(
+            new Date(blog.publishedAt ?? blog.createdAt)
+          )}に投稿`}
         </chakra.p>
       </Box>
       <Stack spacing={8}>

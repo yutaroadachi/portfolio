@@ -1,22 +1,8 @@
-import { ChakraProvider } from '@chakra-ui/react'
-import { Story } from '@storybook/react'
-import { RouterContext } from 'next/dist/shared/lib/router-context'
-import * as nextImage from 'next/image'
-import React from 'react'
+import * as NextImage from 'next/image'
 import theme from '../src/theme'
 
-const withChakra = (Story: Story) => {
-  return (
-    <ChakraProvider theme={theme}>
-      <Story />
-    </ChakraProvider>
-  )
-}
-
-export const decorators = [withChakra]
-
 const customViewports = {
-  /** iPhone X */
+  /** iPhone SE */
   base: {
     name: 'base',
     styles: {
@@ -46,16 +32,16 @@ const customViewports = {
 }
 
 export const parameters = {
-  nextRouter: {
-    Provider: RouterContext.Provider,
-  },
   viewport: {
     viewports: customViewports,
     defaultViewport: 'lg',
   },
+  chakra: {
+    theme,
+  },
 }
 
-Object.defineProperty(nextImage, 'default', {
+Object.defineProperty(NextImage, 'default', {
   configurable: true,
   value: (props) => <img {...props} />,
 })

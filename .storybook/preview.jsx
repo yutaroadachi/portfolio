@@ -1,3 +1,4 @@
+import * as NextImage from 'next/image'
 import theme from '../src/theme'
 
 const customViewports = {
@@ -39,3 +40,8 @@ export const parameters = {
     theme,
   },
 }
+
+Object.defineProperty(NextImage, 'default', {
+  configurable: true,
+  value: (props) => <img {...props} />,
+})

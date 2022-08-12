@@ -50,7 +50,7 @@
     "@types/node": "16.11.48",
     "@types/react": "18.0.17",
     "babel-loader": "8.2.5",
-    "chromatic": "6.7.3",
+    "chromatic": "6.7.4",
     "cypress": "9.7.0",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.4",

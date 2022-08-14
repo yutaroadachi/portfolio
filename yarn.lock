@@ -10753,10 +10753,10 @@ methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
-microcms-js-sdk@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/microcms-js-sdk/-/microcms-js-sdk-2.1.0.tgz#aa69cb5d52b511bd031c37b7962b7e50bec43e9d"
-  integrity sha512-pF80n4HLzEdZL7yxY8RgnXnLdd1OyPRFQX+pOugM5oIPvtZ1nhkNXt+wigHvJ0/glZ1dB0ogXxbAgdfzWYo41A==
+microcms-js-sdk@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/microcms-js-sdk/-/microcms-js-sdk-2.2.1.tgz#9b4b556996826e3a429c0f90a23c265d6a4944f5"
+  integrity sha512-6386axi7C+Fspe53/1ZsVNgMjhk1065ch/lx4Vy6lJngXdkWkvTpMpVQaOwsnPL1+T3s/ugvaiSYM7L5o/uuag==
   dependencies:
     node-fetch "^2.6.1"
     qs "^6.10.1"

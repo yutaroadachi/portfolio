@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@chakra-ui/icons": "2.0.9",
-    "@chakra-ui/react": "2.2.9",
+    "@chakra-ui/react": "2.3.1",
     "@emotion/react": "11.10.0",
     "@emotion/styled": "11.10.0",
     "framer-motion": "7.2.1",
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@babel/core": "7.18.13",
     "@chakra-ui/cli": "2.1.7",
-    "@chakra-ui/storybook-addon": "4.0.9",
+    "@chakra-ui/storybook-addon": "4.0.10",
     "@next/bundle-analyzer": "12.2.5",
     "@storybook/addon-actions": "6.5.10",
     "@storybook/addon-essentials": "6.5.10",

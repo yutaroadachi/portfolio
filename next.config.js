@@ -5,7 +5,6 @@ const withBundleAnalyzer =
 
 /** @type { import('next').NextConfig } */
 const config = {
-  swcMinify: true,
   eslint: {
     dirs: ['src/'],
   },

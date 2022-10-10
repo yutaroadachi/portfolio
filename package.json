@@ -21,8 +21,8 @@
     "bundle-analyze": "ANALYZE=true yarn build"
   },
   "dependencies": {
-    "@chakra-ui/icons": "2.0.10",
-    "@chakra-ui/react": "2.3.4",
+    "@chakra-ui/icons": "2.0.11",
+    "@chakra-ui/react": "2.3.5",
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
     "framer-motion": "7.5.1",
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@babel/core": "7.19.3",
     "@chakra-ui/cli": "2.1.8",
-    "@chakra-ui/storybook-addon": "4.0.11",
+    "@chakra-ui/storybook-addon": "4.0.12",
     "@next/bundle-analyzer": "12.3.1",
     "@storybook/addon-actions": "6.5.12",
     "@storybook/addon-essentials": "6.5.12",

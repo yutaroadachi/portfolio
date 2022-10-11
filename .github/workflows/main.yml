@@ -4,18 +4,14 @@ on: pull_request
 
 jobs:
   typecheck:
-    timeout-minutes: 30
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - uses: actions/cache@v3
-        with:
-          path: ~/.cache/yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
-          restore-keys: ${{ runner.os }}-yarn-
+          node-version: 16
+          cache: 'yarn'
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
       - name: Run typecheck
@@ -23,16 +19,13 @@ jobs:
 
   lint:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - uses: actions/cache@v3
-        with:
-          path: ~/.cache/yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
-          restore-keys: ${{ runner.os }}-yarn-
+          node-version: 16
+          cache: 'yarn'
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
       - name: Run lint
@@ -40,33 +33,27 @@ jobs:
 
   format:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - uses: actions/cache@v3
-        with:
-          path: ~/.cache/yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
-          restore-keys: ${{ runner.os }}-yarn-
+          node-version: 16
+          cache: 'yarn'
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
-      - name: Run format:check
-        run: yarn format:check
+      - name: Run format
+        run: yarn format
 
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - uses: actions/cache@v3
-        with:
-          path: ~/.cache/yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
-          restore-keys: ${{ runner.os }}-yarn-
+          node-version: 16
+          cache: 'yarn'
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
       - name: Run test

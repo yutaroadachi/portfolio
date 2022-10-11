@@ -39,6 +39,7 @@ export default function BlogDetailPage({ blog }: BlogDetailPageProps) {
       <MetaTag
         title={blog.title}
         description={blog.description ?? blog.title}
+        ogImageTitle={blog.title}
       />
       <BlogDetail blog={blog} />
     </>

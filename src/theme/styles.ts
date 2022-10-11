@@ -4,7 +4,7 @@ const styles: Styles = {
   global: {
     body: {
       bgColor: 'base',
-      fontFamily: `'Montserrat', sans-serif`,
+      fontFamily: '"Montserrat", sans-serif',
     },
   },
 }

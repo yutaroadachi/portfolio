@@ -1,5 +1,4 @@
 import { GetServerSideProps } from 'next'
-import React from 'react'
 import { BlogDetail, BlogDetailProps } from 'src/components/page/BlogDetail'
 import { createGetLayout } from 'src/components/ui/Layout'
 import { MetaTag } from 'src/components/ui/MetaTag'
@@ -39,6 +38,7 @@ export default function BlogDetailPage({ blog }: BlogDetailPageProps) {
       <MetaTag
         title={blog.title}
         description={blog.description ?? blog.title}
+        ogUrl={`https://portfolio-adachi.vercel.app/blog/${blog.id}/`}
         ogImageTitle={blog.title}
       />
       <BlogDetail blog={blog} />

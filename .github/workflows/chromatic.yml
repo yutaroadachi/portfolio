@@ -4,17 +4,12 @@ on: push
 
 jobs:
   chromatic-deployment:
-    timeout-minutes: 30
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: actions/cache@v3
-        with:
-          path: ~/.cache/yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
-          restore-keys: ${{ runner.os }}-yarn-
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
       - name: Publish to Chromatic

@@ -1,5 +1,4 @@
 import { GetStaticProps } from 'next'
-import React from 'react'
 import { BlogList, BlogListProps } from 'src/components/page/BlogList'
 import { createGetLayout } from 'src/components/ui/Layout'
 import { MetaTag } from 'src/components/ui/MetaTag'
@@ -32,6 +31,7 @@ export default function BlogListPage({
       <MetaTag
         title="ブログ"
         description="Yutaro Adachi(ソフトウェアエンジニア)のブログです。"
+        ogUrl="https://portfolio-adachi.vercel.app/blog/"
       />
       <BlogList techBlog={techBlog} personalBlog={personalBlog} />
     </>

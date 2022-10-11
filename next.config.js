@@ -7,7 +7,7 @@ const withBundleAnalyzer =
 const config = {
   swcMinify: true,
   eslint: {
-    dirs: ['src/'],
+    dirs: ['src'],
   },
 }
 

@@ -49,7 +49,7 @@
     "@testing-library/cypress": "8.0.3",
     "@testing-library/react": "13.4.0",
     "@types/jest": "29.1.2",
-    "@types/node": "16.11.65",
+    "@types/node": "16.11.66",
     "@types/react": "18.0.21",
     "babel-loader": "8.2.5",
     "chromatic": "6.10.2",

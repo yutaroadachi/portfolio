@@ -7,7 +7,7 @@ import {
   StackProps,
   VStack,
 } from '@chakra-ui/react'
-import NextImage from 'next/future/image'
+import NextImage from 'next/image'
 import { IconType } from 'react-icons'
 import { FiGithub, FiTwitter } from 'react-icons/fi'
 import { URL } from 'src/constants/url'

@@ -41,7 +41,7 @@ export const BlogCard = ({
             </LinkOverlay>
           )}
           {kind === 'personal' && (
-            <NextLink href={href} passHref>
+            <NextLink href={href} passHref legacyBehavior>
               <LinkOverlay>{truncate(title, 50)}</LinkOverlay>
             </NextLink>
           )}

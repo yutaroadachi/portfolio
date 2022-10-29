@@ -8,7 +8,7 @@ export type LogoProps = LinkBoxProps
 export const Logo = ({ ...props }: LogoProps) => {
   return (
     <LinkBox {...props}>
-      <NextLink href={PATH.top} passHref>
+      <NextLink href={PATH.top} passHref legacyBehavior>
         <LinkOverlay textStyle="logo">adachi</LinkOverlay>
       </NextLink>
     </LinkBox>

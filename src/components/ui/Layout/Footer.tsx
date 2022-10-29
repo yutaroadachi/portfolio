@@ -26,7 +26,7 @@ const _Link = ({ link }: { link: typeof LINKS[number] }) => {
       {link.title}
     </Link>
   ) : (
-    <NextLink href={link.href} passHref>
+    <NextLink href={link.href} passHref legacyBehavior>
       <Link fontWeight="bold">{link.title}</Link>
     </NextLink>
   )

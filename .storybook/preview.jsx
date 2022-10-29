@@ -1,4 +1,4 @@
-import * as NextImage from 'next/future/image'
+import * as NextImage from 'next/image'
 import theme from '../src/theme'
 
 const customViewports = {

@@ -32,7 +32,7 @@ export const BlogDetail = ({ blog }: BlogDetailProps) => {
           fontSize="14px"
         >
           <BreadcrumbItem>
-            <NextLink href={PATH.blog} passHref>
+            <NextLink href={PATH.blog} passHref legacyBehavior>
               <BreadcrumbLink color="link">ブログ一覧</BreadcrumbLink>
             </NextLink>
           </BreadcrumbItem>
@@ -57,7 +57,7 @@ export const BlogDetail = ({ blog }: BlogDetailProps) => {
           sx={blogDetailBodyCSS}
         />
         <Center>
-          <NextLink href={PATH.blog} passHref>
+          <NextLink href={PATH.blog} passHref legacyBehavior>
             <Button variant="outlined" size="sm" as="a">
               ブログ一覧へ
             </Button>

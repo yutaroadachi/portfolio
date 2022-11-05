@@ -52,7 +52,7 @@
     "@types/node": "16.18.3",
     "@types/react": "18.0.25",
     "babel-loader": "9.0.0",
-    "chromatic": "6.11.2",
+    "chromatic": "6.11.4",
     "cypress": "9.7.0",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0",

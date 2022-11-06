@@ -15,7 +15,11 @@ export const MetaTag = ({
   ogImageTitle,
   noindex,
 }: MetaTagProps) => {
-  const fullTitle = `${title} | adachi`
+  const fullTitle = `${title} | adachi's Portfolio`
+  const baseOgImageUrl = 'https://portfolio-adachi.vercel.app/api/og'
+  const ogImageUrl = ogImageTitle
+    ? `${baseOgImageUrl}?title=${ogImageTitle}`
+    : baseOgImageUrl
 
   return (
     <Head>
@@ -24,14 +28,11 @@ export const MetaTag = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={ogUrl} />
-      {ogImageTitle && (
-        <meta
-          key="og:image"
-          property="og:image"
-          content={`https://portfolio-adachi.vercel.app/api/og?title=${ogImageTitle}`}
-        />
+      <meta property="og:image" content={ogImageUrl} />
+      <meta name="twitter:card" content="summary_large_image" />
+      {(noindex || process.env.VERCEL_ENV !== 'production') && (
+        <meta key="robots" name="robots" content="noindex" />
       )}
-      {noindex && <meta key="robots" name="robots" content="noindex" />}
     </Head>
   )
 }

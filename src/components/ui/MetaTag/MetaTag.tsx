@@ -30,9 +30,7 @@ export const MetaTag = ({
       <meta property="og:url" content={ogUrl} />
       <meta property="og:image" content={ogImageUrl} />
       <meta name="twitter:card" content="summary_large_image" />
-      {(noindex || process.env.VERCEL_ENV !== 'production') && (
-        <meta key="robots" name="robots" content="noindex" />
-      )}
+      {noindex && <meta name="robots" content="noindex" />}
     </Head>
   )
 }

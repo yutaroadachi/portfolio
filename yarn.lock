@@ -11345,10 +11345,10 @@ methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
-microcms-js-sdk@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/microcms-js-sdk/-/microcms-js-sdk-2.3.0.tgz#ae672d85cf23a7ded9bd77d4b02a39903e3614de"
-  integrity sha512-VNFyO1leoy5SaBKfTaglWiGn3dYY531B6CoeIkQDKxmY6EjxQaZJXe+ukMFJNQsus0stI0Vss0KaeNsHbfW9IA==
+microcms-js-sdk@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/microcms-js-sdk/-/microcms-js-sdk-2.3.1.tgz#299605dd96b443ab1d409d0ad1939896e247c00c"
+  integrity sha512-CZkoxYMkwNBsB7CMW9alGS27f18+jDUoMjqD9qmupDsU2tWz4DNtPK05l0PHwHFmDmXxGhDpgfqmev7EXUTrwQ==
   dependencies:
     cross-fetch "^3.1.5"
     qs "^6.10.1"

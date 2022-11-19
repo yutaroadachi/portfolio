@@ -27,7 +27,7 @@
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
     "@vercel/og": "0.0.20",
-    "framer-motion": "7.6.6",
+    "framer-motion": "7.6.7",
     "microcms-js-sdk": "2.3.2",
     "next": "13.0.3",
     "react": "18.2.0",

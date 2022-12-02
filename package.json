@@ -36,7 +36,7 @@
     "rss-parser": "3.12.0"
   },
   "devDependencies": {
-    "@babel/core": "7.20.2",
+    "@babel/core": "7.20.5",
     "@chakra-ui/cli": "2.1.8",
     "@chakra-ui/storybook-addon": "4.0.13",
     "@next/bundle-analyzer": "13.0.5",

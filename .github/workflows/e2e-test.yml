@@ -1,9 +1,9 @@
-name: Cypress
+name: E2E test
 
 on: deployment_status
 
 jobs:
-  cypress:
+  e2e-test:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     if: |
@@ -17,8 +17,15 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
-      - name: Run cypress
-        uses: cypress-io/github-action@v2
+      - name: Install playwright dependencies
+        run: yarn playwright install --with-deps
+      - name: Run e2e test
+        run: yarn test:e2e
+        env:
+          PLAYWRIGHT_BASE_URL: ${{ github.event.deployment_status.target_url }}
+      - uses: actions/upload-artifact@v3
+        if: failure()
         with:
-          install: false
-          config: baseUrl=${{ github.event.deployment_status.target_url }}
+          name: playwright-report
+          path: playwright-report
+          retention-days: 14

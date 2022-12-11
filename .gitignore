@@ -36,9 +36,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-# cypress
-cypress/screenshots
-cypress/videos
+# playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
 
 # storybook
 storybook-static

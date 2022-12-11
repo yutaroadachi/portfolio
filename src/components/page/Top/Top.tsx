@@ -96,17 +96,14 @@ const Links = () => {
                     href={link.href}
                     isExternal
                     fontWeight="bold"
-                    data-test-id={`top-to-${link.key}`}
+                    data-testid={link.key}
                   >
                     {link.title}
                   </LinkOverlay>
                 )}
                 {!link.isExternal && (
                   <NextLink href={link.href} passHref legacyBehavior>
-                    <LinkOverlay
-                      fontWeight="bold"
-                      data-test-id={`top-to-${link.key}`}
-                    >
+                    <LinkOverlay fontWeight="bold" data-testid={link.key}>
                       {link.title}
                     </LinkOverlay>
                   </NextLink>

@@ -7,11 +7,10 @@ import {
   Button,
   Center,
   chakra,
-  CSSObject,
   Stack,
+  SystemStyleObject,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import React from 'react'
 import { Biography } from 'src/components/domain/Biography'
 import { PATH } from 'src/constants/path'
 import { formatYYYYMMDD } from 'src/lib/format/date-format'
@@ -54,6 +53,8 @@ export const BlogDetail = ({ blog }: BlogDetailProps) => {
           dangerouslySetInnerHTML={{
             __html: `${blog.body}`,
           }}
+          layerStyle="card"
+          p={8}
           sx={blogDetailBodyCSS}
         />
         <Center>
@@ -69,7 +70,7 @@ export const BlogDetail = ({ blog }: BlogDetailProps) => {
   )
 }
 
-const blogDetailBodyCSS: CSSObject = {
+const blogDetailBodyCSS: SystemStyleObject = {
   h1: {
     fontSize: '32px',
     fontWeight: 'bold',
@@ -90,14 +91,29 @@ const blogDetailBodyCSS: CSSObject = {
     fontSize: '16px',
     fontWeight: 'bold',
   },
-  h6: {
-    fontSize: '16px',
-    fontWeight: 'bold',
+  code: {
+    bgColor: 'gray.100',
+    p: 1,
+    borderRadius: '2.5px',
+  },
+  'pre > code': {
+    display: 'inline-block',
+    w: 'full',
+    bgColor: 'black',
+    color: 'white',
+    p: 4,
+    borderRadius: '10px',
+  },
+  'ol, ul': {
+    listStylePos: 'inside',
   },
   a: {
     color: 'link',
     '&:hover': {
       textDecoration: 'underline',
     },
+  },
+  img: {
+    mx: 'auto',
   },
 }

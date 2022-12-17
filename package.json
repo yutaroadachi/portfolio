@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "lint": "next lint --dir src",
+    "lint": "next lint --max-warnings 0 --dir src",
     "lint:fix": "next lint --fix --dir src",
     "format": "prettier --check \"./src/**/*.{ts,tsx}\"",
     "format:write": "prettier --write \"./src/**/*.{ts,tsx}\"",

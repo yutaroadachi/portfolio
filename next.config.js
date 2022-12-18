@@ -8,6 +8,7 @@ const config = {
   eslint: {
     dirs: ['src'],
   },
+  reactStrictMode: true,
 }
 
 module.exports = withBundleAnalyzer(config)

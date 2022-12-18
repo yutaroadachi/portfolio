@@ -27,9 +27,17 @@ export const getPersonalBlogDetail = async (
   return data
 }
 
+const getApiKey = (): string => {
+  if (process.env.MICROCMS_API_KEY === undefined) {
+    throw new Error('MICROCMS_API_KEY is not set')
+  }
+
+  return process.env.MICROCMS_API_KEY
+}
+
 const client = createClient({
   serviceDomain: 'adachi',
-  apiKey: process.env.MICROCMS_API_KEY!,
+  apiKey: getApiKey(),
 })
 
 const BLOG_ENDPOINT = 'blog'

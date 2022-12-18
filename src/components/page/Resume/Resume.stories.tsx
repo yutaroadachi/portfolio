@@ -1,13 +1,12 @@
 import { Meta, Story } from '@storybook/react'
-import React from 'react'
-import { Resume, ResumeProps } from './Resume'
+import { Resume } from './Resume'
 
 export default {
   title: 'page/Resume',
   component: Resume,
-} as Meta<ResumeProps>
+} as Meta
 
-type Template = Story<ResumeProps>
+type Template = Story
 
 const Template: Template = (args) => <Resume {...args} />
 

@@ -21,9 +21,7 @@ import {
 import React from 'react'
 import { Biography } from 'src/components/domain/Biography'
 
-export type SkillsProps = {}
-
-export const Skills = ({}: SkillsProps) => {
+export const Skills = () => {
   return (
     <Box>
       <chakra.h1 id="skills" textStyle="h1" color="main" mb={8}>

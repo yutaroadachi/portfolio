@@ -1,11 +1,8 @@
 import { Box, chakra, Stack, VStack } from '@chakra-ui/react'
-import React from 'react'
 import { Biography } from 'src/components/domain/Biography'
 import { JobHistory } from './JobHistory'
 
-export type ResumeProps = {}
-
-export const Resume = ({}: ResumeProps) => {
+export const Resume = () => {
   return (
     <Box>
       <chakra.h1 id="resume" textStyle="h1" color="main" mb={8}>

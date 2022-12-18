@@ -1,13 +1,12 @@
 import { Meta, Story } from '@storybook/react'
-import React from 'react'
-import { Skills, SkillsProps } from './Skills'
+import { Skills } from './Skills'
 
 export default {
   title: 'page/Skills',
   component: Skills,
-} as Meta<SkillsProps>
+} as Meta
 
-type Template = Story<SkillsProps>
+type Template = Story
 
 const Template: Template = (args) => <Skills {...args} />
 

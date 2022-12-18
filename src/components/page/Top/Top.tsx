@@ -12,13 +12,10 @@ import {
 } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
-import React from 'react'
 import { Biography } from 'src/components/domain/Biography'
 import { LINKS } from 'src/constants/links'
 
-export type TopProps = {}
-
-export const Top = ({}: TopProps) => {
+export const Top = () => {
   return (
     <Stack spacing={8}>
       <Hero />

@@ -1,13 +1,12 @@
 import { Meta, Story } from '@storybook/react'
-import React from 'react'
-import { Top, TopProps } from './Top'
+import { Top } from './Top'
 
 export default {
   title: 'page/Top',
   component: Top,
-} as Meta<TopProps>
+} as Meta
 
-type Template = Story<TopProps>
+type Template = Story
 
 const Template: Template = (args) => <Top {...args} />
 

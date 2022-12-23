@@ -39,7 +39,7 @@
     "@chakra-ui/cli": "2.2.1",
     "@chakra-ui/storybook-addon": "4.0.15",
     "@next/bundle-analyzer": "13.0.7",
-    "@playwright/test": "1.29.0",
+    "@playwright/test": "1.29.1",
     "@storybook/addon-actions": "6.5.14",
     "@storybook/addon-essentials": "6.5.14",
     "@storybook/addon-links": "6.5.14",

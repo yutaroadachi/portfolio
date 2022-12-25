@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-base;
+  }
+  h1 {
+    @apply text-[32px] font-bold;
+  }
+  h2 {
+    @apply text-[24px] font-bold;
+  }
+  h3 {
+    @apply text-[20px] font-bold;
+  }
+  h4 {
+    @apply text-[18px] font-bold;
+  }
+  h5 {
+    @apply text-[16px] font-bold;
+  }
+  h6 {
+    @apply text-[14px] font-bold;
+  }
+}
+
+@layer components {
+  .logo {
+    @apply text-[32px] font-bold tracking-[1px];
+  }
+  .h2-with-treat {
+    @apply text-[24px] font-bold text-center relative after:content-[""] after:w-[30px] after:h-[3px] after:bg-current after:absolute after:bottom-[-3px] after:left-1/2 after:ml-[-15px];
+  }
+  .card {
+    @apply bg-white rounded-xl drop-shadow-sm;
+  }
+}

@@ -1,17 +1,14 @@
 ---
 to: src/components/<%= kind %>/<%= name %>/<%= name %>.stories.tsx
 ---
-import { Meta, Story } from '@storybook/react'
-import React from 'react'
-import { <%= name %>, <%= name %>Props } from './<%= name %>'
+import { ComponentMeta, ComponentStoryObj } from '@storybook/react'
+import { <%= name %> } from './<%= name %>'
 
 export default {
   title: '<%= kind %>/<%= name %>',
   component: <%= name %>,
-} as Meta<<%= name %>Props>
+} as ComponentMeta<typeof <%= name %>>
 
-type Template = Story<<%= name %>Props>
+type StoryObj = ComponentStoryObj<typeof <%= name %>>
 
-const Template: Template = (args) => <<%= name %> {...args} />
-
-export const Default: Template = Template.bind({})
+export const Default: StoryObj = {}

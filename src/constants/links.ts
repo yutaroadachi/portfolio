@@ -1,7 +1,10 @@
 import { IconType } from 'react-icons'
-import { FaReact } from 'react-icons/fa'
-import { GrBlog } from 'react-icons/gr'
-import { IoDocumentTextOutline, IoMailOutline } from 'react-icons/io5'
+import { GiSkills } from 'react-icons/gi'
+import {
+  MdOutlineArticle,
+  MdOutlineEmail,
+  MdOutlineWorkOutline,
+} from 'react-icons/md'
 import { PATH } from './path'
 import { URL } from './url'
 
@@ -16,28 +19,28 @@ export const LINKS: {
   {
     title: 'スキル',
     href: PATH.skills,
-    icon: FaReact,
+    icon: GiSkills,
     key: 'skills',
     isExternal: false,
   },
   {
     title: '履歴書',
     href: PATH.resume,
-    icon: IoDocumentTextOutline,
+    icon: MdOutlineWorkOutline,
     key: 'resume',
     isExternal: false,
   },
   {
     title: 'ブログ',
     href: PATH.blog,
-    icon: GrBlog,
+    icon: MdOutlineArticle,
     key: 'blog',
     isExternal: false,
   },
   {
     title: 'お問い合わせ',
     href: URL.contact,
-    icon: IoMailOutline,
+    icon: MdOutlineEmail,
     key: 'contact',
     isExternal: true,
   },

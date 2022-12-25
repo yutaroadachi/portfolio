@@ -15,4 +15,4 @@ export default function TopPage() {
   )
 }
 
-TopPage.getLayout = createGetLayout({ pt: 0 })
+TopPage.getLayout = createGetLayout({ className: 'pt-0' })

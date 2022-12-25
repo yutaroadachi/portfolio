@@ -1,6 +1,5 @@
-import { Meta, Story } from '@storybook/react'
-import React from 'react'
-import { Layout, LayoutProps } from './Layout'
+import { ComponentMeta, ComponentStoryObj } from '@storybook/react'
+import { Layout } from './Layout'
 
 export default {
   title: 'ui/Layout',
@@ -8,10 +7,8 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
-} as Meta<LayoutProps>
+} as ComponentMeta<typeof Layout>
 
-type Template = Story<LayoutProps>
+type StoryObj = ComponentStoryObj<typeof Layout>
 
-const Template: Template = (args) => <Layout {...args}>コンテンツエリア</Layout>
-
-export const Default: Template = Template.bind({})
+export const Default: StoryObj = {}

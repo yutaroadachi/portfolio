@@ -1,34 +1,43 @@
-import { Container, ContainerProps, Flex } from '@chakra-ui/react'
-import React, { PropsWithChildren } from 'react'
+import { clsx } from 'clsx'
+import {
+  ComponentPropsWithoutRef,
+  PropsWithChildren,
+  ReactElement,
+  ReactNode,
+} from 'react'
 import { Footer } from './Footer'
 import { Header } from './Header'
 
-export type LayoutProps = ContainerProps
+export type LayoutProps = ComponentPropsWithoutRef<'div'>
 
 export const Layout = ({
   children,
   ...props
-}: PropsWithChildren<LayoutProps>) => (
-  <Flex direction="column" minH="100vh">
-    <Header />
-    <Flex direction="column" flexGrow={1} as="main">
-      <Container
-        maxW={{ base: 'full', lg: 'container.md', xl: 'container.lg' }}
-        px={{ base: 4, lg: 0 }}
-        py={8}
-        {...props}
-      >
-        {children}
-      </Container>
-    </Flex>
-    <Footer />
-  </Flex>
-)
+}: PropsWithChildren<LayoutProps>) => {
+  const { className, ...rest } = props
 
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow">
+        <div
+          className={clsx(
+            'max-w-full lg:max-w-screen-md xl:max-w-screen-lg px-4 lg:px-0 py-8 mx-auto',
+            className
+          )}
+          {...rest}
+        >
+          {children}
+        </div>
+      </main>
+      <Footer />
+    </div>
+  )
+}
 export const createGetLayout = (
   layoutProps?: LayoutProps
-): ((page: React.ReactElement) => React.ReactNode) => {
-  return function getLayout(page: React.ReactElement): React.ReactNode {
+): ((page: ReactElement) => ReactNode) => {
+  return function getLayout(page) {
     return <Layout {...layoutProps}>{page}</Layout>
   }
 }

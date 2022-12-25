@@ -7,12 +7,11 @@ import {
   LinkOverlay,
   Stack,
 } from '@chakra-ui/react'
-import React from 'react'
+import NextLink from 'next/link'
 import { GrBlog } from 'react-icons/gr'
-import { ZennIcon } from 'src/components/ui/Icon'
+import { SiZenn } from 'react-icons/si'
 import { formatYYYYMMDD } from 'src/lib/format/date-format'
 import { truncate } from 'src/lib/format/string-format'
-import NextLink from 'next/link'
 
 export type BlogCardProps = {
   href: string
@@ -32,7 +31,7 @@ export const BlogCard = ({
     <LinkBox layerStyle="card" p={4} as="article" {...props}>
       <Stack spacing={0} h={{ base: '220px', md: '200px' }}>
         <Center mb={4}>
-          <Icon boxSize="24px" as={kind === 'tech' ? ZennIcon : GrBlog} />
+          <Icon boxSize="24px" as={kind === 'tech' ? SiZenn : GrBlog} />
         </Center>
         <chakra.h3 fontWeight="bold" flexGrow={1} overflow="hidden">
           {kind === 'tech' && (

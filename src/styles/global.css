@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-base;
+    @apply bg-c-bg;
   }
   h1 {
     @apply text-[32px] font-bold;
@@ -35,5 +35,17 @@
   }
   .card {
     @apply bg-white rounded-xl drop-shadow-sm;
+  }
+}
+
+@layer utilities {
+  .stack {
+    @apply flex flex-col;
+  }
+  .v-stack {
+    @apply flex flex-col justify-center items-center;
+  }
+  .h-stack {
+    @apply flex justify-center items-center;
   }
 }

@@ -1,5 +1,4 @@
-import { Box, chakra, SimpleGrid, Stack } from '@chakra-ui/react'
-import React from 'react'
+import { Box, chakra, Stack } from '@chakra-ui/react'
 import { Biography } from 'src/components/domain/Biography'
 import { BlogCard } from 'src/components/domain/BlogCard'
 import { PersonalBlogList, TechBlogList } from 'src/types/blog'
@@ -30,7 +29,7 @@ const TechBlog = ({ techBlog }: Pick<BlogListProps, 'techBlog'>) => {
       <chakra.h2 id="tech-blog" textStyle="h2WithTreat" color="main" mb={8}>
         テックブログ
       </chakra.h2>
-      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} w="full">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {techBlog.map((blog, idx) => {
           return (
             <BlogCard
@@ -42,7 +41,7 @@ const TechBlog = ({ techBlog }: Pick<BlogListProps, 'techBlog'>) => {
             />
           )
         })}
-      </SimpleGrid>
+      </div>
     </Box>
   )
 }
@@ -55,7 +54,7 @@ const PersonalBlog = ({
       <chakra.h2 id="personal-blog" textStyle="h2WithTreat" color="main" mb={8}>
         個人ブログ
       </chakra.h2>
-      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} w="full">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {personalBlog.map((blog) => {
           return (
             <BlogCard
@@ -67,7 +66,7 @@ const PersonalBlog = ({
             />
           )
         })}
-      </SimpleGrid>
+      </div>
     </Box>
   )
 }

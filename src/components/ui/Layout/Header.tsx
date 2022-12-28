@@ -10,7 +10,7 @@ export const Header = (props: HeaderProps) => {
   const { className, ...rest } = props
 
   return (
-    <header className={clsx('bg-main text-white', className)} {...rest}>
+    <header className={clsx('bg-c-primary text-white', className)} {...rest}>
       <div className="flex justify-between items-center max-w-full lg:max-w-screen-md xl:max-w-screen-lg h-[64px] mx-4 lg:mx-auto">
         <NextLink href={PATH.top} className="logo">
           adachi

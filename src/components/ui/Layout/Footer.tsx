@@ -12,7 +12,7 @@ export const Footer = (props: FooterProps) => {
   return (
     <footer
       className={clsx(
-        'flex flex-col justify-center items-center space-y-8 bg-main text-white py-8',
+        'flex flex-col justify-center items-center space-y-8 bg-c-primary text-white py-8',
         className
       )}
       {...rest}

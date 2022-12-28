@@ -1,54 +1,58 @@
-import {
-  Center,
-  chakra,
-  Icon,
-  LinkBox,
-  LinkBoxProps,
-  LinkOverlay,
-  Stack,
-} from '@chakra-ui/react'
+import { clsx } from 'clsx'
 import NextLink from 'next/link'
-import { GrBlog } from 'react-icons/gr'
+import { ComponentPropsWithoutRef, PropsWithChildren } from 'react'
+import { MdOutlineArticle } from 'react-icons/md'
 import { SiZenn } from 'react-icons/si'
 import { formatYYYYMMDD } from 'src/lib/format/date-format'
 import { truncate } from 'src/lib/format/string-format'
 
 export type BlogCardProps = {
+  kind: 'tech' | 'personal'
   href: string
   title: string
   publishDate: Date
-  kind: 'tech' | 'personal'
-} & LinkBoxProps
+} & ComponentPropsWithoutRef<'article'>
 
 export const BlogCard = ({
+  kind,
   href,
   title,
   publishDate,
-  kind,
   ...props
 }: BlogCardProps) => {
+  const { className, ...rest } = props
+
   return (
-    <LinkBox layerStyle="card" p={4} as="article" {...props}>
-      <Stack spacing={0} h={{ base: '220px', md: '200px' }}>
-        <Center mb={4}>
-          <Icon boxSize="24px" as={kind === 'tech' ? SiZenn : GrBlog} />
-        </Center>
-        <chakra.h3 fontWeight="bold" flexGrow={1} overflow="hidden">
-          {kind === 'tech' && (
-            <LinkOverlay href={href} isExternal>
-              {truncate(title, 50)}
-            </LinkOverlay>
+    <article className={clsx('card p-4', className)} {...rest}>
+      <Link kind={kind} href={href}>
+        <div className="flex justify-center">
+          {kind === 'tech' ? (
+            <SiZenn size={24} />
+          ) : (
+            <MdOutlineArticle size={24} />
           )}
-          {kind === 'personal' && (
-            <NextLink href={href} passHref legacyBehavior>
-              <LinkOverlay>{truncate(title, 50)}</LinkOverlay>
-            </NextLink>
-          )}
-        </chakra.h3>
-        <chakra.p fontSize="12px" color="gray.500">
+        </div>
+        <h3 className="h-[100px] overflow-hidden text-sm my-4">
+          {truncate(title, 50)}
+        </h3>
+        <div className="text-xs text-gray-500">
           {`${formatYYYYMMDD(publishDate)}に投稿`}
-        </chakra.p>
-      </Stack>
-    </LinkBox>
+        </div>
+      </Link>
+    </article>
+  )
+}
+
+const Link = ({
+  kind,
+  href,
+  children,
+}: PropsWithChildren<Pick<BlogCardProps, 'kind' | 'href'>>) => {
+  return kind === 'tech' ? (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  ) : (
+    <NextLink href={href}>{children}</NextLink>
   )
 }

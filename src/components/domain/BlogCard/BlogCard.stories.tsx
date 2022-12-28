@@ -1,28 +1,27 @@
-import { Meta, Story } from '@storybook/react'
-import React from 'react'
-import { BlogCard, BlogCardProps } from './BlogCard'
+import { ComponentMeta, ComponentStoryObj } from '@storybook/react'
+import { BlogCard } from './BlogCard'
 
 export default {
   title: 'domain/BlogCard',
   component: BlogCard,
+} as ComponentMeta<typeof BlogCard>
+
+type StoryObj = ComponentStoryObj<typeof BlogCard>
+
+export const Tech: StoryObj = {
   args: {
-    title: 'テストブログ',
+    kind: 'tech',
     href: 'http://example.com',
+    title: 'テストブログ',
     publishDate: new Date('2021-10-31T00:00:00.0000'),
-    w: { base: '163.5px', md: '172px', lg: '244px' },
+    className: 'w-[180px]',
   },
-} as Meta<BlogCardProps>
-
-type Template = Story<BlogCardProps>
-
-const Template: Template = (args) => <BlogCard {...args} />
-
-export const Tech: Template = Template.bind({})
-Tech.args = {
-  kind: 'tech',
 }
 
-export const Personal: Template = Template.bind({})
-Personal.args = {
-  kind: 'personal',
+export const Personal: StoryObj = {
+  ...Tech,
+  args: {
+    ...Tech.args,
+    kind: 'personal',
+  },
 }

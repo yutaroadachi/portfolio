@@ -1,115 +1,92 @@
-import { ChevronDownIcon } from '@chakra-ui/icons'
-import {
-  Box,
-  chakra,
-  Icon,
-  Img,
-  LinkBox,
-  LinkOverlay,
-  SimpleGrid,
-  Stack,
-  VStack,
-} from '@chakra-ui/react'
-import Head from 'next/head'
+import NextImage from 'next/image'
 import NextLink from 'next/link'
+import { PropsWithChildren } from 'react'
+import { BiChevronDown } from 'react-icons/bi'
 import { Biography } from 'src/components/domain/Biography'
 import { LINKS } from 'src/constants/links'
 
 export const Top = () => {
   return (
-    <Stack spacing={8}>
+    <div className="stack space-y-8">
       <Hero />
       <AboutMe />
       <Links />
-    </Stack>
+    </div>
   )
 }
 
 const Hero = () => {
-  const HEADER_HEIGHT = 64
-  const ADRESS_BAR_HEIGHT = 64
-
   return (
-    <>
-      <Head>
-        <link rel="preload" href="/assets/top-page/hero.png" as="image" />
-      </Head>
-      <VStack
-        spacing={4}
-        justify="center"
-        align="center"
-        minH={{
-          base: `calc(100vh - ${HEADER_HEIGHT + ADRESS_BAR_HEIGHT}px)`,
-          lg: `calc(100vh - ${HEADER_HEIGHT}px)`,
-        }}
-      >
-        <chakra.h1 id="hero" textStyle="h1" color="main" textAlign="center">
-          adachi&apos;s
-          <br />
-          portfolio site
-        </chakra.h1>
-        <Img
-          src="/assets/top-page/hero.png"
-          htmlWidth="313px"
-          htmlHeight="333px"
-          alt=""
-        />
-        <VStack spacing={0} color="main">
-          <ChevronDownIcon boxSize="48px" />
-          <chakra.p fontSize="24px" fontWeight="bold">
-            Scroll
-          </chakra.p>
-        </VStack>
-      </VStack>
-    </>
+    <section
+      // SPの場合はヘッダーとアドレスバーの高さを除いた高さ、PCの場合はヘッダーの高さを除いた高さ
+      className="v-stack space-y-4 min-h-[calc(100vh_-_128px)] lg:min-h-[calc(100vh_-_64px)]"
+    >
+      <h1 id="hero" className="text-center">
+        adachi&apos;s
+        <br />
+        portfolio site
+      </h1>
+      <NextImage
+        src="/assets/top-page/hero.png"
+        width={938}
+        height={1000}
+        alt=""
+        priority
+        className="max-w-[313px] h-auto"
+      />
+      <div className="v-stack">
+        <BiChevronDown size={48} />
+        <p className="text-2xl font-bold">Scroll</p>
+      </div>
+    </section>
   )
 }
 
 const AboutMe = () => {
   return (
-    <Box>
-      <chakra.h2 id="about-me" textStyle="h2WithTreat" color="main" mb={8}>
+    <section className="v-stack space-y-5">
+      <h2 id="about-me" className="h2-with-treat">
         私について
-      </chakra.h2>
+      </h2>
       <Biography />
-    </Box>
+    </section>
   )
 }
 
 const Links = () => {
   return (
-    <Box w="full">
-      <chakra.h2 id="links" textStyle="h2WithTreat" color="main" mb={8}>
+    <section className="v-stack space-y-5">
+      <h2 id="links" className="h2-with-treat">
         リンク
-      </chakra.h2>
-      <SimpleGrid columns={{ base: 2, md: 4 }} gap={4}>
+      </h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
         {LINKS.map((link) => {
           return (
-            <LinkBox layerStyle="card" p={4} key={link.title}>
-              <VStack spacing={1}>
-                <Icon boxSize="48px" as={link.icon} />
-                {link.isExternal && (
-                  <LinkOverlay
-                    href={link.href}
-                    isExternal
-                    fontWeight="bold"
-                    data-testid={link.key}
-                  >
-                    {link.title}
-                  </LinkOverlay>
-                )}
-                {!link.isExternal && (
-                  <NextLink href={link.href} passHref legacyBehavior>
-                    <LinkOverlay fontWeight="bold" data-testid={link.key}>
-                      {link.title}
-                    </LinkOverlay>
-                  </NextLink>
-                )}
-              </VStack>
-            </LinkBox>
+            <div key={link.key} className="card p-4">
+              <Link {...link} data-testid={link.key}>
+                <div className="v-stack space-y-1">
+                  <link.icon size={48} />
+                  <h3>{link.title}</h3>
+                </div>
+              </Link>
+            </div>
           )
         })}
-      </SimpleGrid>
-    </Box>
+      </div>
+    </section>
+  )
+}
+
+const Link = ({
+  href,
+  isExternal,
+  children,
+}: PropsWithChildren<typeof LINKS[0]>) => {
+  return isExternal ? (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  ) : (
+    <NextLink href={href}>{children}</NextLink>
   )
 }

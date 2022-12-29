@@ -16,7 +16,7 @@ export const Skills = () => {
 
 const FrontEnd = () => {
   return (
-    <section className="space-y-4">
+    <section className="space-y-5">
       <h2 className="h2-with-treat">フロントエンド</h2>
       <table className="table-auto w-full text-sm">
         <thead>
@@ -104,7 +104,7 @@ const FrontEnd = () => {
 
 const BackEnd = () => {
   return (
-    <section className="space-y-4">
+    <section className="space-y-5">
       <h2 className="h2-with-treat">バックエンド</h2>
       <table className="table-auto w-full text-sm">
         <thead>

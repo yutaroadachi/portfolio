@@ -1,5 +1,5 @@
 import * as NextImage from 'next/image'
-import theme from '../src/theme'
+import '../src/styles/global.css'
 
 const customViewports = {
   /** iPhone SE */
@@ -32,12 +32,18 @@ const customViewports = {
 }
 
 export const parameters = {
+  backgrounds: {
+    default: 'bg',
+    values: [
+      {
+        name: 'bg',
+        value: '#fff5e4',
+      },
+    ],
+  },
   viewport: {
     viewports: customViewports,
     defaultViewport: 'lg',
-  },
-  chakra: {
-    theme,
   },
 }
 

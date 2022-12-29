@@ -16,13 +16,9 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "g": "HYGEN_TMPLS=hygen hygen",
-    "gen:theme-typings": "chakra-cli tokens ./src/theme/index.ts",
-    "postinstall": "yarn gen:theme-typings",
     "bundle-analyze": "ANALYZE=true yarn build"
   },
   "dependencies": {
-    "@chakra-ui/icons": "2.0.14",
-    "@chakra-ui/react": "2.4.4",
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
     "@vercel/og": "0.0.21",
@@ -37,8 +33,6 @@
   },
   "devDependencies": {
     "@babel/core": "7.20.7",
-    "@chakra-ui/cli": "2.2.1",
-    "@chakra-ui/storybook-addon": "4.0.15",
     "@next/bundle-analyzer": "13.0.7",
     "@playwright/test": "1.29.1",
     "@storybook/addon-actions": "6.5.15",

@@ -1,3 +1,4 @@
+import { Montserrat } from '@next/font/google'
 import { NextPage } from 'next'
 import { AppProps } from 'next/app'
 import { ReactElement, ReactNode } from 'react'
@@ -11,8 +12,17 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout
 }
 
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+})
+
 export default function _App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page)
 
-  return getLayout(<Component {...pageProps} />)
+  return (
+    <div className={`${montserrat.variable} font-sans`}>
+      {getLayout(<Component {...pageProps} />)}
+    </div>
+  )
 }

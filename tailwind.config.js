@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{ts,tsx}'],
@@ -9,7 +11,7 @@ module.exports = {
         'c-link': '#1da1f2',
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
+        sans: ['var(--font-montserrat)', ...fontFamily.sans],
       },
     },
   },

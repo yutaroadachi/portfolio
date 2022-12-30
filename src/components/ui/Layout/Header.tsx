@@ -55,11 +55,12 @@ const ForSP = () => {
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={link.title}
           >
             <link.icon size={24} />
           </a>
         ) : (
-          <NextLink key={link.key} href={link.href}>
+          <NextLink key={link.key} href={link.href} aria-label={link.title}>
             <link.icon size={24} />
           </NextLink>
         )

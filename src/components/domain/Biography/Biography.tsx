@@ -2,7 +2,7 @@ import { clsx } from 'clsx'
 import NextImage from 'next/image'
 import { ComponentPropsWithoutRef } from 'react'
 import { IconType } from 'react-icons'
-import { FiGithub, FiTwitter } from 'react-icons/fi'
+import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai'
 import { URL } from 'src/constants/url'
 
 export type BiographyProps = ComponentPropsWithoutRef<'div'>
@@ -18,7 +18,7 @@ export const Biography = (props: BiographyProps) => {
       )}
       {...rest}
     >
-      <div className="flex flex-col items-center space-y-4 shrink-0">
+      <div className="v-stack space-y-4 shrink-0">
         <NextImage
           src="/assets/profile.png"
           width={128}
@@ -29,7 +29,7 @@ export const Biography = (props: BiographyProps) => {
           <h2>Yutaro Adachi</h2>
           <p className="text-sm text-gray-500">ソフトウェアエンジニア</p>
         </div>
-        <div className="flex space-x-4">
+        <div className="h-stack space-x-4">
           {ACCOUNTS.map((account, idx) => {
             return (
               <a
@@ -37,6 +37,7 @@ export const Biography = (props: BiographyProps) => {
                 href={account.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={account.label}
               >
                 <account.icon size={24} />
               </a>
@@ -49,7 +50,7 @@ export const Biography = (props: BiographyProps) => {
         <br />
         その後、スタートアップでソフトウェアエンジニアとしてフロントエンド（React,
         Next.js, TypeScript）からバックエンド（Ruby on
-        Rails）まで幅広く経験してきましたが、特にフロントエンドが強みです。また、要件定義や設計といった上流工程の経験やリードエンジニアとして所属チームの開発をリードする経験もしてきたので、一人称で開発できると自負しています。
+        Rails）まで幅広く経験してきましたが、特にフロントエンドが強みです。また、要件定義や設計といった上流工程の経験やチームリーダーとして所属チームの開発をリードする経験もしてきたので、一人称で開発できると自負しています。
       </p>
     </div>
   )
@@ -58,13 +59,16 @@ export const Biography = (props: BiographyProps) => {
 const ACCOUNTS: {
   href: string
   icon: IconType
+  label: string
 }[] = [
   {
     href: URL.github,
-    icon: FiGithub,
+    icon: AiOutlineGithub,
+    label: 'GitHubアカウント',
   },
   {
     href: URL.twitter,
-    icon: FiTwitter,
+    icon: AiOutlineTwitter,
+    label: 'Twitterアカウント',
   },
 ]

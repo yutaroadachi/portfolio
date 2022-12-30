@@ -20,7 +20,7 @@ export const Footer = (props: FooterProps) => {
       <NextLink href={PATH.top} className="logo">
         adachi
       </NextLink>
-      <div className="space-x-4 font-bold">
+      <nav className="space-x-4 font-bold">
         {LINKS.map((link) => {
           return link.isExternal ? (
             <a
@@ -37,8 +37,8 @@ export const Footer = (props: FooterProps) => {
             </NextLink>
           )
         })}
-      </div>
-      <p>Copyright© adachi All Rights Reserved.</p>
+      </nav>
+      <div>Copyright© adachi All Rights Reserved.</div>
     </footer>
   )
 }

@@ -24,7 +24,7 @@ export const Header = (props: HeaderProps) => {
 
 const ForPC = () => {
   return (
-    <div className="hidden md:flex space-x-4 font-bold">
+    <nav className="hidden md:flex space-x-4 font-bold">
       {LINKS.map((link) => {
         return link.isExternal ? (
           <a
@@ -41,13 +41,13 @@ const ForPC = () => {
           </NextLink>
         )
       })}
-    </div>
+    </nav>
   )
 }
 
 const ForSP = () => {
   return (
-    <div className="flex md:hidden space-x-4">
+    <nav className="flex md:hidden space-x-4">
       {LINKS.map((link) => {
         return link.isExternal ? (
           <a
@@ -64,6 +64,6 @@ const ForSP = () => {
           </NextLink>
         )
       })}
-    </div>
+    </nav>
   )
 }

@@ -7,22 +7,22 @@
     @apply bg-c-bg;
   }
   h1 {
-    @apply text-[32px] font-bold;
+    @apply text-4xl font-bold;
   }
   h2 {
-    @apply text-[24px] font-bold;
+    @apply text-3xl font-bold;
   }
   h3 {
-    @apply text-[20px] font-bold;
+    @apply text-2xl font-bold;
   }
   h4 {
-    @apply text-[18px] font-bold;
+    @apply text-xl font-bold;
   }
   h5 {
-    @apply text-[16px] font-bold;
+    @apply text-lg font-bold;
   }
   h6 {
-    @apply text-[14px] font-bold;
+    @apply font-bold;
   }
   .blog-detail code {
     @apply bg-gray-100 p-1 rounded-sm;
@@ -48,8 +48,8 @@
   .logo {
     @apply text-[32px] font-bold tracking-[1px];
   }
-  .h2-with-treat {
-    @apply text-[24px] font-bold text-center relative after:content-[""] after:w-[30px] after:h-[3px] after:bg-current after:absolute after:bottom-[-3px] after:left-1/2 after:ml-[-15px];
+  .with-treat {
+    @apply text-center relative after:content-[""] after:w-[30px] after:h-[3px] after:bg-current after:absolute after:left-0 after:right-0 after:mx-auto after:bottom-[-5px];
   }
   .card {
     @apply bg-white rounded-xl drop-shadow-sm;
@@ -61,10 +61,10 @@
     @apply flex flex-col;
   }
   .v-stack {
-    @apply flex flex-col justify-center items-center;
+    @apply flex flex-col items-center;
   }
   .h-stack {
-    @apply flex justify-center items-center;
+    @apply flex items-center;
   }
   .center {
     @apply flex justify-center items-center;

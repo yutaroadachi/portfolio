@@ -23,7 +23,7 @@ export const BlogList = ({ techBlog, personalBlog }: BlogListProps) => {
 const TechBlog = ({ techBlog }: Pick<BlogListProps, 'techBlog'>) => {
   return (
     <div className="space-y-5">
-      <h2 id="tech-blog" className="h2-with-treat">
+      <h2 id="tech-blog" className="with-treat">
         テックブログ
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -48,7 +48,7 @@ const PersonalBlog = ({
 }: Pick<BlogListProps, 'personalBlog'>) => {
   return (
     <div className="space-y-5">
-      <h2 id="personal-blog" className="h2-with-treat">
+      <h2 id="personal-blog" className="with-treat">
         個人ブログ
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

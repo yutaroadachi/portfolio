@@ -16,7 +16,7 @@ export const Resume = () => {
 const JobHistory = () => {
   return (
     <section className="space-y-5">
-      <h2 className="h2-with-treat">職歴</h2>
+      <h2 className="with-treat">職歴</h2>
       <table className="table-auto w-full text-sm">
         <thead>
           <tr className="text-left whitespace-nowrap">

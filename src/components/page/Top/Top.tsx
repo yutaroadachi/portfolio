@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <section
       // SPの場合はヘッダーとアドレスバーの高さを除いた高さ、PCの場合はヘッダーの高さを除いた高さ
-      className="v-stack space-y-4 min-h-[calc(100vh_-_128px)] lg:min-h-[calc(100vh_-_64px)]"
+      className="v-stack center space-y-4 min-h-[calc(100vh_-_128px)] lg:min-h-[calc(100vh_-_64px)]"
     >
       <h1 id="hero" className="text-center">
         adachi&apos;s
@@ -45,7 +45,7 @@ const Hero = () => {
 const AboutMe = () => {
   return (
     <section className="v-stack space-y-5">
-      <h2 id="about-me" className="h2-with-treat">
+      <h2 id="about-me" className="with-treat">
         私について
       </h2>
       <Biography />
@@ -56,7 +56,7 @@ const AboutMe = () => {
 const Links = () => {
   return (
     <section className="v-stack space-y-5">
-      <h2 id="links" className="h2-with-treat">
+      <h2 id="links" className="with-treat">
         リンク
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">

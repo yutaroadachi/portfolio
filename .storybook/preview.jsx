@@ -1,5 +1,15 @@
 import * as NextImage from 'next/image'
-import theme from '../src/theme'
+import '../src/styles/globals.css'
+
+const withTailwindCSS = (Story) => {
+  return (
+    <div className="font-sans">
+      <Story />
+    </div>
+  )
+}
+
+export const decorators = [withTailwindCSS]
 
 const customViewports = {
   /** iPhone SE */
@@ -35,9 +45,6 @@ export const parameters = {
   viewport: {
     viewports: customViewports,
     defaultViewport: 'lg',
-  },
-  chakra: {
-    theme,
   },
 }
 

@@ -1,16 +1,5 @@
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import {
-  Box,
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  Button,
-  Center,
-  chakra,
-  Stack,
-  SystemStyleObject,
-} from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { BiChevronRight } from 'react-icons/bi'
 import { Biography } from 'src/components/domain/Biography'
 import { PATH } from 'src/constants/path'
 import { formatYYYYMMDD } from 'src/lib/format/date-format'
@@ -22,98 +11,38 @@ export type BlogDetailProps = {
 
 export const BlogDetail = ({ blog }: BlogDetailProps) => {
   return (
-    <Box>
-      <Box mb={8}>
-        <Breadcrumb
-          separator={
-            <ChevronRightIcon boxSize="14px" color="gray.500" pb="2px" />
-          }
-          fontSize="14px"
-        >
-          <BreadcrumbItem>
-            <NextLink href={PATH.blog} passHref legacyBehavior>
-              <BreadcrumbLink color="link">ブログ一覧</BreadcrumbLink>
-            </NextLink>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <chakra.p>ブログ詳細</chakra.p>
-          </BreadcrumbItem>
-        </Breadcrumb>
-        <chakra.h1 id="blog-detail" textStyle="h1" color="main">
-          {blog.title}
-        </chakra.h1>
-        <chakra.p fontSize="14px" color="gray.500">
+    <div className="space-y-8">
+      <div className="space-y-1">
+        <nav aria-label="breadcrumb" className="text-sm text-c-link">
+          <ol className="flex items-center space-x-1">
+            <li>
+              <NextLink href={PATH.blog}>ブログ一覧</NextLink>
+            </li>
+            <BiChevronRight className="text-gray-500" />
+            <li>
+              <NextLink href={`/blog/${blog.id}`}>ブログ詳細</NextLink>
+            </li>
+          </ol>
+        </nav>
+        <h1 id="blog-detail">{blog.title}</h1>
+        <div className="text-sm text-gray-500">
           {`${formatYYYYMMDD(
             new Date(blog.publishedAt ?? blog.createdAt)
           )}に投稿`}
-        </chakra.p>
-      </Box>
-      <Stack spacing={8}>
-        <Box
-          dangerouslySetInnerHTML={{
-            __html: `${blog.body}`,
-          }}
-          layerStyle="card"
-          p={8}
-          sx={blogDetailBodyCSS}
-        />
-        <Center>
-          <NextLink href={PATH.blog} passHref legacyBehavior>
-            <Button variant="outlined" size="sm" as="a">
-              ブログ一覧へ
-            </Button>
-          </NextLink>
-        </Center>
-        <Biography />
-      </Stack>
-    </Box>
+        </div>
+      </div>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `${blog.body}`,
+        }}
+        className="blog-detail card p-8"
+      />
+      <div className="center">
+        <NextLink href={PATH.blog} className="text-c-link">
+          ブログ一覧へ
+        </NextLink>
+      </div>
+      <Biography />
+    </div>
   )
-}
-
-const blogDetailBodyCSS: SystemStyleObject = {
-  h1: {
-    fontSize: '32px',
-    fontWeight: 'bold',
-  },
-  h2: {
-    fontSize: '24px',
-    fontWeight: 'bold',
-  },
-  h3: {
-    fontSize: '20px',
-    fontWeight: 'bold',
-  },
-  h4: {
-    fontSize: '16px',
-    fontWeight: 'bold',
-  },
-  h5: {
-    fontSize: '16px',
-    fontWeight: 'bold',
-  },
-  code: {
-    bgColor: 'gray.100',
-    p: 1,
-    borderRadius: '2.5px',
-  },
-  'pre > code': {
-    display: 'inline-block',
-    w: 'full',
-    bgColor: 'black',
-    color: 'white',
-    p: 4,
-    borderRadius: '10px',
-  },
-  'ol, ul': {
-    listStylePos: 'inside',
-  },
-  a: {
-    color: 'link',
-    '&:hover': {
-      textDecoration: 'underline',
-    },
-  },
-  img: {
-    mx: 'auto',
-  },
 }

@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-c-bg;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+  h5 {
+    @apply text-lg font-bold;
+  }
+  h6 {
+    @apply font-bold;
+  }
+  .blog-detail code {
+    @apply bg-gray-100 p-1 rounded-sm;
+  }
+  .blog-detail pre > code {
+    @apply inline-block w-full bg-black text-white p-4 rounded-lg;
+  }
+  .blog-detail ol {
+    @apply list-decimal list-inside;
+  }
+  .blog-detail ul {
+    @apply list-disc list-inside;
+  }
+  .blog-detail a {
+    @apply text-c-link;
+  }
+  .blog-detail img {
+    @apply mx-auto;
+  }
+}
+
+@layer components {
+  .logo {
+    @apply text-[32px] font-bold tracking-[1px];
+  }
+  .with-treat {
+    @apply text-center relative after:content-[""] after:w-[30px] after:h-[3px] after:bg-current after:absolute after:left-0 after:right-0 after:mx-auto after:bottom-[-5px];
+  }
+  .card {
+    @apply bg-white rounded-xl drop-shadow-sm;
+  }
+}
+
+@layer utilities {
+  .stack {
+    @apply flex flex-col;
+  }
+  .v-stack {
+    @apply flex flex-col items-center;
+  }
+  .h-stack {
+    @apply flex items-center;
+  }
+  .center {
+    @apply flex justify-center items-center;
+  }
+}

@@ -1,184 +1,140 @@
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import {
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
-  Box,
-  chakra,
-  Link,
-  ListItem,
-  Stack,
-  Table,
-  Tbody,
-  Td,
-  Th,
-  Thead,
-  Tr,
-  UnorderedList,
-} from '@chakra-ui/react'
-import React from 'react'
+import { FiExternalLink } from 'react-icons/fi'
 import { Biography } from 'src/components/domain/Biography'
 
 export const Skills = () => {
   return (
-    <Box>
-      <chakra.h1 id="skills" textStyle="h1" color="main" mb={8}>
-        スキル
-      </chakra.h1>
-      <Stack spacing={8}>
-        <Box w="full">
-          <ForPC />
-          <ForSP />
-        </Box>
-        <Biography />
-      </Stack>
-    </Box>
+    <div className="space-y-8">
+      <section>
+        <h1 id="skills">スキル</h1>
+      </section>
+      <FrontEnd />
+      <BackEnd />
+      <Biography />
+    </div>
   )
 }
 
-const ForPC = () => {
+const FrontEnd = () => {
   return (
-    <Table
-      display={{ base: 'none', md: 'block' }}
-      colorScheme="blackAlpha"
-      size="lg"
-    >
-      <Thead>
-        <Tr>
-          <Th whiteSpace="nowrap">技術</Th>
-          <Th whiteSpace="nowrap">経験年数</Th>
-          <Th>詳細</Th>
-        </Tr>
-      </Thead>
-      <Tbody>
-        {skills.map((skill) => {
-          return (
-            <Tr key={skill.name}>
-              <Td whiteSpace="nowrap">{skill.name}</Td>
-              <Td whiteSpace="nowrap">{skill.years}</Td>
-              <Td>{skill.detail}</Td>
-            </Tr>
-          )
-        })}
-      </Tbody>
-    </Table>
+    <section className="space-y-5">
+      <h2 className="with-treat">フロントエンド</h2>
+      <table className="table-auto w-full text-sm">
+        <thead>
+          <tr className="text-left whitespace-nowrap">
+            <th className="p-4">技術</th>
+            <th className="p-4">経験年数</th>
+            <th className="p-4">詳細</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="text-left">
+            <td className="whitespace-nowrap p-4">React</td>
+            <td className="whitespace-nowrap p-4 ">3.5年</td>
+            <td rowSpan={3} className="p-4">
+              <div className="space-y-4">
+                <div>
+                  WebメディアのようなHeadless
+                  CMSを使用したJamstackなWebサイトから、複雑なUIやロジックを持ったWebアプリケーションの開発まで対応可能です。また、CI/CDやStorybookの整備などフロントエンド開発基盤の構築も対応可能です。
+                </div>
+                <div>
+                  また、
+                  <a
+                    href="https://zenn.dev/a_da_chi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-c-link mx-1"
+                  >
+                    Zenn
+                    <FiExternalLink className="inline-block mb-1 ml-1" />
+                  </a>
+                  にて「
+                  <a
+                    href="https://zenn.dev/a_da_chi/articles/105dac5573b2f5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-c-link mx-1"
+                  >
+                    もう迷わないNext.jsのCSR/SSR/SSG/ISR
+                    <FiExternalLink className="inline-block mb-1 ml-1" />
+                  </a>
+                  」などNext.jsに関する記事を複数執筆しており、多数のLikeを頂いています。
+                </div>
+                <div className="space-y-1">
+                  <div>その他周辺ライブラリ</div>
+                  <ul className="list-disc list-inside">
+                    <li>バンドラー: Webpack / Vite</li>
+                    <li>ルーティング: React Router</li>
+                    <li>コンポーネント: Chakra UI / MUI</li>
+                    <li>
+                      CSS: Tailwind CSS / Bootstrap / CSS Modules / styled
+                      components / Emotion
+                    </li>
+                    <li>状態管理: Context API / Jotai</li>
+                    <li>データ取得: SWR</li>
+                    <li>
+                      GraphQL: Apollo Client / urql / GraphQL Code Generator
+                    </li>
+                    <li>フォーム: Formik / Yup</li>
+                    <li>
+                      テスト: Jest / Vitest / Testing Library / reg-suit /
+                      Chromatic / Cypress
+                    </li>
+                    <li>
+                      コンポーネントカタログ: Storybook / Storyshots / Storycap
+                    </li>
+                    <li>コードジェネレーター: Scaffdog / Hygen</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr className="text-left">
+            <td className="whitespace-nowrap p-4">TypeScript</td>
+            <td className="whitespace-nowrap p-4 ">2.5年</td>
+          </tr>
+          <tr className="text-left">
+            <td className="whitespace-nowrap p-4">Next.js</td>
+            <td className="whitespace-nowrap p-4 ">2.5年</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   )
 }
 
-const ForSP = () => {
+const BackEnd = () => {
   return (
-    <Accordion
-      display={{ base: 'block', md: 'none' }}
-      defaultIndex={[0]}
-      allowMultiple
-    >
-      <Stack spacing={4}>
-        {skills.map((skill) => {
-          return (
-            <AccordionItem key={skill.name}>
-              <AccordionButton>
-                <Box flex="1" textAlign="left">
-                  <chakra.h2 textStyle="h2">{skill.name}</chakra.h2>
-                  <chakra.p fontSize="14px" color="gray.500">
-                    {skill.years}
-                  </chakra.p>
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-              <AccordionPanel>{skill.detail}</AccordionPanel>
-            </AccordionItem>
-          )
-        })}
-      </Stack>
-    </Accordion>
+    <section className="space-y-5">
+      <h2 className="with-treat">バックエンド</h2>
+      <table className="table-auto w-full text-sm">
+        <thead>
+          <tr className="text-left whitespace-nowrap">
+            <th className="p-4">技術</th>
+            <th className="p-4">経験年数</th>
+            <th className="p-4">詳細</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="text-left">
+            <td className="whitespace-nowrap p-4">Ruby on Rails</td>
+            <td className="whitespace-nowrap p-4 ">3.5年</td>
+            <td rowSpan={1} className="p-4">
+              <div className="space-y-4">
+                <div>
+                  モノリシックなアプリケーションから、API（REST,
+                  GraphQL）の開発まで対応可能です。
+                </div>
+                <div className="space-y-1">
+                  <div>その他周辺ライブラリ</div>
+                  <ul className="list-disc list-inside">
+                    <li>GraphQL: GraphQL Ruby</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   )
 }
-
-const skills: {
-  name: string
-  years: string
-  detail: React.ReactNode
-}[] = [
-  {
-    name: 'React',
-    years: '3年',
-    detail: (
-      <>
-        LPやコーポレートサイト、採用サイトなどのHeadless
-        CMSを使用したJamstackなサイトから、複雑なUIやロジックを持ったアプリケーションまで対応可能です。Hooksを使用してロジックとビューを適切に分離したり、再利用性の高いコンポーネントを作ったりすることを意識しています。
-        <br />
-        また、JestやCypressをGitHub
-        Actionsで実行してテストを自動化したり、Storybookを使用してコンポーネントをカタログ化してデザイナーやビジネスサイドとのコミュニケーションをスムーズにしたり、Hygenを使用してテンプレートファイルの自動生成をして開発を効率化したりといったフロントエンド周辺のDevOpsの整備も意識しています。
-        <Stack spacing={1} mt={4}>
-          <chakra.h3 textStyle="h3">使用経験のあるライブラリ</chakra.h3>
-          <UnorderedList listStylePos="inside">
-            <ListItem>UIライブラリ: Chakra UI / MUI</ListItem>
-            <ListItem>
-              CSSフレームワーク: Tailwind CSS / Bootstrap / Bulma
-            </ListItem>
-            <ListItem>
-              CSS in JS: styled-components / Emotion / CSS Modules
-            </ListItem>
-            <ListItem>状態管理: Context API</ListItem>
-            <ListItem>データフェッチ: SWR</ListItem>
-            <ListItem>フォーム管理: Formik</ListItem>
-            <ListItem>バリデーションスキーマ: Yup</ListItem>
-            <ListItem>単体テスト: Jest</ListItem>
-            <ListItem>結合テスト: Testing Library</ListItem>
-            <ListItem>E2E: Cypress</ListItem>
-            <ListItem>コンポーネントカタログ: Storybook</ListItem>
-            <ListItem>コードジェネレータ: Hygen</ListItem>
-          </UnorderedList>
-        </Stack>
-      </>
-    ),
-  },
-  {
-    name: 'TypeScript',
-    years: '2年',
-    detail:
-      '基本的なデータ構造に対する型付けから、それらを組み合わせたり、ジェネリクスを使用したりする必要がある複雑なデータ構造に対する型付けまで対応可能です。きちんと型を当てて保守性を高めるだけではなく、ドキュメントとしての役割も果たせるように命名を意識しています。',
-  },
-  {
-    name: 'Next.js',
-    years: '2年',
-    detail: (
-      <>
-        LPやコーポレートサイト、採用サイトなどのHeadless
-        CMSを併用したJamstackなサイトから、複雑なUIやロジックを持ったアプリケーションまで対応可能です。Zennにて
-        <Link
-          href="https://zenn.dev/a_da_chi/articles/181ea4ccc39580"
-          isExternal
-          color="link"
-        >
-          Next.js最速セットアップ
-          <ExternalLinkIcon pb="3px" mx="2px" />
-        </Link>
-        や
-        <Link
-          href="https://zenn.dev/a_da_chi/articles/105dac5573b2f5"
-          isExternal
-          color="link"
-        >
-          もう迷わないNext.jsのCSR/SSR/SSG/ISR
-          <ExternalLinkIcon pb="3px" mx="2px" />
-        </Link>
-        などNext.jsに関する技術記事を複数執筆しており、累計で1000以上のLikeを頂いています。
-      </>
-    ),
-  },
-  {
-    name: 'Ruby on Rails',
-    years: '3年',
-    detail:
-      'モノリシックなアプリケーション開発から、API開発まで対応可能です。Fat Controllerにならないようにするのはもちろん、サービス層やデコレータ層を使用してFat Modelにならないように意識しています。テストにはminitestを使用することが多く、日常的にテストを書いています。',
-  },
-  {
-    name: 'Go',
-    years: '1ヶ月',
-    detail:
-      '社内ツールの改修、および機能追加に伴うコードリーディングと実装の経験があります。',
-  },
-]

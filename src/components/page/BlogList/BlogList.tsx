@@ -1,5 +1,3 @@
-import { Box, chakra, SimpleGrid, Stack } from '@chakra-ui/react'
-import React from 'react'
 import { Biography } from 'src/components/domain/Biography'
 import { BlogCard } from 'src/components/domain/BlogCard'
 import { PersonalBlogList, TechBlogList } from 'src/types/blog'
@@ -11,39 +9,37 @@ export type BlogListProps = {
 
 export const BlogList = ({ techBlog, personalBlog }: BlogListProps) => {
   return (
-    <Box>
-      <chakra.h1 id="blog-list" textStyle="h1" color="main" mb={8}>
-        ブログ
-      </chakra.h1>
-      <Stack spacing={8}>
-        <TechBlog techBlog={techBlog} />
-        <PersonalBlog personalBlog={personalBlog} />
-        <Biography />
-      </Stack>
-    </Box>
+    <div className="space-y-8">
+      <section>
+        <h1 id="blog-list">ブログ</h1>
+      </section>
+      <TechBlog techBlog={techBlog} />
+      <PersonalBlog personalBlog={personalBlog} />
+      <Biography />
+    </div>
   )
 }
 
 const TechBlog = ({ techBlog }: Pick<BlogListProps, 'techBlog'>) => {
   return (
-    <Box w="full">
-      <chakra.h2 id="tech-blog" textStyle="h2WithTreat" color="main" mb={8}>
+    <div className="space-y-5">
+      <h2 id="tech-blog" className="with-treat">
         テックブログ
-      </chakra.h2>
-      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} w="full">
+      </h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {techBlog.map((blog, idx) => {
           return (
             <BlogCard
+              key={idx}
+              kind="tech"
               href={blog.link}
               title={blog.title}
               publishDate={new Date(blog.pubDate)}
-              kind="tech"
-              key={idx}
             />
           )
         })}
-      </SimpleGrid>
-    </Box>
+      </div>
+    </div>
   )
 }
 
@@ -51,23 +47,23 @@ const PersonalBlog = ({
   personalBlog,
 }: Pick<BlogListProps, 'personalBlog'>) => {
   return (
-    <Box w="full">
-      <chakra.h2 id="personal-blog" textStyle="h2WithTreat" color="main" mb={8}>
+    <div className="space-y-5">
+      <h2 id="personal-blog" className="with-treat">
         個人ブログ
-      </chakra.h2>
-      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} w="full">
+      </h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {personalBlog.map((blog) => {
           return (
             <BlogCard
+              key={blog.id}
+              kind="personal"
               href={`/blog/${blog.id}`}
               title={blog.title}
               publishDate={new Date(blog.publishedAt ?? blog.createdAt)}
-              kind="personal"
-              key={blog.id}
             />
           )
         })}
-      </SimpleGrid>
-    </Box>
+      </div>
+    </div>
   )
 }

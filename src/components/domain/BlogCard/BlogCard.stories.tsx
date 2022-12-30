@@ -14,7 +14,7 @@ export const Tech: StoryObj = {
     href: 'http://example.com',
     title: 'テストブログ',
     publishDate: new Date('2021-10-31T00:00:00.0000'),
-    className: 'w-[180px]',
+    className: 'w-[244px]',
   },
 }
 

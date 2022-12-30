@@ -62,8 +62,8 @@ const Links = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
         {LINKS.map((link) => {
           return (
-            <div key={link.key} className="card p-4">
-              <Link {...link} data-testid={link.key}>
+            <div key={link.key} className="card p-4" data-testid={link.key}>
+              <Link {...link}>
                 <div className="v-stack space-y-1">
                   <link.icon size={48} />
                   <h3>{link.title}</h3>

@@ -12,7 +12,7 @@ export type BlogDetailProps = {
 export const BlogDetail = ({ blog }: BlogDetailProps) => {
   return (
     <div className="space-y-8">
-      <div>
+      <div className="space-y-1">
         <nav aria-label="breadcrumb" className="text-sm text-c-link">
           <ol className="flex items-center space-x-1">
             <li>

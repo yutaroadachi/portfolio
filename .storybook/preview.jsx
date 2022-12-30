@@ -1,5 +1,5 @@
 import * as NextImage from 'next/image'
-import '../src/styles/global.css'
+import '../src/styles/globals.css'
 
 const customViewports = {
   /** iPhone SE */

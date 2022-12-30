@@ -36,7 +36,7 @@ const Hero = () => {
       />
       <div className="v-stack">
         <BiChevronDown size={48} />
-        <p className="text-2xl font-bold">Scroll</p>
+        <p className="text-3xl font-bold">Scroll</p>
       </div>
     </section>
   )

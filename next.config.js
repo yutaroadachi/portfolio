@@ -6,7 +6,10 @@ const withBundleAnalyzer =
 /** @type { import('next').NextConfig } */
 const config = {
   eslint: {
-    dirs: ['src'],
+    dirs: ['app', 'src'],
+  },
+  experimental: {
+    appDir: true,
   },
   reactStrictMode: true,
 }

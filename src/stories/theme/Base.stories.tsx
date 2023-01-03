@@ -44,9 +44,10 @@ const Base = () => {
         <div>
           <NextImage
             src="/assets/profile.png"
-            width={128}
-            height={128}
+            width={256}
+            height={256}
             alt="Yutaro Adachiのプロフィール画像"
+            className="max-w-[128px] h-auto"
           />
         </div>
       </div>

@@ -21,9 +21,10 @@ export const ProfileCard = (props: ProfileCardProps) => {
       <div className="v-stack space-y-4 shrink-0">
         <NextImage
           src="/assets/profile.png"
-          width={128}
-          height={128}
+          width={256}
+          height={256}
           alt="Yutaro Adachiのプロフィール画像"
+          className="max-w-[128px] h-auto"
         />
         <div className="text-center">
           <h2>Yutaro Adachi</h2>

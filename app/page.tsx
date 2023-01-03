@@ -29,8 +29,8 @@ const Hero = () => {
       </h1>
       <NextImage
         src="/assets/top-page/hero.png"
-        width={938}
-        height={1000}
+        width={626}
+        height={667}
         alt=""
         priority
         className="max-w-[313px] h-auto"

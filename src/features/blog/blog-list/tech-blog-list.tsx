@@ -1,3 +1,5 @@
+import { URL } from '@/constants/url'
+import { FiExternalLink } from 'react-icons/fi'
 import { BlogCard } from './blog-card'
 import { getTechBlogList } from './get-tech-blog-list'
 
@@ -24,6 +26,17 @@ export const TechBlogList = ({ techBlogList }: TechBlogListProps) => {
           )
         })}
       </div>
+      <center>
+        <a
+          href={URL.zenn}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-c-link"
+        >
+          もっと見る
+          <FiExternalLink className="inline-block mb-1 ml-1" />
+        </a>
+      </center>
     </div>
   )
 }

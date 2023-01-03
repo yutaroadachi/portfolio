@@ -1,3 +1,4 @@
+import { URL } from '@/constants/url'
 import { ProfileCard } from '@/features/profile/profile-card'
 import { FiExternalLink } from 'react-icons/fi'
 
@@ -39,7 +40,7 @@ const FrontEnd = () => {
                 <div>
                   また、
                   <a
-                    href="https://zenn.dev/a_da_chi"
+                    href={URL.zenn}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-c-link mx-1"
@@ -49,7 +50,7 @@ const FrontEnd = () => {
                   </a>
                   にて「
                   <a
-                    href="https://zenn.dev/a_da_chi/articles/105dac5573b2f5"
+                    href={`${URL.zenn}/articles/105dac5573b2f5`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-c-link mx-1"

@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
-    "@vercel/og": "0.0.21",
+    "@vercel/og": "0.0.22",
     "client-only": "0.0.1",
     "clsx": "1.2.1",
     "microcms-js-sdk": "2.3.2",

@@ -28,7 +28,7 @@ const config: PlaywrightTestConfig = {
   webServer: process.env.CI
     ? undefined
     : {
-        command: 'yarn dev',
+        command: 'pnpm dev',
         url: BASE_URL,
       },
   workers: process.env.CI ? 1 : undefined,

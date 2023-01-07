@@ -2,6 +2,10 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16",
+    "pnpm": "7"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,7 +19,7 @@
     "test:e2e": "playwright test",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "bundle-analyze": "ANALYZE=true yarn build"
+    "bundle-analyze": "ANALYZE=true pnpm build"
   },
   "dependencies": {
     "@next/font": "13.1.1",

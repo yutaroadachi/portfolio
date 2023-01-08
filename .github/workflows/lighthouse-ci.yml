@@ -15,4 +15,4 @@ jobs:
       - name: Run lhci collect
         run: npx --package @lhci/cli lhci collect --url ${{ github.event.deployment_status.target_url }}
       - name: Run lhci upload
-        run: npx --package @lhci/cli lhci upload
+        run: npx --package @lhci/cli lhci upload --githubAppToken ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

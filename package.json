@@ -36,7 +36,7 @@
   "devDependencies": {
     "@babel/core": "7.20.12",
     "@next/bundle-analyzer": "13.1.4",
-    "@playwright/test": "1.29.2",
+    "@playwright/test": "1.30.0",
     "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-essentials": "6.5.16",
     "@storybook/addon-links": "6.5.16",

@@ -67,7 +67,9 @@ const Footer = () => {
           )
         })}
       </nav>
-      <div>Copyright© adachi All Rights Reserved.</div>
+      <div className="text-sm">
+        Copyright© Yutaro Adachi All Rights Reserved.
+      </div>
     </footer>
   )
 }
@@ -75,7 +77,7 @@ const Footer = () => {
 const Logo = () => {
   return (
     <NextLink href={PATH.top} className="logo">
-      adachi
+      y
     </NextLink>
   )
 }

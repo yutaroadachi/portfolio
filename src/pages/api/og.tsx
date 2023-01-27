@@ -10,12 +10,12 @@ export default async function handler(req: NextRequest) {
     const { searchParams } = new URL(req.url)
     const title = searchParams.get('title')?.slice(0, 70)
 
-    const [fontRegularData, fontBoldData] = await Promise.all([
+    const [fontRegularData, fontSemiBoldData] = await Promise.all([
       fetch(
         new URL('../../../assets/Montserrat-Regular.ttf', import.meta.url)
       ).then((res) => res.arrayBuffer()),
       fetch(
-        new URL('../../../assets/Montserrat-Bold.ttf', import.meta.url)
+        new URL('../../../assets/Montserrat-SemiBold.ttf', import.meta.url)
       ).then((res) => res.arrayBuffer()),
     ])
 
@@ -29,28 +29,39 @@ export default async function handler(req: NextRequest) {
             width: '100%',
             height: '100%',
             backgroundColor: '#5eacc2',
-            fontFamily: '"Montserrat"',
-            fontSize: '64px',
-            color: 'white',
             padding: '32px',
+            border: '16px solid #fff',
           }}
         >
           <div
             style={{
               width: '100%',
+              fontFamily: '"Montserrat"',
+              fontWeight: 400,
+              fontSize: '64px',
+              color: '#fff',
               wordBreak: 'break-all',
-              fontWeight: 'normal',
             }}
           >
             {title}
           </div>
           <div
             style={{
-              fontWeight: 'bold',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              width: '80px',
+              height: '80px',
+              backgroundColor: '#fff',
+              fontFamily: '"Montserrat"',
+              fontWeight: 600,
+              fontSize: '64px',
+              color: '#5eacc2',
+              paddingBottom: '16px',
               marginLeft: 'auto',
             }}
           >
-            adachi
+            y
           </div>
         </div>
       ) : (
@@ -62,13 +73,25 @@ export default async function handler(req: NextRequest) {
             width: '100%',
             height: '100%',
             backgroundColor: '#5eacc2',
-            fontFamily: '"Montserrat"',
-            fontWeight: 'bold',
-            fontSize: '128px',
-            color: 'white',
           }}
         >
-          adachi
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              width: '160px',
+              height: '160px',
+              backgroundColor: '#fff',
+              color: '#5eacc2',
+              fontFamily: '"Montserrat"',
+              fontWeight: 600,
+              fontSize: '128px',
+              paddingBottom: '32px',
+            }}
+          >
+            y
+          </div>
         </div>
       ),
       {
@@ -81,8 +104,8 @@ export default async function handler(req: NextRequest) {
           },
           {
             name: 'Montserrat',
-            data: fontBoldData,
-            weight: 700,
+            data: fontSemiBoldData,
+            weight: 600,
             style: 'normal',
           },
         ],

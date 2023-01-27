@@ -23,9 +23,9 @@ const Hero = () => {
       className="v-stack center space-y-4 min-h-[calc(100vh_-_160px)] lg:min-h-[calc(100vh_-_96px)]"
     >
       <h1 id="hero" className="text-center">
-        adachi&apos;s
+        Yutaro Adachi&apos;s
         <br />
-        portfolio
+        Portfolio
       </h1>
       <NextImage
         src="/assets/top-page/hero.png"

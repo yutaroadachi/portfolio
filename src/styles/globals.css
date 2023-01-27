@@ -7,19 +7,19 @@
     @apply bg-c-bg;
   }
   h1 {
-    @apply text-4xl font-bold;
+    @apply font-bold text-4xl;
   }
   h2 {
-    @apply text-3xl font-bold;
+    @apply font-bold text-3xl;
   }
   h3 {
-    @apply text-2xl font-bold;
+    @apply font-bold text-2xl;
   }
   h4 {
-    @apply text-xl font-bold;
+    @apply font-bold text-xl;
   }
   h5 {
-    @apply text-lg font-bold;
+    @apply font-bold text-lg;
   }
   h6 {
     @apply font-bold;
@@ -46,7 +46,7 @@
 
 @layer components {
   .logo {
-    @apply text-[32px] font-bold tracking-[1px];
+    @apply center w-10 h-10 bg-white text-c-primary font-semibold text-[32px] pb-2;
   }
   .with-treat {
     @apply text-center relative after:content-[""] after:w-[30px] after:h-[3px] after:bg-current after:absolute after:left-0 after:right-0 after:mx-auto after:bottom-[-5px];

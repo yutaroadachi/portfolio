@@ -1,6 +1,6 @@
-# adachi's portfolio
+# Yutaro Adachi's Portfolio
 
-adachi's portfolio created by Next.js.
+Yutaro Adachi's Portfolio created by Next.js.
 
 ## Getting Started
 

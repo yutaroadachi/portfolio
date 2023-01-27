@@ -33,5 +33,5 @@ export const DefaultTags = ({
   )
 }
 
-const siteName = "adachi's Portfolio"
+const siteName = "Yutaro Adachi's Portfolio"
 const ogImageApiServerEndpoint = 'https://portfolio-adachi.vercel.app/api/og'

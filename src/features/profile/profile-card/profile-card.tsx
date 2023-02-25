@@ -28,7 +28,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
         />
         <div className="text-center">
           <h2>Yutaro Adachi</h2>
-          <p className="text-sm text-gray-500">ソフトウェアエンジニア</p>
+          <p className="text-sm text-gray-500">Frontend Engineer</p>
         </div>
         <div className="h-stack space-x-4">
           {ACCOUNTS.map((account, idx) => {

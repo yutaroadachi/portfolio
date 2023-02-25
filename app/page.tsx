@@ -1,9 +1,18 @@
 import { LINKS } from '@/constants/links'
 import { ProfileCard } from '@/features/profile/profile-card'
+import { generateOpenGraph, generateTitle } from '@/utils/meta/generator'
 import NextImage from 'next/image'
 import NextLink from 'next/link'
 import { PropsWithChildren } from 'react'
 import { BiChevronDown } from 'react-icons/bi'
+
+const title = 'トップ'
+const description = 'Yutaro Adachi(Frontend Engineer)のポートフォリオです。'
+export const metadata = {
+  title: generateTitle(title),
+  description,
+  openGraph: generateOpenGraph(title, description),
+}
 
 export default function RootPage() {
   return (

@@ -1,5 +1,14 @@
 import { ProfileCard } from '@/features/profile/profile-card'
+import { generateOpenGraph, generateTitle } from '@/utils/meta/generator'
 import { ReactNode } from 'react'
+
+const title = '履歴書'
+const description = 'Yutaro Adachi(Frontend Engineer)の履歴書です。'
+export const metadata = {
+  title: generateTitle(title),
+  description,
+  openGraph: generateOpenGraph(title, description),
+}
 
 export default function ResumePage() {
   return (

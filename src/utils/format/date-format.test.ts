@@ -1,6 +1,7 @@
 import { formatYYYYMMDD } from './date-format'
 
-test('formatYYYYMMDD', () => {
-  const date = new Date('2021-3-21')
-  expect(formatYYYYMMDD(date)).toEqual('2021/3/21')
+describe('formatYYYYMMDD', () => {
+  it('YYYY/MM/DDの形式で日付文字列が返されること', () => {
+    expect(formatYYYYMMDD(new Date('2019-01-01'))).toEqual('2019/1/1')
+  })
 })

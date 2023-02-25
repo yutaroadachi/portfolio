@@ -1,22 +1,18 @@
-import { devices, PlaywrightTestConfig } from '@playwright/test'
+import { defineConfig, devices } from '@playwright/test'
 
 const BASE_URL = 'http://localhost:3000'
 
-const config: PlaywrightTestConfig = {
+export default defineConfig({
   forbidOnly: !!process.env.CI,
   fullyParallel: true,
   projects: [
     {
       name: 'chromium',
-      use: {
-        ...devices['Desktop Chrome'],
-      },
+      use: devices['Desktop Chrome'],
     },
     {
       name: 'Mobile Safari',
-      use: {
-        ...devices['iPhone 13'],
-      },
+      use: devices['iPhone 13'],
     },
   ],
   retries: process.env.CI ? 1 : 0,
@@ -32,6 +28,4 @@ const config: PlaywrightTestConfig = {
         url: BASE_URL,
       },
   workers: process.env.CI ? 1 : undefined,
-}
-
-export default config
+})

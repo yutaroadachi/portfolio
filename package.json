@@ -21,7 +21,6 @@
     "bundle-analyze": "ANALYZE=true yarn build"
   },
   "dependencies": {
-    "@next/font": "13.2.1",
     "@vercel/og": "0.1.0",
     "client-only": "0.0.1",
     "clsx": "1.2.1",

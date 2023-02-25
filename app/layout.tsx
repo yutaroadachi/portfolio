@@ -1,7 +1,13 @@
 import '@/styles/globals.css'
-import { Montserrat } from '@next/font/google'
+import { Montserrat } from 'next/font/google'
 import { ReactNode } from 'react'
 import { LayoutContent } from './LayoutContent'
+
+export const metadata = {
+  twitter: {
+    card: 'summary_large_image',
+  },
+}
 
 const montserrat = Montserrat({
   subsets: ['latin'],

@@ -6,7 +6,7 @@ describe('truncate', () => {
     ${'react'}  | ${5}      | ${'react'}
     ${'react!'} | ${5}      | ${'reac…'}
   `(
-    'original: $original, maxLength: $maxLengthの時、$expectedを返す',
+    'original: $original, maxLength: $maxLengthの時、$expectedが返されること',
     ({ original, maxLength, expected }) => {
       expect(truncate(original, maxLength)).toEqual(expected)
     }

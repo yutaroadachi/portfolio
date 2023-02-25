@@ -1,6 +1,15 @@
 import { URL } from '@/constants/url'
 import { ProfileCard } from '@/features/profile/profile-card'
+import { generateOpenGraph, generateTitle } from '@/utils/meta/generator'
 import { FiExternalLink } from 'react-icons/fi'
+
+const title = 'スキル'
+const description = 'Yutaro Adachi(Frontend Engineer)のスキルです。'
+export const metadata = {
+  title: generateTitle(title),
+  description,
+  openGraph: generateOpenGraph(title, description),
+}
 
 export default function SkillsPage() {
   return (

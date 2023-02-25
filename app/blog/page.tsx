@@ -5,7 +5,16 @@ import {
   TechBlogList,
 } from '@/features/blog/blog-list'
 import { ProfileCard } from '@/features/profile/profile-card'
+import { generateOpenGraph, generateTitle } from '@/utils/meta/generator'
 import { Suspense } from 'react'
+
+const title = 'ブログ'
+const description = 'Yutaro Adachi(Frontend Engineer)のブログです。'
+export const metadata = {
+  title: generateTitle(title),
+  description,
+  openGraph: generateOpenGraph(title, description),
+}
 
 export const revalidate = 300
 

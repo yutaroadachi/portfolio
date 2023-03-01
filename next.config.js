@@ -6,7 +6,7 @@ const withBundleAnalyzer =
 /** @type { import('next').NextConfig } */
 const config = {
   eslint: {
-    dirs: ['app', 'src'],
+    dirs: ['src'],
   },
   experimental: {
     appDir: true,

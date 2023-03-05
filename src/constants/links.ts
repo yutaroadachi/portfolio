@@ -8,10 +8,12 @@ import {
 import { PATH } from './path'
 import { URL } from './url'
 
+export type LinksHref = '/skills' | '/resume' | '/blog'
+
 /** Header, Footer, Topで使用するリンク */
 export const LINKS: {
   key: string
-  href: string
+  href: LinksHref | string
   title: string
   icon: IconType
   isExternal: boolean

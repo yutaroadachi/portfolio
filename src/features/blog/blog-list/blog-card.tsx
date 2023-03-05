@@ -44,6 +44,6 @@ const Link = ({
       {children}
     </a>
   ) : (
-    <NextLink href={href}>{children}</NextLink>
+    <NextLink href={href as `/blog/${string}`}>{children}</NextLink>
   )
 }

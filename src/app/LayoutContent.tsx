@@ -1,4 +1,4 @@
-import { LINKS } from '@/constants/links'
+import { LINKS, LinksHref } from '@/constants/links'
 import { PATH } from '@/constants/path'
 import NextLink from 'next/link'
 import { PropsWithChildren, ReactNode } from 'react'
@@ -97,7 +97,7 @@ const Link = ({
       {children}
     </a>
   ) : (
-    <NextLink href={href} aria-label={label}>
+    <NextLink href={href as LinksHref} aria-label={label}>
       {children}
     </NextLink>
   )

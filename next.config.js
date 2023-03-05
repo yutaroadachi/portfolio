@@ -10,6 +10,7 @@ const config = {
   },
   experimental: {
     appDir: true,
+    typedRoutes: true,
   },
   reactStrictMode: true,
 }

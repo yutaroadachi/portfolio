@@ -1,4 +1,4 @@
-import { LINKS } from '@/constants/links'
+import { LINKS, LinksHref } from '@/constants/links'
 import { ProfileCard } from '@/features/profile/profile-card'
 import { generateOpenGraph, generateTitle } from '@/utils/meta/generator'
 import NextImage from 'next/image'
@@ -100,6 +100,6 @@ const Link = ({
       {children}
     </a>
   ) : (
-    <NextLink href={href}>{children}</NextLink>
+    <NextLink href={href as LinksHref}>{children}</NextLink>
   )
 }

@@ -1,12 +1,7 @@
 import { IconType } from 'react-icons'
 import { GiSkills } from 'react-icons/gi'
-import {
-  MdOutlineArticle,
-  MdOutlineEmail,
-  MdOutlineWorkOutline,
-} from 'react-icons/md'
+import { MdOutlineArticle, MdOutlineWorkOutline } from 'react-icons/md'
 import { PATH } from './path'
-import { URL } from './url'
 
 export type LinksHref = '/skills' | '/resume' | '/blog'
 
@@ -38,12 +33,5 @@ export const LINKS: {
     title: 'ブログ',
     icon: MdOutlineArticle,
     isExternal: false,
-  },
-  {
-    key: 'contact',
-    href: URL.contact,
-    title: 'お問い合わせ',
-    icon: MdOutlineEmail,
-    isExternal: true,
   },
 ]

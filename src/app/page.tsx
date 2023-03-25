@@ -69,7 +69,7 @@ const Links = () => {
       <h2 id="links" className="with-treat">
         リンク
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
         {LINKS.map((link) => {
           return (
             <div key={link.key} className="card p-4" data-testid={link.key}>

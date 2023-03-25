@@ -61,5 +61,8 @@
     "storybook-addon-next": "1.7.3",
     "tailwindcss": "3.2.7",
     "typescript": "5.0.2"
+  },
+  "resolutions": {
+    "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"
   }
 }

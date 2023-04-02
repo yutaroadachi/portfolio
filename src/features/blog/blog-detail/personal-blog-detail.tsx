@@ -74,7 +74,7 @@ const TwitterShareLink = ({ url, text }: ShareLink) => {
 
   return (
     <a
-      href={`https://twitter.com/share?${urlSearchParams}`}
+      href={`https://twitter.com/intent/tweet?${urlSearchParams}`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Twitterでシェア"

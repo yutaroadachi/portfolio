@@ -15,7 +15,7 @@ export const PersonalBlogDetail = ({
   return (
     <div className="space-y-8">
       <div className="space-y-1">
-        <nav aria-label="breadcrumb" className="text-sm text-c-link">
+        <nav className="text-sm text-c-link" aria-label="breadcrumb">
           <ol className="flex items-center space-x-1">
             <li>
               <NextLink href={PATH.blog}>ブログ一覧</NextLink>

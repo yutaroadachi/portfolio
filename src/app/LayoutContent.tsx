@@ -1,7 +1,6 @@
-import { LINKS, LinksHref } from '@/constants/links'
 import { PATH } from '@/constants/path'
 import NextLink from 'next/link'
-import { PropsWithChildren, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 export const LayoutContent = ({ children }: { children: ReactNode }) => {
   return (
@@ -22,30 +21,12 @@ const Header = () => {
     <header className="bg-c-primary text-white">
       <div className="flex justify-between items-center max-w-full lg:max-w-screen-md xl:max-w-screen-lg h-[64px] mx-4 lg:mx-auto">
         <Logo />
-        <nav className="flex md:hidden space-x-4">
+        <nav className="space-x-4 font-bold">
           {LINKS.map((link) => {
             return (
-              <Link
-                key={link.key}
-                isExternal={link.isExternal}
-                href={link.href}
-                label={link.title}
-              >
-                <link.icon size={24} />
-              </Link>
-            )
-          })}
-        </nav>
-        <nav className="hidden md:flex space-x-4 font-bold">
-          {LINKS.map((link) => {
-            return (
-              <Link
-                key={link.key}
-                isExternal={link.isExternal}
-                href={link.href}
-              >
+              <NextLink key={link.key} href={link.href} aria-label={link.title}>
                 {link.title}
-              </Link>
+              </NextLink>
             )
           })}
         </nav>
@@ -61,9 +42,9 @@ const Footer = () => {
       <nav className="space-x-4 font-bold">
         {LINKS.map((link) => {
           return (
-            <Link key={link.key} isExternal={link.isExternal} href={link.href}>
+            <NextLink key={link.key} href={link.href} aria-label={link.title}>
               {link.title}
-            </Link>
+            </NextLink>
           )
         })}
       </nav>
@@ -76,29 +57,25 @@ const Footer = () => {
 
 const Logo = () => {
   return (
-    <NextLink href={PATH.top} className="logo">
+    <NextLink href={PATH.top} className="logo" aria-label="logo">
       y
     </NextLink>
   )
 }
 
-const Link = ({
-  isExternal,
-  href,
-  label,
-  children,
-}: PropsWithChildren<{
-  isExternal: boolean
-  href: string
-  label?: string
-}>) => {
-  return isExternal ? (
-    <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
-      {children}
-    </a>
-  ) : (
-    <NextLink href={href as LinksHref} aria-label={label}>
-      {children}
-    </NextLink>
-  )
-}
+const LINKS: {
+  key: string
+  href: '/' | '/blog'
+  title: string
+}[] = [
+  {
+    key: 'top',
+    href: PATH.top,
+    title: 'トップ',
+  },
+  {
+    key: 'blog',
+    href: PATH.blog,
+    title: 'ブログ',
+  },
+]

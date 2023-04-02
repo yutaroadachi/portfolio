@@ -1,3 +1,4 @@
+import { PROD_ORIGIN } from '@/constants/url'
 import { generateOpenGraph } from './generator'
 
 describe('generateOpenGraph', () => {
@@ -6,7 +7,7 @@ describe('generateOpenGraph', () => {
       title: `テスト | Yutaro Adachi's Portfolio`,
       description: 'テストです。',
       siteName: `Yutaro Adachi's Portfolio`,
-      images: [{ url: 'https://portfolio-adachi.vercel.app/api/og' }],
+      images: [{ url: `${PROD_ORIGIN}/api/og` }],
     })
   })
 
@@ -16,9 +17,7 @@ describe('generateOpenGraph', () => {
         title: `テスト | Yutaro Adachi's Portfolio`,
         description: 'テストです。',
         siteName: `Yutaro Adachi's Portfolio`,
-        images: [
-          { url: 'https://portfolio-adachi.vercel.app/api/og?title=テスト' },
-        ],
+        images: [{ url: `${PROD_ORIGIN}/api/og?title=テスト` }],
       }
     )
   })

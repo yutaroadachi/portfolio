@@ -40,8 +40,8 @@ const Hero = () => {
         className="max-w-[313px] h-auto mt-8"
       />
       <div className="v-stack mt-4">
-        <BiChevronDown size={48} />
-        <p className="text-3xl font-bold">Scroll</p>
+        <div className="font-bold">Scroll Down</div>
+        <BiChevronDown size={72} className="animate-bounce" />
       </div>
     </section>
   )

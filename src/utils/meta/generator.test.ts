@@ -1,4 +1,3 @@
-import { PROD_ORIGIN } from '@/constants/url'
 import { generateOpenGraph } from './generator'
 
 describe('generateOpenGraph', () => {
@@ -7,7 +6,7 @@ describe('generateOpenGraph', () => {
       title: `テスト | Yutaro Adachi's Portfolio`,
       description: 'テストです。',
       siteName: `Yutaro Adachi's Portfolio`,
-      images: [{ url: `${PROD_ORIGIN}/api/og` }],
+      images: 'http://localhost:3000/api/og',
     })
   })
 
@@ -17,7 +16,7 @@ describe('generateOpenGraph', () => {
         title: `テスト | Yutaro Adachi's Portfolio`,
         description: 'テストです。',
         siteName: `Yutaro Adachi's Portfolio`,
-        images: [{ url: `${PROD_ORIGIN}/api/og?title=テスト` }],
+        images: 'http://localhost:3000/api/og?title=テスト',
       }
     )
   })

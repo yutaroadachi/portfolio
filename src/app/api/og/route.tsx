@@ -1,21 +1,18 @@
-import { ImageResponse } from '@vercel/og'
-import { NextRequest } from 'next/server'
+import { ImageResponse, NextRequest } from 'next/server'
 
-export const config = {
-  runtime: 'edge',
-}
+export const runtime = 'experimental-edge'
 
-export default async function handler(req: NextRequest) {
+export const GET = async (req: NextRequest) => {
   try {
     const { searchParams } = new URL(req.url)
     const title = searchParams.get('title')?.slice(0, 70)
 
     const [fontRegularData, fontSemiBoldData] = await Promise.all([
       fetch(
-        new URL('../../../assets/Montserrat-Regular.ttf', import.meta.url)
+        new URL('../../../../assets/Montserrat-Regular.ttf', import.meta.url)
       ).then((res) => res.arrayBuffer()),
       fetch(
-        new URL('../../../assets/Montserrat-SemiBold.ttf', import.meta.url)
+        new URL('../../../../assets/Montserrat-SemiBold.ttf', import.meta.url)
       ).then((res) => res.arrayBuffer()),
     ])
 
@@ -30,7 +27,6 @@ export default async function handler(req: NextRequest) {
             height: '100%',
             backgroundColor: '#5eacc2',
             padding: '32px',
-            border: '16px solid #fff',
           }}
         >
           <div
@@ -115,6 +111,7 @@ export default async function handler(req: NextRequest) {
     if (e instanceof Error) {
       console.error(e.message)
     }
+
     return new Response(`Failed to generate the image`, {
       status: 500,
     })

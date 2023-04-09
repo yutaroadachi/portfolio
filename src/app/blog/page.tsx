@@ -9,7 +9,7 @@ import { generateOpenGraph, generateTitle } from '@/utils/meta/generator'
 import { Suspense } from 'react'
 
 const title = 'ブログ'
-const description = 'Yutaro Adachi(Frontend Engineer)のブログです。'
+const description = 'Yutaro Adachiのブログです。'
 export const metadata = {
   title: generateTitle(title),
   description,

@@ -5,5 +5,7 @@ export const URL = {
   zenn: 'https://zenn.dev/a_da_chi',
 } as const
 
-/** 本番環境のオリジン */
-export const PROD_ORIGIN = 'https://portfolio-adachi.vercel.app'
+/** オリジン */
+export const ORIGIN = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : 'http://localhost:3000'

@@ -1,8 +1,11 @@
-import { PROD_ORIGIN } from '@/constants/url'
+import { PATH } from '@/constants/path'
+import { ORIGIN } from '@/constants/url'
 import type { Metadata } from 'next'
 
+const siteName = "Yutaro Adachi's Portfolio"
+
 export const generateTitle = (pageTitle: string) => {
-  return `${pageTitle} | Yutaro Adachi's Portfolio`
+  return `${pageTitle} | ${siteName}`
 }
 
 export const generateOpenGraph = (
@@ -10,21 +13,14 @@ export const generateOpenGraph = (
   description: string,
   ogImageTitle?: string
 ): Metadata['openGraph'] => {
-  const siteName = `Yutaro Adachi's Portfolio`
-  const titleWithTemplate = `${title} | ${siteName}`
-  const ogImageEndpoint = `${PROD_ORIGIN}/api/og`
+  const ogImageEndpoint = `${ORIGIN}${PATH.api.og}`
 
   return {
-    title: titleWithTemplate,
+    title: generateTitle(title),
     description,
     siteName,
-    images: [
-      {
-        url:
-          ogImageTitle === undefined
-            ? ogImageEndpoint
-            : `${ogImageEndpoint}?title=${ogImageTitle}`,
-      },
-    ],
+    images: ogImageTitle
+      ? `${ogImageEndpoint}?title=${ogImageTitle}`
+      : ogImageEndpoint,
   }
 }

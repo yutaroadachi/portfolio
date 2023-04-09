@@ -4,7 +4,7 @@ import NextImage from 'next/image'
 import { BiChevronDown } from 'react-icons/bi'
 
 const title = 'トップ'
-const description = 'Yutaro Adachi(Frontend Engineer)のポートフォリオです。'
+const description = 'Yutaro Adachiのポートフォリオです。'
 export const metadata = {
   title: generateTitle(title),
   description,

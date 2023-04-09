@@ -1,5 +1,5 @@
 import { PATH } from '@/constants/path'
-import { PROD_ORIGIN } from '@/constants/url'
+import { ORIGIN } from '@/constants/url'
 import { ProfileCard } from '@/features/profile/profile-card'
 import { formatYYYYMMDD } from '@/utils/format/date-format'
 import { generateTitle } from '@/utils/meta/generator'
@@ -16,7 +16,7 @@ export type PersonalBlogDetailProps = {
 export const PersonalBlogDetail = ({
   personalBlogDetail,
 }: PersonalBlogDetailProps) => {
-  const shareUrl = `${PROD_ORIGIN}${PATH.blog}/${personalBlogDetail.id}`
+  const shareUrl = `${ORIGIN}${PATH.blog}/${personalBlogDetail.id}`
   const shareText = generateTitle(personalBlogDetail.title)
 
   return (

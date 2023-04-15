@@ -16,8 +16,6 @@
     "format:write": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "test": "jest",
     "test:e2e": "playwright test",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
     "bundle-analyze": "ANALYZE=true yarn build"
   },
   "dependencies": {
@@ -35,12 +33,6 @@
     "@babel/core": "7.21.4",
     "@next/bundle-analyzer": "13.3.0",
     "@playwright/test": "1.32.3",
-    "@storybook/addon-actions": "6.5.16",
-    "@storybook/addon-essentials": "6.5.16",
-    "@storybook/addon-links": "6.5.16",
-    "@storybook/builder-webpack5": "6.5.16",
-    "@storybook/manager-webpack5": "6.5.16",
-    "@storybook/react": "6.5.16",
     "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.0",
     "@types/node": "18.15.11",
@@ -57,11 +49,7 @@
     "jest-environment-jsdom": "29.5.0",
     "postcss": "8.4.21",
     "prettier": "2.8.7",
-    "storybook-addon-next": "1.8.0",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4"
-  },
-  "resolutions": {
-    "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"
   }
 }

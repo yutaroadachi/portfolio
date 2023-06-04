@@ -4166,10 +4166,10 @@ merge2@^1.3.0, merge2@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
 
-microcms-js-sdk@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/microcms-js-sdk/-/microcms-js-sdk-2.4.0.tgz#559a3ef522283c76e43b2defee0f7f9a9232bf6e"
-  integrity sha512-vwZQs9rzi8MPB4EYV9HXDKAr10slnpYuZf4cDim7rhH+wGKv7uZ+5zxNMtc80/uNBi7J/K05a6ZxepnhA08SYw==
+microcms-js-sdk@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/microcms-js-sdk/-/microcms-js-sdk-2.5.0.tgz#0832639e9ef6a625e2f5a21e4cee71984901c64b"
+  integrity sha512-tmzLcxCZ6/98KvFUi4VMrpsDXQSxadCMH/yebMIAQ6+tr33SdCF57FqGrg95qB3NGeSuzJvtapo14EPZqhwrMg==
   dependencies:
     async-retry "^1.3.3"
     cross-fetch "^3.1.5"

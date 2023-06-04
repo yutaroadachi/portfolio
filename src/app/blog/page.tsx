@@ -31,7 +31,6 @@ export default async function BlogListPage() {
       </section>
       <TechBlogList techBlogList={techBlogList} />
       <Suspense fallback={<h2>Loading…</h2>}>
-        {/* @ts-expect-error Server Component */}
         <PersonalBlogListData personalBlogListData={personalBlogListData} />
       </Suspense>
       <ProfileCard />

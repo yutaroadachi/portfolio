@@ -12,19 +12,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: 'package.json'
-          cache: 'yarn'
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
       - name: Install playwright dependencies
-        run: yarn playwright install --with-deps
+        run: pnpm playwright install --with-deps
+
       - name: Run e2e test
-        run: yarn test:e2e
+        run: pnpm test:e2e
         env:
           PLAYWRIGHT_BASE_URL: ${{ github.event.deployment_status.target_url }}
+
       - name: Upload playwright report
         uses: actions/upload-artifact@v3
         if: failure()

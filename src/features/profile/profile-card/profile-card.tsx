@@ -1,21 +1,21 @@
-import { URL } from '@/constants/url'
-import { clsx } from 'clsx'
-import NextImage from 'next/image'
-import { ComponentPropsWithoutRef } from 'react'
-import { IconType } from 'react-icons'
-import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai'
-import { FiExternalLink } from 'react-icons/fi'
+import { URL } from "@/constants/url";
+import { clsx } from "clsx";
+import NextImage from "next/image";
+import { ComponentPropsWithoutRef } from "react";
+import { IconType } from "react-icons";
+import { AiOutlineGithub, AiOutlineTwitter } from "react-icons/ai";
+import { FiExternalLink } from "react-icons/fi";
 
-export type ProfileCardProps = ComponentPropsWithoutRef<'div'>
+export type ProfileCardProps = ComponentPropsWithoutRef<"div">;
 
 export const ProfileCard = (props: ProfileCardProps) => {
-  const { className, ...rest } = props
+  const { className, ...rest } = props;
 
   return (
     <aside
       className={clsx(
-        'card stack md:flex-row md:items-center space-y-8 md:space-x-8 md:space-y-0 p-8',
-        className
+        "card stack md:flex-row md:items-center space-y-8 md:space-x-8 md:space-y-0 p-8",
+        className,
       )}
       {...rest}
     >
@@ -43,7 +43,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
               >
                 <account.icon size={24} />
               </a>
-            )
+            );
           })}
         </div>
       </div>
@@ -73,22 +73,22 @@ export const ProfileCard = (props: ProfileCardProps) => {
         」は400以上のLikeを頂いています。
       </p>
     </aside>
-  )
-}
+  );
+};
 
 const ACCOUNTS: {
-  href: string
-  icon: IconType
-  label: string
+  href: string;
+  icon: IconType;
+  label: string;
 }[] = [
   {
     href: URL.github,
     icon: AiOutlineGithub,
-    label: 'GitHubアカウント',
+    label: "GitHubアカウント",
   },
   {
     href: URL.twitter,
     icon: AiOutlineTwitter,
-    label: 'Twitterアカウント',
+    label: "Twitterアカウント",
   },
-]
+];

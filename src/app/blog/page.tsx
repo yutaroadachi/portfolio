@@ -3,26 +3,26 @@ import {
   getTechBlogList,
   PersonalBlogList,
   TechBlogList,
-} from '@/features/blog/blog-list'
-import { ProfileCard } from '@/features/profile/profile-card'
-import { generateOpenGraph, generateTitle } from '@/utils/meta/generator'
-import { Suspense } from 'react'
+} from "@/features/blog/blog-list";
+import { ProfileCard } from "@/features/profile/profile-card";
+import { generateOpenGraph, generateTitle } from "@/utils/meta/generator";
+import { Suspense } from "react";
 
-const title = 'ブログ'
-const description = 'Yutaro Adachiのブログです。'
+const title = "ブログ";
+const description = "Yutaro Adachiのブログです。";
 export const metadata = {
   title: generateTitle(title),
   description,
   openGraph: generateOpenGraph(title, description),
-}
+};
 
-export const revalidate = 300
+export const revalidate = 300;
 
 export default async function BlogListPage() {
-  const techBlogListData = getTechBlogList()
-  const personalBlogListData = getPersonalBlogList()
+  const techBlogListData = getTechBlogList();
+  const personalBlogListData = getPersonalBlogList();
 
-  const techBlogList = await techBlogListData
+  const techBlogList = await techBlogListData;
 
   return (
     <div className="space-y-8">
@@ -35,15 +35,15 @@ export default async function BlogListPage() {
       </Suspense>
       <ProfileCard />
     </div>
-  )
+  );
 }
 
 const PersonalBlogListData = async ({
   personalBlogListData,
 }: {
-  personalBlogListData: ReturnType<typeof getPersonalBlogList>
+  personalBlogListData: ReturnType<typeof getPersonalBlogList>;
 }) => {
-  const personalBlogList = await personalBlogListData
+  const personalBlogList = await personalBlogListData;
 
-  return <PersonalBlogList personalBlogList={personalBlogList} />
-}
+  return <PersonalBlogList personalBlogList={personalBlogList} />;
+};

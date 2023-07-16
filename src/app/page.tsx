@@ -1,15 +1,15 @@
-import { ProfileCard } from '@/features/profile/profile-card'
-import { generateOpenGraph, generateTitle } from '@/utils/meta/generator'
-import NextImage from 'next/image'
-import { BiChevronDown } from 'react-icons/bi'
+import { ProfileCard } from "@/features/profile/profile-card";
+import { generateOpenGraph, generateTitle } from "@/utils/meta/generator";
+import NextImage from "next/image";
+import { BiChevronDown } from "react-icons/bi";
 
-const title = 'トップ'
-const description = 'Yutaro Adachiのポートフォリオです。'
+const title = "トップ";
+const description = "Yutaro Adachiのポートフォリオです。";
 export const metadata = {
   title: generateTitle(title),
   description,
   openGraph: generateOpenGraph(title, description),
-}
+};
 
 export default function RootPage() {
   return (
@@ -18,7 +18,7 @@ export default function RootPage() {
       <AboutMe />
       <Skills />
     </div>
-  )
+  );
 }
 
 const Hero = () => {
@@ -44,8 +44,8 @@ const Hero = () => {
         <BiChevronDown size={72} className="animate-bounce" />
       </div>
     </section>
-  )
-}
+  );
+};
 
 const AboutMe = () => {
   return (
@@ -55,8 +55,8 @@ const AboutMe = () => {
       </div>
       <ProfileCard />
     </section>
-  )
-}
+  );
+};
 
 const Skills = () => {
   return (
@@ -85,5 +85,5 @@ const Skills = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

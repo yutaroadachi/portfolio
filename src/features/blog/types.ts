@@ -1,5 +1,5 @@
 export type PersonalBlog = {
-  title: string
-  body: string
-  description?: string
-}
+  title: string;
+  body: string;
+  description?: string;
+};

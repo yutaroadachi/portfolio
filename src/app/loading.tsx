@@ -3,5 +3,5 @@ export default function RootLoading() {
     <section>
       <h1>Loading…</h1>
     </section>
-  )
+  );
 }

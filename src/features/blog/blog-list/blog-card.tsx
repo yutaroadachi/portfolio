@@ -1,23 +1,23 @@
-import { formatYYYYMMDD } from '@/utils/format/date-format'
-import { truncate } from '@/utils/format/string-format'
-import NextLink from 'next/link'
-import { PropsWithChildren } from 'react'
-import { MdOutlineArticle } from 'react-icons/md'
-import { SiZenn } from 'react-icons/si'
+import { formatYYYYMMDD } from "@/utils/format/date-format";
+import { truncate } from "@/utils/format/string-format";
+import NextLink from "next/link";
+import { PropsWithChildren } from "react";
+import { MdOutlineArticle } from "react-icons/md";
+import { SiZenn } from "react-icons/si";
 
 export type BlogCardProps = {
-  kind: 'tech' | 'personal'
-  href: string
-  title: string
-  publishDate: Date
-}
+  kind: "tech" | "personal";
+  href: string;
+  title: string;
+  publishDate: Date;
+};
 
 export const BlogCard = ({ kind, href, title, publishDate }: BlogCardProps) => {
   return (
     <article className="card p-4">
       <Link kind={kind} href={href}>
         <div className="center">
-          {kind === 'tech' ? (
+          {kind === "tech" ? (
             <SiZenn size={24} />
           ) : (
             <MdOutlineArticle size={24} />
@@ -31,19 +31,19 @@ export const BlogCard = ({ kind, href, title, publishDate }: BlogCardProps) => {
         </div>
       </Link>
     </article>
-  )
-}
+  );
+};
 
 const Link = ({
   kind,
   href,
   children,
-}: PropsWithChildren<Pick<BlogCardProps, 'kind' | 'href'>>) => {
-  return kind === 'tech' ? (
+}: PropsWithChildren<Pick<BlogCardProps, "kind" | "href">>) => {
+  return kind === "tech" ? (
     <a href={href} target="_blank" rel="noopener noreferrer">
       {children}
     </a>
   ) : (
     <NextLink href={href as `/blog/${string}`}>{children}</NextLink>
-  )
-}
+  );
+};

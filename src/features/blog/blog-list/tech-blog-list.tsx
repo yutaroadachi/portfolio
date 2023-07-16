@@ -1,11 +1,11 @@
-import { URL } from '@/constants/url'
-import { FiExternalLink } from 'react-icons/fi'
-import { BlogCard } from './blog-card'
-import { getTechBlogList } from './get-tech-blog-list'
+import { URL } from "@/constants/url";
+import { FiExternalLink } from "react-icons/fi";
+import { BlogCard } from "./blog-card";
+import { getTechBlogList } from "./get-tech-blog-list";
 
 export type TechBlogListProps = {
-  techBlogList: Awaited<ReturnType<typeof getTechBlogList>>
-}
+  techBlogList: Awaited<ReturnType<typeof getTechBlogList>>;
+};
 
 export const TechBlogList = ({ techBlogList }: TechBlogListProps) => {
   return (
@@ -23,7 +23,7 @@ export const TechBlogList = ({ techBlogList }: TechBlogListProps) => {
               title={techBlog.title as string}
               publishDate={new Date(techBlog.pubDate as string)}
             />
-          )
+          );
         })}
       </div>
       <center>
@@ -38,5 +38,5 @@ export const TechBlogList = ({ techBlogList }: TechBlogListProps) => {
         </a>
       </center>
     </div>
-  )
-}
+  );
+};

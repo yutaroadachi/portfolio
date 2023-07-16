@@ -1,9 +1,9 @@
-import { BlogCard } from './blog-card'
-import { getPersonalBlogList } from './get-personal-blog-list'
+import { BlogCard } from "./blog-card";
+import { getPersonalBlogList } from "./get-personal-blog-list";
 
 export type PersonalBlogListProps = {
-  personalBlogList: Awaited<ReturnType<typeof getPersonalBlogList>>
-}
+  personalBlogList: Awaited<ReturnType<typeof getPersonalBlogList>>;
+};
 
 export const PersonalBlogList = ({
   personalBlogList,
@@ -25,9 +25,9 @@ export const PersonalBlogList = ({
                 new Date(personalBlog.publishedAt ?? personalBlog.createdAt)
               }
             />
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};

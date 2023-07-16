@@ -1,23 +1,23 @@
-import { PATH } from '@/constants/path'
-import { ORIGIN } from '@/constants/url'
-import { ProfileCard } from '@/features/profile/profile-card'
-import { formatYYYYMMDD } from '@/utils/format/date-format'
-import { generateTitle } from '@/utils/meta/generator'
-import NextLink from 'next/link'
-import { AiOutlineTwitter } from 'react-icons/ai'
-import { BiChevronRight } from 'react-icons/bi'
-import { SiHatenabookmark } from 'react-icons/si'
-import { getPersonalBlogDetail } from './get-personal-blog-detail'
+import { PATH } from "@/constants/path";
+import { ORIGIN } from "@/constants/url";
+import { ProfileCard } from "@/features/profile/profile-card";
+import { formatYYYYMMDD } from "@/utils/format/date-format";
+import { generateTitle } from "@/utils/meta/generator";
+import NextLink from "next/link";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { BiChevronRight } from "react-icons/bi";
+import { SiHatenabookmark } from "react-icons/si";
+import { getPersonalBlogDetail } from "./get-personal-blog-detail";
 
 export type PersonalBlogDetailProps = {
-  personalBlogDetail: Awaited<ReturnType<typeof getPersonalBlogDetail>>
-}
+  personalBlogDetail: Awaited<ReturnType<typeof getPersonalBlogDetail>>;
+};
 
 export const PersonalBlogDetail = ({
   personalBlogDetail,
 }: PersonalBlogDetailProps) => {
-  const shareUrl = `${ORIGIN}${PATH.blog}/${personalBlogDetail.id}`
-  const shareText = generateTitle(personalBlogDetail.title)
+  const shareUrl = `${ORIGIN}${PATH.blog}/${personalBlogDetail.id}`;
+  const shareText = generateTitle(personalBlogDetail.title);
 
   return (
     <div className="space-y-8">
@@ -39,8 +39,8 @@ export const PersonalBlogDetail = ({
         <div className="text-sm text-gray-500">
           {`${formatYYYYMMDD(
             new Date(
-              personalBlogDetail.publishedAt ?? personalBlogDetail.createdAt
-            )
+              personalBlogDetail.publishedAt ?? personalBlogDetail.createdAt,
+            ),
           )}に投稿`}
         </div>
       </div>
@@ -61,16 +61,16 @@ export const PersonalBlogDetail = ({
       </div>
       <ProfileCard />
     </div>
-  )
-}
+  );
+};
 
 type ShareLink = {
-  url: string
-  text: string
-}
+  url: string;
+  text: string;
+};
 
 const TwitterShareLink = ({ url, text }: ShareLink) => {
-  const urlSearchParams = new URLSearchParams({ url, text })
+  const urlSearchParams = new URLSearchParams({ url, text });
 
   return (
     <a
@@ -81,11 +81,11 @@ const TwitterShareLink = ({ url, text }: ShareLink) => {
     >
       <AiOutlineTwitter size={36} />
     </a>
-  )
-}
+  );
+};
 
 const HatenaShareLink = ({ url, text }: ShareLink) => {
-  const urlSearchParams = new URLSearchParams({ url, btitle: text })
+  const urlSearchParams = new URLSearchParams({ url, btitle: text });
 
   return (
     <a
@@ -96,5 +96,5 @@ const HatenaShareLink = ({ url, text }: ShareLink) => {
     >
       <SiHatenabookmark size={36} />
     </a>
-  )
-}
+  );
+};

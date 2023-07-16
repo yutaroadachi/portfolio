@@ -4,15 +4,15 @@ module.exports = {
       numberOfRuns: 1,
       settings: {
         onlyCategories: [
-          'performance',
-          'accessibility',
-          'best-practices',
-          'seo',
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo",
         ],
       },
     },
     upload: {
-      target: 'temporary-public-storage',
+      target: "temporary-public-storage",
     },
   },
-}
+};

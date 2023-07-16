@@ -1,6 +1,6 @@
 import { ImageResponse, NextRequest } from "next/server";
 
-export const runtime = "experimental-edge";
+export const runtime = "edge";
 
 export const GET = async (req: NextRequest) => {
   try {

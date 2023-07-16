@@ -1,19 +1,19 @@
-import { PATH } from '@/constants/path'
-import '@/styles/globals.css'
-import { Montserrat } from 'next/font/google'
-import NextLink from 'next/link'
-import { ReactNode } from 'react'
+import { PATH } from "@/constants/path";
+import "@/styles/globals.css";
+import { Montserrat } from "next/font/google";
+import NextLink from "next/link";
+import { ReactNode } from "react";
 
 export const metadata = {
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
   },
-}
+};
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  variable: '--font-montserrat',
-})
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </div>
       </body>
     </html>
-  )
+  );
 }
 
 const Header = () => {
@@ -44,13 +44,13 @@ const Header = () => {
               <NextLink key={link.key} href={link.href} aria-label={link.title}>
                 {link.title}
               </NextLink>
-            )
+            );
           })}
         </nav>
       </div>
     </header>
-  )
-}
+  );
+};
 
 const Footer = () => {
   return (
@@ -62,37 +62,37 @@ const Footer = () => {
             <NextLink key={link.key} href={link.href} aria-label={link.title}>
               {link.title}
             </NextLink>
-          )
+          );
         })}
       </nav>
       <div className="text-sm">
         Copyright© Yutaro Adachi All Rights Reserved.
       </div>
     </footer>
-  )
-}
+  );
+};
 
 const Logo = () => {
   return (
     <NextLink href={PATH.top} className="logo" aria-label="logo">
       y
     </NextLink>
-  )
-}
+  );
+};
 
 const LINKS: {
-  key: string
-  href: '/' | '/blog'
-  title: string
+  key: string;
+  href: "/" | "/blog";
+  title: string;
 }[] = [
   {
-    key: 'top',
+    key: "top",
     href: PATH.top,
-    title: 'トップ',
+    title: "トップ",
   },
   {
-    key: 'blog',
+    key: "blog",
     href: PATH.blog,
-    title: 'ブログ',
+    title: "ブログ",
   },
-]
+];

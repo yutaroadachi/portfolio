@@ -1,8 +1,8 @@
 /** 内部リンク */
 export const PATH = {
   api: {
-    og: '/api/og',
+    og: "/api/og",
   },
-  blog: '/blog',
-  top: '/',
-} as const
+  blog: "/blog",
+  top: "/",
+} as const;

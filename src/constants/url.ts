@@ -8,7 +8,7 @@ export const URL = {
 /** オリジン */
 export const ORIGIN =
   process.env.VERCEL_ENV === "production"
-    ? "https://portfolio-adachi.vercel.app"
+    ? "https://yutaroadachi.vercel.app"
     : process.env.VERCEL_URL
     ? `https://${process.env.VERCEL_URL}`
     : "http://localhost:3000";

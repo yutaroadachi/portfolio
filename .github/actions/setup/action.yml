@@ -1,9 +1,9 @@
-name: 'Setup'
+name: "Setup"
 
-description: 'Setup my Node.js application'
+description: "Setup Node.js"
 
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - name: Setup pnpm
       uses: pnpm/action-setup@v2
@@ -11,8 +11,8 @@ runs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version-file: '.node-version'
-        cache: 'pnpm'
+        node-version-file: ".node-version"
+        cache: "pnpm"
 
     - name: Install dependencies
       run: pnpm install --frozen-lockfile

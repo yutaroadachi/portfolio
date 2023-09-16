@@ -16,8 +16,11 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
 
+      - name: Install @lhci/cli
+        run: bun add --global @lhci/cli
+
       - name: Run lhci collect
-        run: bun --package @lhci/cli x lhci collect --url ${{ github.event.deployment_status.target_url }}
+        run: bunx lhci collect --url ${{ github.event.deployment_status.target_url }}
 
       - name: Run lhci upload
-        run: bun --package @lhci/cli x lhci upload --githubAppToken ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+        run: bunx lhci upload --githubAppToken ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

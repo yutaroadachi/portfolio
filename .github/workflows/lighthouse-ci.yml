@@ -11,13 +11,16 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install @lhci/cli
+        run: bun add --global @lhci/cli
 
       - name: Run lhci collect
-        run: pnpm --package @lhci/cli dlx lhci collect --url ${{ github.event.deployment_status.target_url }}
+        run: bunx lhci collect --url ${{ github.event.deployment_status.target_url }}
 
       - name: Run lhci upload
-        run: pnpm --package @lhci/cli dlx lhci upload --githubAppToken ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+        run: bunx lhci upload --githubAppToken ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

@@ -31,7 +31,7 @@
     "@babel/core": "7.23.3",
     "@next/bundle-analyzer": "14.0.2",
     "@playwright/test": "1.39.0",
-    "@testing-library/react": "14.1.0",
+    "@testing-library/react": "14.1.2",
     "@types/jest": "29.5.8",
     "@types/node": "18.16.16",
     "@types/react": "18.2.37",

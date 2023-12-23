@@ -10,5 +10,5 @@ export const ORIGIN =
   process.env.VERCEL_ENV === "production"
     ? "https://yutaroadachi.vercel.app"
     : process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000";
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000";

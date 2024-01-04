@@ -64,23 +64,34 @@ const Skills = () => {
       <h2 id="skills" className="with-treat">
         スキル
       </h2>
-      <div className="stack space-y-4">
+      <div className="stack space-y-4 break-words">
         <div>
           <h3>リードできる</h3>
           <ul>
-            <li>JavaScript, TypeScript, React, Next.js</li>
+            <li>
+              {[
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "Next.js",
+                "Vue.js",
+                "Nuxt",
+              ].join("/")}
+            </li>
           </ul>
         </div>
         <div>
           <h3>問題なく使用できる</h3>
           <ul>
-            <li>HTML, CSS, Ruby, Ruby on Rails, GraphQL</li>
+            <li>{["Ruby", "Ruby on Rails", "GraphQL", "gRPC"].join("/")}</li>
           </ul>
         </div>
         <div>
           <h3>実務経験あり</h3>
           <ul>
-            <li>NestJS, Prisma, Go</li>
+            <li>{["NestJS"].join("/")}</li>
           </ul>
         </div>
       </div>

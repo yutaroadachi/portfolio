@@ -33,7 +33,7 @@
     "@playwright/test": "1.42.1",
     "@testing-library/react": "14.2.2",
     "@types/jest": "29.5.12",
-    "@types/node": "18.19.15",
+    "@types/node": "18.19.28",
     "@types/react": "18.2.73",
     "@typescript-eslint/eslint-plugin": "7.4.0",
     "@typescript-eslint/parser": "7.4.0",

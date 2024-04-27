@@ -12,8 +12,8 @@ dependencies:
     specifier: 2.1.1
     version: 2.1.1
   microcms-js-sdk:
-    specifier: 3.1.0
-    version: 3.1.0
+    specifier: 3.1.1
+    version: 3.1.1
   next:
     specifier: 14.2.2
     version: 14.2.2(@babel/core@7.24.4)(@playwright/test@1.43.1)(react-dom@18.2.0)(react@18.2.0)
@@ -4321,8 +4321,8 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /microcms-js-sdk@3.1.0:
-    resolution: {integrity: sha512-xOqS6b6CP/p/+7D64EM+BcR4D/qMUmIucDuJUVVMz4fcHgI5zpGMTeEGQK4vMwwjm/iKvs+bifUX53RgwHez/A==}
+  /microcms-js-sdk@3.1.1:
+    resolution: {integrity: sha512-Lh234f+r4dje/1XxWNu4sMrjCrqkMkRoc9wr/WN5wsEngTa0ZLMXLNgZm3e74vw/HHj3ipYSJeCA2HyyguN37w==}
     engines: {node: '>=18.0.0'}
     dependencies:
       async-retry: 1.3.3

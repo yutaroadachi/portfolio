@@ -30,7 +30,7 @@
   "devDependencies": {
     "@babel/core": "7.24.9",
     "@next/bundle-analyzer": "14.2.5",
-    "@playwright/test": "1.45.2",
+    "@playwright/test": "1.45.3",
     "@testing-library/react": "16.0.0",
     "@types/jest": "29.5.12",
     "@types/node": "18.19.15",

@@ -28,7 +28,7 @@
     "server-only": "0.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.24.9",
+    "@babel/core": "7.25.2",
     "@next/bundle-analyzer": "14.2.5",
     "@playwright/test": "1.45.3",
     "@testing-library/react": "16.0.0",

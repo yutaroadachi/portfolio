@@ -45,7 +45,7 @@ devDependencies:
     version: 1.51.1
   '@testing-library/react':
     specifier: 16.2.0
-    version: 16.2.0(@testing-library/dom@10.0.0)(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
+    version: 16.2.0(@testing-library/dom@10.0.0)(@types/react@18.3.19)(react-dom@18.3.1)(react@18.3.1)
   '@types/jest':
     specifier: 29.5.14
     version: 29.5.14
@@ -53,8 +53,8 @@ devDependencies:
     specifier: 22.13.8
     version: 22.13.8
   '@types/react':
-    specifier: 18.3.18
-    version: 18.3.18
+    specifier: 18.3.19
+    version: 18.3.19
   '@typescript-eslint/eslint-plugin':
     specifier: 7.18.0
     version: 7.18.0(@typescript-eslint/parser@7.18.0)(eslint@8.57.1)(typescript@5.8.2)
@@ -952,7 +952,7 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/react@16.2.0(@testing-library/dom@10.0.0)(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1):
+  /@testing-library/react@16.2.0(@testing-library/dom@10.0.0)(@types/react@18.3.19)(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-2cSskAvA1QNtKc8Y9VJQRv0tm3hLVgxRGDB+KYhIaPQJ1I+RHbhIXcM+zClKXzMes/wshsMVzf4B9vS4IZpqDQ==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -969,7 +969,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.22.5
       '@testing-library/dom': 10.0.0
-      '@types/react': 18.3.18
+      '@types/react': 18.3.19
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     dev: true
@@ -1085,8 +1085,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react@18.3.18:
-    resolution: {integrity: sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==}
+  /@types/react@18.3.19:
+    resolution: {integrity: sha512-fcdJqaHOMDbiAwJnXv6XCzX0jDW77yI3tJqYh1Byn8EL5/S628WRx9b/y3DnNe55zTukUQKrfYxiZls2dHcUMw==}
     dependencies:
       '@types/prop-types': 15.7.5
       csstype: 3.1.2
